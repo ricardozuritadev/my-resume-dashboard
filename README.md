@@ -1,2 +1,2 @@
 # my-resume
-My personal resume website
+My personal resume

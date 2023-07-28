@@ -27,6 +27,10 @@
       border-radius: 50%;
     }
 
+    &__profession {
+      font-size: $font-size-small;
+    }
+
     &__nav {
       text-align: left;
     }
@@ -34,18 +38,28 @@
     &__links {
       display: flex;
       flex-direction: column;
-      gap: 4rem;
+      gap: 0.6rem;
+      margin-bottom: 4rem;
     }
 
     &__link {
+      border-radius: 15px;
+      padding: 1rem 3rem;
+      transition: all 0.1s;
+
+      &:hover {
+        background-color: $color-gray-100;
+      }
+    }
+
+    &__element {
       display: flex;
-      // align-items: center;
+      align-items: center;
       gap: 1rem;
     }
 
     &__icon {
       width: 3rem;
-      height: 3rem;
       text-align: center;
     }
 

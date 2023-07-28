@@ -1,0 +1,12 @@
+.l-sidenav {
+  display: none;
+
+  @include from-medium {
+    display: block;
+    position: fixed;
+    background-color: $color-gray-100;
+    width: 20%;
+    height: 100vh;
+    max-width: px;
+  }
+}

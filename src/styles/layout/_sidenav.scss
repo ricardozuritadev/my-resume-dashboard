@@ -2,11 +2,58 @@
   display: none;
 
   @include from-medium {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    background-color: $color-gray-100;
+    padding: 5rem 6rem;
+    border-right: 1px solid $color-gray-100;
+    text-align: center;
     width: 20%;
     height: 100vh;
     max-width: px;
+
+    &__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+    }
+
+    &__pic {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%;
+    }
+
+    &__nav {
+      text-align: left;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    &__link {
+      display: flex;
+      // align-items: center;
+      gap: 1rem;
+    }
+
+    &__icon {
+      width: 3rem;
+      height: 3rem;
+      text-align: center;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      // gap: 2rem;
+    }
   }
 }

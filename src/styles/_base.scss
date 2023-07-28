@@ -10,8 +10,19 @@ html {
 
 body {
   background-color: $color-gray-200;
-  font-size: 1.6rem;
+  color: $color-white;
+  font-family: "Montserrat", sans-serif;
+  font-size: $font-size-base;
   line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
 }
 
 .l-app {

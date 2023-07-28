@@ -26,52 +26,68 @@ const Sidenav = () => {
             />
           </div>
           <div>
-            <h4>{SIDENAV_CONSTANTS.NAME}</h4>
-            <p>{t(SIDENAV_CONSTANTS.PROFESSION)}</p>
+            <h3>{SIDENAV_CONSTANTS.NAME}</h3>
+            <p className="l-sidenav__profession">
+              {t(SIDENAV_CONSTANTS.PROFESSION)}
+            </p>
           </div>
         </section>
         <section className="l-sidenav__nav">
           <nav>
             <ul className="l-sidenav__links">
-              <li className="l-sidenav__link">
-                <span className="l-sidenav__icon">
-                  <FontAwesomeIcon icon={faHouse} />
-                </span>
-                {SIDENAV_CONSTANTS.HOME}
-              </li>
-              <li className="l-sidenav__link">
-                <span className="l-sidenav__icon">
-                  <FontAwesomeIcon icon={faUser} />
-                </span>
-                {t(SIDENAV_CONSTANTS.ABOUT)}
-              </li>
-              <li className="l-sidenav__link">
-                <span className="l-sidenav__icon">
-                  <FontAwesomeIcon icon={faLaptopCode} />
-                </span>
-                {t(SIDENAV_CONSTANTS.SKILLS)}
-              </li>
-              <li className="l-sidenav__link">
-                <span className="l-sidenav__icon">
-                  <FontAwesomeIcon icon={faBuilding} />
-                </span>
-                {t(SIDENAV_CONSTANTS.EXPERIENCE)}
-              </li>
-              <li className="l-sidenav__link">
-                <span className="l-sidenav__icon">
-                  <FontAwesomeIcon icon={faGraduationCap} />
-                </span>
-                {t(SIDENAV_CONSTANTS.EDUCATION)}
-              </li>
-              <li className="l-sidenav__link">
-                <span className="l-sidenav__icon">
-                  <FontAwesomeIcon icon={faIdCard} />
-                </span>
-                {t(SIDENAV_CONSTANTS.CONTACT)}
-              </li>
+              <a href="#" className="l-sidenav__link">
+                <li className="l-sidenav__element">
+                  <span className="l-sidenav__icon">
+                    <FontAwesomeIcon icon={faHouse} />
+                  </span>
+                  {SIDENAV_CONSTANTS.HOME}
+                </li>
+              </a>
+              <a href="#" className="l-sidenav__link">
+                <li className="l-sidenav__element">
+                  <span className="l-sidenav__icon">
+                    <FontAwesomeIcon icon={faUser} />
+                  </span>
+                  {t(SIDENAV_CONSTANTS.ABOUT)}
+                </li>
+              </a>
+              <a href="#" className="l-sidenav__link">
+                <li className="l-sidenav__element">
+                  <span className="l-sidenav__icon">
+                    <FontAwesomeIcon icon={faLaptopCode} />
+                  </span>
+                  {t(SIDENAV_CONSTANTS.SKILLS)}
+                </li>
+              </a>
+              <a href="#" className="l-sidenav__link">
+                <li className="l-sidenav__element">
+                  <span className="l-sidenav__icon">
+                    <FontAwesomeIcon icon={faBuilding} />
+                  </span>
+                  {t(SIDENAV_CONSTANTS.EXPERIENCE)}
+                </li>
+              </a>
+              <a href="#" className="l-sidenav__link">
+                <li className="l-sidenav__element">
+                  <span className="l-sidenav__icon">
+                    <FontAwesomeIcon icon={faGraduationCap} />
+                  </span>
+                  {t(SIDENAV_CONSTANTS.EDUCATION)}
+                </li>
+              </a>
+              <a href="#" className="l-sidenav__link">
+                <li className="l-sidenav__element">
+                  <span className="l-sidenav__icon">
+                    <FontAwesomeIcon icon={faIdCard} />
+                  </span>
+                  {t(SIDENAV_CONSTANTS.CONTACT)}
+                </li>
+              </a>
             </ul>
           </nav>
         </section>
+
+        <section>THEME TOGGLE</section>
       </div>
 
       {/* <div className="l-sidenav__bottom">

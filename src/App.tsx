@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import Header from "layout/header";
 import Main from "layout/main";
 import Sidenav from "layout/sidenav";
@@ -16,4 +18,10 @@ const App = () => {
   );
 };
 
-export default App;
+export default function WrappedApp() {
+  return (
+    <Suspense fallback="...loading">
+      <App />
+    </Suspense>
+  );
+}

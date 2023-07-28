@@ -1,0 +1,11 @@
+{
+  "sidenav": {
+    "profession": "Desarrollador Frontend",
+    "home": "Home",
+    "about": "Acerca de mi",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "education": "Estudios",
+    "contact": "Contacto"
+  }
+}

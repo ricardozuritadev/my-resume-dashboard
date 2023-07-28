@@ -1,0 +1,11 @@
+{
+  "sidenav": {
+    "profession": "Frontend Developer",
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact"
+  }
+}

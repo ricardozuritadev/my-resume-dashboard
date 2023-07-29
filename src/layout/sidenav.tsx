@@ -20,12 +20,12 @@ const Sidenav = () => {
         <section>
           <div className="l-sidenav__pic-container">
             <img
-              src="images/front_profile_pic.jpg"
+              src="images/rz_avatar.png"
               alt="Profile pic"
               className="l-sidenav__pic"
             />
           </div>
-          <div>
+          <div className="l-sidenav__info">
             <h3>{SIDENAV_CONSTANTS.NAME}</h3>
             <p className="l-sidenav__profession">
               {t(SIDENAV_CONSTANTS.PROFESSION)}
@@ -41,7 +41,9 @@ const Sidenav = () => {
                   <span className="l-sidenav__icon">
                     <FontAwesomeIcon icon={faUser} />
                   </span>
-                  {t(SIDENAV_CONSTANTS.ABOUT)}
+                  <span className="l-sidenav__text">
+                    {t(SIDENAV_CONSTANTS.ABOUT)}
+                  </span>
                 </li>
               </a>
               <a href="#" className="l-sidenav__link">
@@ -49,7 +51,9 @@ const Sidenav = () => {
                   <span className="l-sidenav__icon">
                     <FontAwesomeIcon icon={faLaptopCode} />
                   </span>
-                  {t(SIDENAV_CONSTANTS.SKILLS)}
+                  <span className="l-sidenav__text">
+                    {t(SIDENAV_CONSTANTS.SKILLS)}
+                  </span>
                 </li>
               </a>
               <a href="#" className="l-sidenav__link">
@@ -57,7 +61,9 @@ const Sidenav = () => {
                   <span className="l-sidenav__icon">
                     <FontAwesomeIcon icon={faBuilding} />
                   </span>
-                  {t(SIDENAV_CONSTANTS.EXPERIENCE)}
+                  <span className="l-sidenav__text">
+                    {t(SIDENAV_CONSTANTS.EXPERIENCE)}
+                  </span>
                 </li>
               </a>
               <a href="#" className="l-sidenav__link">
@@ -65,7 +71,9 @@ const Sidenav = () => {
                   <span className="l-sidenav__icon">
                     <FontAwesomeIcon icon={faGraduationCap} />
                   </span>
-                  {t(SIDENAV_CONSTANTS.EDUCATION)}
+                  <span className="l-sidenav__text">
+                    {t(SIDENAV_CONSTANTS.EDUCATION)}
+                  </span>
                 </li>
               </a>
               <a href="#" className="l-sidenav__link">
@@ -73,7 +81,9 @@ const Sidenav = () => {
                   <span className="l-sidenav__icon">
                     <FontAwesomeIcon icon={faIdCard} />
                   </span>
-                  {t(SIDENAV_CONSTANTS.CONTACT)}
+                  <span className="l-sidenav__text">
+                    {t(SIDENAV_CONSTANTS.CONTACT)}
+                  </span>
                 </li>
               </a>
             </ul>

@@ -8,9 +8,9 @@
     align-items: center;
     position: fixed;
     padding: 5rem 0;
-    border-right: 1px solid $color-gray-100;
+    border-right: 1px solid $color-gray-200;
     text-align: center;
-    width: 22rem;
+    width: 8rem;
     height: 100vh;
 
     &__top {
@@ -21,9 +21,11 @@
     }
 
     &__pic {
-      width: 15rem;
-      height: 15rem;
-      border-radius: 50%;
+      display: none;
+    }
+
+    &__info {
+      display: none;
     }
 
     &__profession {
@@ -45,10 +47,6 @@
       border-radius: 15px;
       padding: 1.6rem 3rem;
       transition: all 0.1s;
-
-      &:hover {
-        background-color: $color-gray-100;
-      }
     }
 
     &__element {
@@ -62,15 +60,39 @@
       text-align: center;
     }
 
+    &__text {
+      display: none;
+    }
+
     &__bottom {
       display: flex;
       justify-content: space-between;
       width: 100%;
-      // gap: 2rem;
     }
   }
 
   @include from-large {
     width: 28rem;
+
+    &__pic {
+      display: block;
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%;
+    }
+
+    &__info {
+      display: block;
+    }
+
+    &__text {
+      display: block;
+    }
+
+    &__link {
+      &:hover {
+        background-color: $color-gray-200;
+      }
+    }
   }
 }

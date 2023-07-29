@@ -1,5 +1,4 @@
-// RESPONSIVE MIXINS
-
+// RESPONSIVE
 @mixin from-medium {
   @media (min-width: $breakpoint-medium) {
     @content;
@@ -22,4 +21,123 @@
   @media (min-width: $breakpoint-xxlarge) {
     @content;
   }
+}
+
+// PATTERNS
+@mixin pattern-circles-white {
+  background: radial-gradient(
+      transparent 34%,
+      #d4d4d4 35%,
+      #d4d4d4 45%,
+      transparent 46%
+    ),
+    radial-gradient(
+      circle at left,
+      transparent 39%,
+      #d4d4d480 40%,
+      #d4d4d480 45%,
+      transparent 46%
+    ),
+    radial-gradient(
+      circle at right,
+      transparent 39%,
+      #d4d4d480 40%,
+      #d4d4d480 45%,
+      transparent 46%
+    );
+  background-size: 6em 6em;
+  background-color: #dcdcdd;
+  opacity: 1;
+}
+
+@mixin pattern-circles-gray {
+  background: radial-gradient(
+      transparent 34%,
+      #3b3b3b 35%,
+      #3b3b3b 45%,
+      transparent 46%
+    ),
+    radial-gradient(
+      circle at left,
+      transparent 39%,
+      #3b3b3b80 40%,
+      #3b3b3b80 45%,
+      transparent 46%
+    ),
+    radial-gradient(
+      circle at right,
+      transparent 39%,
+      #3b3b3b80 40%,
+      #3b3b3b80 45%,
+      transparent 46%
+    );
+  background-size: 6em 6em;
+  background-color: #36373e;
+  opacity: 1;
+}
+
+@mixin pattern-diamonds-white {
+  background: linear-gradient(
+      45deg,
+      transparent 34%,
+      #3b3b3b 35%,
+      #3b3b3b 40%,
+      transparent 41%,
+      transparent 59%,
+      #3b3b3b 60%,
+      #3b3b3b 65%,
+      transparent 66%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 34%,
+      #3b3b3b 35%,
+      #3b3b3b 40%,
+      transparent 41%,
+      transparent 59%,
+      #3b3b3b 60%,
+      #3b3b3b 65%,
+      transparent 66%
+    ),
+    radial-gradient(#3b3b3b 10%, transparent 11%),
+    radial-gradient(circle at left, #3b3b3b 5%, transparent 6%),
+    radial-gradient(circle at right, #3b3b3b 5%, transparent 6%),
+    radial-gradient(circle at top, #3b3b3b 5%, transparent 6%),
+    radial-gradient(circle at bottom, #3b3b3b 5%, transparent 6%);
+  background-size: 6em 6em;
+  background-color: #36373e;
+  opacity: 1;
+}
+
+@mixin pattern_diamonds-gray {
+  background: linear-gradient(
+      45deg,
+      transparent 34%,
+      #3e3e3e 35%,
+      #3e3e3e 40%,
+      transparent 41%,
+      transparent 59%,
+      #3e3e3e 60%,
+      #3e3e3e 65%,
+      transparent 66%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 34%,
+      #3e3e3e 35%,
+      #3e3e3e 40%,
+      transparent 41%,
+      transparent 59%,
+      #3e3e3e 60%,
+      #3e3e3e 65%,
+      transparent 66%
+    ),
+    radial-gradient(#3e3e3e 10%, transparent 11%),
+    radial-gradient(circle at left, #3e3e3e 5%, transparent 6%),
+    radial-gradient(circle at right, #3e3e3e 5%, transparent 6%),
+    radial-gradient(circle at top, #3e3e3e 5%, transparent 6%),
+    radial-gradient(circle at bottom, #3e3e3e 5%, transparent 6%);
+  background-size: 6em 6em;
+  background-color: #36373e;
+  opacity: 1;
 }

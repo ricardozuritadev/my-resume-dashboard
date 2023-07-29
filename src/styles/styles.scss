@@ -7,10 +7,13 @@
 // FONTS
 @import "./fonts";
 
-// BASE STYLES
+// BASE
 @import "./base";
 
-// LAYOUT STYLES
+// LAYOUT
 @import "styles/layout/sidenav";
 @import "styles/layout/header";
 @import "styles/layout/main";
+
+// PAGES
+@import "styles/pages/about";

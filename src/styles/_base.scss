@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background-color: $color-gray-200;
-  color: $color-white;
+  background-color: $color-gray-300;
+  color: $color-white-100;
   font-family: "Montserrat", sans-serif;
   font-size: $font-size-base;
   line-height: 1.5;
@@ -23,12 +23,4 @@ a {
 
 ul {
   list-style: none;
-}
-
-.l-app {
-  @include from-medium {
-    &__main {
-      margin-left: 20%;
-    }
-  }
 }

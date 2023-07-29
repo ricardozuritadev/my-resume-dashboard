@@ -1,0 +1,111 @@
+.p-about {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1;
+  gap: 3rem;
+  padding: 4rem;
+
+  &__card {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 4rem;
+    border-radius: $border-radius-medium;
+    width: 38rem;
+    height: 34rem;
+
+    &--bio {
+      background-image: url("/images/side_profile_pic_full.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 68rem;
+    }
+
+    &--cv {
+      @include pattern-circles-white;
+      color: $color-gray-300;
+      justify-content: space-between;
+    }
+
+    &--hobbies {
+      background-color: $color-yellow;
+      color: $color-gray-300;
+    }
+
+    &--live {
+      background-color: $color-gray-100;
+    }
+
+    &--lang {
+      background-color: $color-gray-100;
+    }
+  }
+
+  &__title {
+    padding-top: 4rem;
+  }
+
+  &__button {
+    background-color: $color-yellow;
+    border: none;
+    border-radius: $border-radius-small;
+    padding: 2rem 8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $color-gray-100;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @include from-medium {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    &__card {
+      width: 32rem;
+      height: 34rem;
+
+      &--bio {
+        grid-row: 1/3;
+        height: 72rem;
+      }
+    }
+  }
+
+  @include from-large {
+    grid-template-columns: repeat(3, 1fr);
+
+    &__card {
+      width: 28rem;
+      height: 29rem;
+
+      &--bio {
+        grid-column: 3/4;
+        grid-row: 1/3;
+        height: 62rem;
+      }
+    }
+
+    &__button {
+      padding: 1rem 6rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-gray-200;
+        color: $color-white-100;
+      }
+    }
+  }
+
+  @include from-xxlarge {
+    &__card {
+      width: 48rem;
+      height: 37rem;
+
+      &--bio {
+        height: 78rem;
+      }
+    }
+  }
+}

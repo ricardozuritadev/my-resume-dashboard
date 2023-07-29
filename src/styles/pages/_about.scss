@@ -17,14 +17,32 @@
     height: 34rem;
 
     &--bio {
-      background-image: url("/images/side_profile_pic_full.jpg");
+      position: relative;
+      background-color: $color-white-200;
+      background-image: url("/images/rz_front_profile_alpha.png");
       background-position: center;
       background-size: cover;
       height: 68rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.388) 100%
+        );
+        border-radius: $border-radius-medium;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 18rem;
+        pointer-events: none;
+      }
     }
 
     &--cv {
-      @include pattern-circles-white;
+      background-color: $color-white-200;
       color: $color-gray-300;
       justify-content: space-between;
     }
@@ -43,8 +61,16 @@
     }
   }
 
-  &__title {
+  &__cv-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding-top: 4rem;
+    width: 100%;
+  }
+
+  &__pdf {
+    color: $color-white-300;
   }
 
   &__button {
@@ -56,6 +82,7 @@
     font-weight: 700;
     color: $color-gray-100;
     transition: all 0.3s ease-in-out;
+    z-index: 100;
   }
 
   @include from-medium {
@@ -69,6 +96,7 @@
       &--bio {
         grid-row: 1/3;
         height: 72rem;
+        background-position: left;
       }
     }
   }

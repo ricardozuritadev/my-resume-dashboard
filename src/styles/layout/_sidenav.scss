@@ -7,12 +7,11 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    padding: 5rem 6rem;
+    padding: 5rem 0;
     border-right: 1px solid $color-gray-100;
     text-align: center;
-    width: 20%;
+    width: 22rem;
     height: 100vh;
-    max-width: px;
 
     &__top {
       display: flex;
@@ -44,7 +43,7 @@
 
     &__link {
       border-radius: 15px;
-      padding: 1rem 3rem;
+      padding: 1.6rem 3rem;
       transition: all 0.1s;
 
       &:hover {
@@ -69,5 +68,9 @@
       width: 100%;
       // gap: 2rem;
     }
+  }
+
+  @include from-large {
+    width: 28rem;
   }
 }

@@ -1,4 +1,5 @@
 // RESPONSIVE MIXINS
+
 @mixin from-medium {
   @media (min-width: $breakpoint-medium) {
     @content;

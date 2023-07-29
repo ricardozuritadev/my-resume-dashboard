@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { faBuilding } from "@fortawesome/free-solid-svg-icons";
@@ -17,6 +16,7 @@ const Sidenav = () => {
     <aside className="l-sidenav">
       <div className="l-sidenav__top">
         <section>LOGO</section>
+
         <section>
           <div className="l-sidenav__pic-container">
             <img
@@ -32,17 +32,10 @@ const Sidenav = () => {
             </p>
           </div>
         </section>
+
         <section className="l-sidenav__nav">
           <nav>
             <ul className="l-sidenav__links">
-              <a href="#" className="l-sidenav__link">
-                <li className="l-sidenav__element">
-                  <span className="l-sidenav__icon">
-                    <FontAwesomeIcon icon={faHouse} />
-                  </span>
-                  {SIDENAV_CONSTANTS.HOME}
-                </li>
-              </a>
               <a href="#" className="l-sidenav__link">
                 <li className="l-sidenav__element">
                   <span className="l-sidenav__icon">

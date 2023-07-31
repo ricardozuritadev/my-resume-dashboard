@@ -1,0 +1,43 @@
+.c-button {
+  border: none;
+  border-radius: $border-radius-small;
+  padding: 2rem 8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $color-gray-100;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+  cursor: pointer;
+
+  &--yellow {
+    background-color: $color-yellow;
+
+    &:hover {
+      background-color: $color-gray-200;
+      color: $color-white-100;
+    }
+  }
+
+  &--gray {
+    background-color: $color-gray-200;
+    color: $color-white-200;
+
+    &:hover {
+      background-color: $color-yellow;
+      color: $color-gray-200;
+    }
+  }
+
+  &--white {
+    background-color: $color-white-200;
+
+    &:hover {
+      background-color: $color-gray-200;
+      color: $color-white-100;
+    }
+  }
+
+  @include from-medium {
+    padding: 2rem 4rem;
+  }
+}

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import { ABOUT_CONSTANTS } from "constants/sidenav.constants";
+import { ABOUT_CONSTANTS } from "constants/about.constants";
 
 import { buttonColor } from "types/button.types";
 

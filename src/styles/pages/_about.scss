@@ -73,18 +73,6 @@
     color: $color-white-300;
   }
 
-  &__button {
-    background-color: $color-yellow;
-    border: none;
-    border-radius: $border-radius-small;
-    padding: 2rem 8rem;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: $color-gray-100;
-    transition: all 0.3s ease-in-out;
-    z-index: 100;
-  }
-
   @include from-medium {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
@@ -112,16 +100,6 @@
         grid-column: 3/4;
         grid-row: 1/3;
         height: 62rem;
-      }
-    }
-
-    &__button {
-      padding: 1rem 6rem;
-      cursor: pointer;
-
-      &:hover {
-        background-color: $color-gray-200;
-        color: $color-white-100;
       }
     }
   }

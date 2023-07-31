@@ -10,8 +10,10 @@ import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 
 import { buttonColor } from "types/button.types";
+import { IconColor } from "types/card-item.types";
 
 import Button from "components/button";
+import CardItem from "components/card-item";
 
 const About = () => {
   const { t } = useTranslation();
@@ -41,34 +43,26 @@ const About = () => {
           <div></div>
         </div>
         <div className="p-hobbies-container">
-          <div className="p-hobbies-container__item">
-            <FontAwesomeIcon
-              icon={faGuitar}
-              className="p-hobbies-container__icon p-hobbies-container__icon--orange"
-            />
-            <p> {t(ABOUT_CONSTANTS.GUITAR)}</p>
-          </div>
-          <div className="p-hobbies-container__item">
-            <FontAwesomeIcon
-              icon={faCode}
-              className="p-hobbies-container__icon p-hobbies-container__icon--gray"
-            />
-            <p> {t(ABOUT_CONSTANTS.CODE)}</p>
-          </div>
-          <div className="p-hobbies-container__item">
-            <FontAwesomeIcon
-              icon={faTicketSimple}
-              className="p-hobbies-container__icon p-hobbies-container__icon--purple"
-            />
-            <p> {t(ABOUT_CONSTANTS.MOVIES)}</p>
-          </div>
-          <div className="p-hobbies-container__item">
-            <FontAwesomeIcon
-              icon={faGamepad}
-              className="p-hobbies-container__icon p-hobbies-container__icon--white"
-            />
-            <p> {t(ABOUT_CONSTANTS.VIDEOGAMES)}</p>
-          </div>
+          <CardItem
+            icon={faGuitar}
+            iconColor={IconColor.orange}
+            text={t(ABOUT_CONSTANTS.GUITAR)}
+          />
+          <CardItem
+            icon={faCode}
+            iconColor={IconColor.gray}
+            text={t(ABOUT_CONSTANTS.CODE)}
+          />
+          <CardItem
+            icon={faTicketSimple}
+            iconColor={IconColor.purple}
+            text={t(ABOUT_CONSTANTS.MOVIES)}
+          />
+          <CardItem
+            icon={faGamepad}
+            iconColor={IconColor.white}
+            text={t(ABOUT_CONSTANTS.VIDEOGAMES)}
+          />
         </div>
       </div>
 

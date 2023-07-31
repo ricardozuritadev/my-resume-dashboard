@@ -10,6 +10,10 @@
   "about": {
     "myStory": "My story",
     "resume": "Resume",
-    "downloadResume": "Download Resume"
+    "downloadResume": "Download Resume",
+    "guitar": "Guitar",
+    "code": "Code",
+    "movies": "Movies",
+    "videoGames": "Games"
   }
 }

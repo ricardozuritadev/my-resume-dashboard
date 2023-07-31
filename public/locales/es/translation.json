@@ -10,6 +10,10 @@
   "about": {
     "myStory": "Mi historia",
     "resume": "Curriculum",
-    "downloadResume": "Descargar CV"
+    "downloadResume": "Descargar CV",
+    "guitar": "Guitarra",
+    "code": "Programar",
+    "movies": "Cine",
+    "videoGames": "Videojuegos"
   }
 }

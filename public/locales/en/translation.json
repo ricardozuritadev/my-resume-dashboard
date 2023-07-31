@@ -6,5 +6,10 @@
     "experience": "Experience",
     "education": "Education",
     "contact": "Contact"
+  },
+  "about": {
+    "myStory": "My story",
+    "resume": "Resume",
+    "downloadResume": "Download Resume"
   }
 }

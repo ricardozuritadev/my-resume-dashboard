@@ -6,5 +6,10 @@
     "experience": "Experiencia",
     "education": "Estudios",
     "contact": "Contacto"
+  },
+  "about": {
+    "myStory": "Mi historia",
+    "resume": "Curriculum",
+    "downloadResume": "Descargar CV"
   }
 }

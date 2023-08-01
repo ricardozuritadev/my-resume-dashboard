@@ -1,0 +1,79 @@
+.c-flip-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  perspective: 5000px;
+
+  @include from-medium {
+    background-position: left;
+  }
+
+  @include from-xxlarge {
+    background-position: center;
+  }
+}
+
+.c-flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 500ms;
+
+  &__front,
+  &__back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: $border-radius-medium;
+    padding-bottom: 4rem;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+  }
+
+  &__front {
+    background-color: $color-white-200;
+    background-image: url("/images/rz_front_profile_alpha.png");
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.388) 100%
+      );
+      border-radius: $border-radius-medium;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 18rem;
+      pointer-events: none;
+    }
+  }
+
+  &__back {
+    background-color: $color-gray-100;
+    transform: rotateY(-180deg);
+    justify-content: space-between;
+    padding: 4rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: $font-size-medium;
+  }
+}
+
+.flip {
+  transform: rotateY(-180deg);
+}

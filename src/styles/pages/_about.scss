@@ -50,6 +50,11 @@
     padding: 4rem 4rem 0 4rem;
     width: 100%;
     z-index: 100;
+
+    &--line {
+      border-bottom: 1px solid $color-white-400;
+      padding-bottom: 2rem;
+    }
   }
 
   &__cv {
@@ -91,7 +96,22 @@
   }
 
   &__lang {
+    justify-content: space-between;
     background-color: $color-yellow;
+    color: $color-gray-200;
+  }
+
+  &__charts {
+    display: flex;
+    gap: 6rem;
+
+    @include from-medium {
+      gap: 1rem;
+    }
+
+    @include from-xxlarge {
+      gap: 8rem;
+    }
   }
 
   @include from-medium {

@@ -1,0 +1,22 @@
+.container,
+.c-circle-chart,
+.c-circle-chart__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.c-circle-chart {
+  border-radius: 50%;
+
+  &__wrapper {
+    background-color: $color-yellow;
+    border-radius: 50%;
+  }
+
+  &__value {
+    font-weight: bold;
+  }
+}

@@ -83,12 +83,12 @@ const About = () => {
           <CircleChart
             endValue={100}
             size={12}
-            bottomText={ABOUT_CONSTANTS.SPANISH}
+            bottomText={t(ABOUT_CONSTANTS.SPANISH)}
           />
           <CircleChart
             endValue={70}
             size={12}
-            bottomText={ABOUT_CONSTANTS.ENGLISH}
+            bottomText={t(ABOUT_CONSTANTS.ENGLISH)}
           />
         </div>
       </div>

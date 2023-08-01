@@ -26,6 +26,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     backface-visibility: hidden;
     border-radius: $border-radius-medium;
@@ -40,7 +41,7 @@
     background-image: url("/images/rz_front_profile_alpha.png");
     background-position: center;
     background-size: cover;
-    justify-content: flex-end;
+    color: $color-gray-300;
 
     &::before {
       content: "";
@@ -62,7 +63,6 @@
   &__back {
     background-color: $color-gray-100;
     transform: rotateY(-180deg);
-    justify-content: space-between;
     padding: 4rem;
   }
 

@@ -1,0 +1,44 @@
+.c-card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem;
+  gap: 0.5rem;
+
+  @include from-xxlarge {
+    gap: 1rem;
+  }
+
+  &__icon {
+    padding: 1.6rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+
+    &--orange {
+      background-color: $color-orange;
+      color: $color-gray-200;
+    }
+
+    &--yellow {
+      background-color: $color-yellow;
+      color: $color-gray-200;
+    }
+
+    &--purple {
+      background-color: $color-purple;
+      color: $color-white-200;
+    }
+
+    &--white {
+      background-color: $color-white-300;
+      color: $color-gray-200;
+    }
+
+    @include from-xxlarge {
+      padding: 2.6rem;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 4rem 0 4rem;
+    padding: 2rem 4rem 2rem 4rem;
     width: 100%;
     z-index: 100;
 
@@ -143,54 +143,5 @@
 
   @include from-xxlarge {
     gap: 4rem;
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-    padding: 0 4rem;
-    gap: 0.5rem;
-
-    @include from-medium {
-      padding: 0;
-    }
-
-    @include from-xxlarge {
-      gap: 1rem;
-      padding: 0 5rem;
-    }
-  }
-
-  &__icon {
-    padding: 0.8rem;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-
-    &--orange {
-      background-color: $color-orange;
-      color: $color-gray-200;
-    }
-
-    &--yellow {
-      background-color: $color-yellow;
-      color: $color-gray-200;
-    }
-
-    &--purple {
-      background-color: $color-purple;
-      color: $color-white-200;
-    }
-
-    &--white {
-      background-color: $color-white-300;
-      color: $color-gray-200;
-    }
-
-    @include from-xxlarge {
-      width: 2.5rem;
-      height: 2.5rem;
-      padding: 1rem;
-    }
   }
 }

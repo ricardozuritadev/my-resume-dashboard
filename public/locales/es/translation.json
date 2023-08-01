@@ -15,6 +15,9 @@
     "code": "Programar",
     "movies": "Cine",
     "videoGames": "Videojuegos",
-    "livedIn": "Viví en"
+    "livedIn": "Viví en",
+    "languages": "Idiomas",
+    "spanish": "Español",
+    "english": "Inglés"
   }
 }

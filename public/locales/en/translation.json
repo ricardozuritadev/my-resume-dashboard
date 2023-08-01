@@ -15,6 +15,9 @@
     "code": "Code",
     "movies": "Movies",
     "videoGames": "Games",
-    "livedIn": "Lived in"
+    "livedIn": "Lived in",
+    "languages": "Languages",
+    "spanish": "Spanish",
+    "english": "English"
   }
 }

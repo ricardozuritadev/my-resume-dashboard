@@ -10,12 +10,12 @@ type CardItemProps = {
 
 const CardItem = ({ icon, iconColor, text }: CardItemProps) => {
   return (
-    <div className="p-hobbies-container__item">
+    <div className="c-card-item">
       <FontAwesomeIcon
         icon={icon}
-        className={`p-hobbies-container__icon p-hobbies-container__icon--${iconColor}`}
+        className={`c-card-item__icon c-card-item__icon--${iconColor}`}
       />
-      <p> {text}</p>
+      <p>{text}</p>
     </div>
   );
 };

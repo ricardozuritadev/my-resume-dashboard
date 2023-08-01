@@ -1,15 +1,23 @@
-import { buttonColor } from "types/button.types";
+import { ButtonColor, ButtonSize } from "types/button.types";
 
 type ButtonProps = {
   children: React.ReactNode;
-  color: buttonColor;
+  color: ButtonColor;
+  size: ButtonSize;
+  isOutlineBtn?: boolean;
 };
 
-const Button = ({ children, color: btnColor }: ButtonProps) => {
-  const buttonColor = btnColor ? btnColor : "yellow";
+const Button = ({ children, isOutlineBtn, color, size }: ButtonProps) => {
+  const outlineBtn = isOutlineBtn ? "outline" : "";
+  const buttonColor = color ? color : "yellow";
+  const buttonSize = size ? size : "medium";
 
   return (
-    <button className={`c-button c-button--${buttonColor}`}>{children}</button>
+    <button
+      className={`c-button c-button--${outlineBtn} c-button--${buttonColor} c-button--${buttonSize}`}
+    >
+      {children}
+    </button>
   );
 };
 

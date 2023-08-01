@@ -15,6 +15,7 @@ import { IconColor } from "types/card-item.types";
 import Button from "components/button";
 import CardItem from "components/card-item";
 import Slideshow from "components/slideshow";
+import CircleChart from "components/circle-chart";
 
 const About = () => {
   const { t } = useTranslation();
@@ -74,7 +75,23 @@ const About = () => {
         <Slideshow />
       </div>
 
-      <div className="p-about__card p-about__lang"></div>
+      <div className="p-about__card p-about__lang">
+        <div className="p-about__card-header p-about__card-header--line">
+          <h2>{t(ABOUT_CONSTANTS.LANGUAGES)}</h2>
+        </div>
+        <div className="p-about__charts">
+          <CircleChart
+            endValue={100}
+            size={12}
+            bottomText={ABOUT_CONSTANTS.SPANISH}
+          />
+          <CircleChart
+            endValue={70}
+            size={12}
+            bottomText={ABOUT_CONSTANTS.ENGLISH}
+          />
+        </div>
+      </div>
     </div>
   );
 };

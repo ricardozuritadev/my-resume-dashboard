@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
@@ -6,8 +6,28 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 import { cities } from "utils/data/images";
 
+const delay = 4000;
+
 const Slideshow = () => {
   const [index, setIndex] = useState<number>(0);
+  const [wasBtnClicked, setWasBtnClicked] = useState<boolean>(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (index < cities.length - 1) {
+        setIndex((prev) => prev + 1);
+      } else {
+        setIndex(0);
+      }
+    }, delay);
+
+    if (wasBtnClicked) {
+      clearInterval(interval);
+      return;
+    }
+
+    return () => clearInterval(interval);
+  }, [index, wasBtnClicked]);
 
   return (
     <>
@@ -37,7 +57,10 @@ const Slideshow = () => {
                     icon={faAngleLeft}
                     size="xl"
                     className="c-slideshow__angle c-slideshow__angle--left"
-                    onClick={() => index > 0 && setIndex((prev) => prev - 1)}
+                    onClick={() => {
+                      setIndex((prev) => prev - 1);
+                      setWasBtnClicked(true);
+                    }}
                   />
                 ) : (
                   <div className="empty-angle empty-angle--left"></div>
@@ -53,9 +76,10 @@ const Slideshow = () => {
                     icon={faAngleRight}
                     size="xl"
                     className="c-slideshow__angle c-slideshow__angle--right"
-                    onClick={() =>
-                      index < cities.length - 1 && setIndex((prev) => prev + 1)
-                    }
+                    onClick={() => {
+                      setIndex((prev) => prev + 1);
+                      setWasBtnClicked(true);
+                    }}
                   />
                 ) : (
                   <div className="empty-angle empty-angle--right"></div>

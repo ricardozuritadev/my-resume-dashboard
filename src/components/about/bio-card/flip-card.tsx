@@ -21,19 +21,16 @@ const FlipCard = () => {
           <div></div>
           <div className="c-flip-card__content">
             <p>
+              ¡Hola! Soy Ricardo, desarrollador Front End y de aplicaciones
+              multiplataforma.
+            </p>
+            <p>
               Al inicio, la programación era una curiosidad para mí. Ahora se ha
               convertido en una pasión y día a día estoy mejorando y en
               constante aprendizaje de nuevas tecnologías.
             </p>
-            <p>
-              Lo que más disfruto es desarrollar plataformas o apps que
-              solucionen algún problema cotidiano. Ya sea una plataforma para
-              gestionar tareas de mi trabajo o una app para controlar las
-              finanzas con mi pareja. Sé que hay muchas soluciones ya en el
-              mercado, pero busco desarrollar una a medida y con la satisfacción
-              de haberla realizado yo mismo, con el aprendizaje que ello
-              conlleva.
-            </p>
+            <p>En esta página encontrarás más información sobre mí.</p>
+            <p>¡Gracias por la visita!</p>
           </div>
           <Button
             color={ButtonColor.yellow}

@@ -1,0 +1,18 @@
+.c-languages-card {
+  justify-content: space-between;
+  background-color: $color-yellow;
+  color: $color-gray-200;
+
+  &__charts {
+    display: flex;
+    gap: 6rem;
+
+    @include from-medium {
+      gap: 1rem;
+    }
+
+    @include from-xxlarge {
+      gap: 8rem;
+    }
+  }
+}

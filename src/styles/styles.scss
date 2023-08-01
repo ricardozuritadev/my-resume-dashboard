@@ -7,8 +7,8 @@
 // FONTS
 @import "./fonts";
 
-// BASE
-@import "./base";
+// GENERAL
+@import "./general";
 
 // COMPONENTS
 @import "styles/components/button";
@@ -16,6 +16,11 @@
 @import "styles/components/slideshow";
 @import "styles/components/circle-chart";
 @import "styles/components/flip-card";
+@import "styles/components/about/bio-card";
+@import "styles/components/about/resume-card";
+@import "styles/components/about/hobbies-card";
+@import "styles/components/about/where-i-lived-card";
+@import "styles/components/about/languages-card";
 
 // LAYOUT
 @import "styles/layout/sidenav";

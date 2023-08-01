@@ -1,0 +1,14 @@
+.c-bio-card {
+  position: relative;
+  height: 68rem;
+
+  @include from-medium {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: 100%;
+  }
+
+  @include from-large {
+    grid-column: 3/4;
+  }
+}

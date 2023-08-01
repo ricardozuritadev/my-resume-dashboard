@@ -5,95 +5,6 @@
   gap: 3rem;
   padding: 4rem;
 
-  &__card {
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 4rem;
-    border-radius: $border-radius-medium;
-    width: 38rem;
-    height: 34rem;
-    user-select: none;
-
-    &--bio {
-      position: relative;
-      height: 68rem;
-    }
-  }
-
-  &__card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 4rem 2rem 4rem;
-    width: 100%;
-    z-index: 100;
-
-    &--line {
-      border-bottom: 1px solid $color-white-400;
-      padding-bottom: 2rem;
-    }
-  }
-
-  &__cv {
-    background-color: $color-white-200;
-    color: $color-gray-300;
-    justify-content: space-between;
-  }
-
-  &__pdf {
-    color: $color-white-300;
-  }
-
-  &__hobbies {
-    background-color: $color-gray-100;
-    color: $color-white-100;
-    justify-content: space-between;
-  }
-
-  &__slideshow {
-    position: absolute;
-  }
-
-  &__live {
-    position: relative;
-    justify-content: space-between;
-    background-color: $color-white-200;
-    color: $color-gray-200;
-    overflow: hidden;
-  }
-
-  &__live-city {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  &__live-time {
-    font-weight: bold;
-  }
-
-  &__lang {
-    justify-content: space-between;
-    background-color: $color-yellow;
-    color: $color-gray-200;
-  }
-
-  &__charts {
-    display: flex;
-    gap: 6rem;
-
-    @include from-medium {
-      gap: 1rem;
-    }
-
-    @include from-xxlarge {
-      gap: 8rem;
-    }
-  }
-
   @include from-medium {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
@@ -111,37 +22,19 @@
 
   @include from-large {
     grid-template-columns: repeat(3, 1fr);
-
-    &__card {
-      width: 28rem;
-      height: 29rem;
-
-      &--bio {
-        grid-column: 3/4;
-        grid-row: 1/3;
-        height: 62rem;
-      }
-    }
   }
 
-  @include from-xxlarge {
-    &__card {
-      width: 48rem;
-      height: 37rem;
-
-      &--bio {
-        height: 100%;
-      }
-    }
+  &__slideshow {
+    position: absolute;
   }
-}
 
-.p-hobbies-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  &__live-city {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-  @include from-xxlarge {
-    gap: 4rem;
+  &__live-time {
+    font-weight: bold;
   }
 }

@@ -4,16 +4,24 @@ type ButtonProps = {
   children: React.ReactNode;
   color: ButtonColor;
   size: ButtonSize;
+  handleClick: () => void;
   isOutlineBtn?: boolean;
 };
 
-const Button = ({ children, isOutlineBtn, color, size }: ButtonProps) => {
+const Button = ({
+  children,
+  color,
+  size,
+  handleClick,
+  isOutlineBtn
+}: ButtonProps) => {
   const outlineBtn = isOutlineBtn ? "outline" : "";
   const buttonColor = color ? color : "yellow";
   const buttonSize = size ? size : "medium";
 
   return (
     <button
+      onClick={handleClick}
       className={`c-button c-button--${outlineBtn} c-button--${buttonColor} c-button--${buttonSize}`}
     >
       {children}

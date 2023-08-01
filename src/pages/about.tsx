@@ -9,11 +9,12 @@ import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 
-import { buttonColor } from "types/button.types";
+import { ButtonColor, ButtonSize } from "types/button.types";
 import { IconColor } from "types/card-item.types";
 
 import Button from "components/button";
 import CardItem from "components/card-item";
+import Slideshow from "components/slideshow";
 
 const About = () => {
   const { t } = useTranslation();
@@ -21,25 +22,25 @@ const About = () => {
   return (
     <div className="p-about">
       <div className="p-about__card p-about__card--bio">
-        <Button color={buttonColor.yellow}>
+        <Button color={ButtonColor.yellow} size={ButtonSize.medium}>
           {t(ABOUT_CONSTANTS.MY_STORY)}
         </Button>
       </div>
 
       <div className="p-about__card p-about__cv">
         <div className="p-about__card-header">
-          <h3>{t(ABOUT_CONSTANTS.RESUME)}</h3>
-          <p>{t(ABOUT_CONSTANTS.YEAR)}</p>
+          <h2>{t(ABOUT_CONSTANTS.RESUME)}</h2>
+          <p>{ABOUT_CONSTANTS.YEAR}</p>
         </div>
         <FontAwesomeIcon icon={faFilePdf} size="7x" className="p-about__pdf" />
-        <Button color={buttonColor.yellow}>
+        <Button color={ButtonColor.yellow} size={ButtonSize.medium}>
           {t(ABOUT_CONSTANTS.DOWNLOAD_RESUME)}
         </Button>
       </div>
 
       <div className="p-about__card p-about__hobbies">
         <div className="p-about__card-header">
-          <h3>{ABOUT_CONSTANTS.HOBBIES}</h3>
+          <h2>{ABOUT_CONSTANTS.HOBBIES}</h2>
           <div></div>
         </div>
         <div className="p-hobbies-container">
@@ -50,7 +51,7 @@ const About = () => {
           />
           <CardItem
             icon={faCode}
-            iconColor={IconColor.gray}
+            iconColor={IconColor.yellow}
             text={t(ABOUT_CONSTANTS.CODE)}
           />
           <CardItem
@@ -66,7 +67,12 @@ const About = () => {
         </div>
       </div>
 
-      <div className="p-about__card p-about__live"></div>
+      <div className="p-about__card p-about__live">
+        <div className="p-about__card-header">
+          <h2>{t(ABOUT_CONSTANTS.LIVED_IN)}</h2>
+        </div>
+        <Slideshow />
+      </div>
 
       <div className="p-about__card p-about__lang"></div>
     </div>

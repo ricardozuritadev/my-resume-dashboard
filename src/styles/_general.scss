@@ -36,6 +36,11 @@ ul {
   width: 38rem;
   height: 34rem;
   user-select: none;
+  transition: transform 0.15s;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
 
   @include from-medium {
     width: 100%;

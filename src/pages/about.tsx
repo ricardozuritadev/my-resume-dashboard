@@ -12,6 +12,7 @@ import { ABOUT_CONSTANTS } from "constants/about.constants";
 import { ButtonColor, ButtonSize } from "types/button.types";
 import { IconColor } from "types/card-item.types";
 
+import FlipCard from "components/flip-card";
 import Button from "components/button";
 import CardItem from "components/card-item";
 import Slideshow from "components/slideshow";
@@ -23,9 +24,7 @@ const About = () => {
   return (
     <div className="p-about">
       <div className="p-about__card p-about__card--bio">
-        <Button color={ButtonColor.yellow} size={ButtonSize.medium}>
-          {t(ABOUT_CONSTANTS.MY_STORY)}
-        </Button>
+        <FlipCard />
       </div>
 
       <div className="p-about__card p-about__cv">
@@ -34,7 +33,11 @@ const About = () => {
           <p>{ABOUT_CONSTANTS.YEAR}</p>
         </div>
         <FontAwesomeIcon icon={faFilePdf} size="7x" className="p-about__pdf" />
-        <Button color={ButtonColor.yellow} size={ButtonSize.medium}>
+        <Button
+          color={ButtonColor.yellow}
+          size={ButtonSize.medium}
+          handleClick={() => alert("Logica para descargar PDF")}
+        >
           {t(ABOUT_CONSTANTS.DOWNLOAD_RESUME)}
         </Button>
       </div>

@@ -7,5 +7,6 @@ export const ABOUT_CONSTANTS = {
   GUITAR: "about.guitar",
   CODE: "about.code",
   MOVIES: "about.movies",
-  VIDEOGAMES: "about.videoGames"
+  VIDEOGAMES: "about.videoGames",
+  LIVED_IN: "about.livedIn"
 };

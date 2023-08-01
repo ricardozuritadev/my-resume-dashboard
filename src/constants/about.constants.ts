@@ -1,5 +1,6 @@
 export const ABOUT_CONSTANTS = {
   MY_STORY: "about.myStory",
+  BACK: "about.back",
   RESUME: "about.resume",
   YEAR: "/2023",
   DOWNLOAD_RESUME: "about.downloadResume",

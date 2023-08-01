@@ -46,6 +46,9 @@ const FlipCard = () => {
           </Button>
         </div>
         <div className="c-flip-card__front">
+          <div className="p-about__card-header">
+            <h2>{ABOUT_CONSTANTS.BIO}</h2>
+          </div>
           <Button
             color={ButtonColor.yellow}
             size={ButtonSize.medium}

@@ -9,6 +9,15 @@
   z-index: 100;
   cursor: pointer;
 
+  &--outline {
+    border: 1px solid $color-gray-100;
+
+    &:hover {
+      background-color: $color-gray-200;
+      color: $color-white-100;
+    }
+  }
+
   &--yellow {
     background-color: $color-yellow;
 
@@ -37,7 +46,15 @@
     }
   }
 
-  @include from-medium {
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &--small {
+    padding: 1rem 2rem;
+  }
+
+  &--medium {
     padding: 2rem 4rem;
   }
 }

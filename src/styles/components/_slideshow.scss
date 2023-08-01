@@ -1,0 +1,99 @@
+.c-slideshow {
+  position: absolute;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  transition: ease 500ms;
+
+  &__slide {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 37rem;
+  }
+
+  &__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(220, 220, 221, 0.6);
+    padding: 2rem 0;
+    width: 100%;
+
+    @include from-medium {
+      gap: 3rem;
+    }
+
+    @include from-large {
+      gap: 1rem;
+    }
+
+    @include from-xxlarge {
+      gap: 10rem;
+    }
+  }
+
+  &__city {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__years {
+    font-weight: bold;
+  }
+
+  &__angle {
+    position: absolute;
+    padding: 4rem;
+    z-index: 100;
+    cursor: pointer;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+
+    @include from-medium {
+      padding: 4rem 2rem;
+    }
+
+    @include from-xxlarge {
+      padding: 4rem 6rem;
+    }
+  }
+}
+
+.empty-angle {
+  position: absolute;
+  padding: 5rem;
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+  }
+
+  @include from-medium {
+    padding: 5rem 3rem;
+  }
+
+  @include from-xxlarge {
+    padding: 5rem 7rem;
+  }
+}

@@ -15,6 +15,7 @@
     border-radius: $border-radius-medium;
     width: 38rem;
     height: 34rem;
+    user-select: none;
 
     &--bio {
       position: relative;
@@ -48,6 +49,7 @@
     align-items: center;
     padding: 4rem 4rem 0 4rem;
     width: 100%;
+    z-index: 100;
   }
 
   &__cv {
@@ -61,17 +63,35 @@
   }
 
   &__hobbies {
-    background-color: $color-yellow;
-    color: $color-gray-300;
+    background-color: $color-gray-100;
+    color: $color-white-100;
     justify-content: space-between;
   }
 
+  &__slideshow {
+    position: absolute;
+  }
+
   &__live {
-    background-color: $color-gray-100;
+    position: relative;
+    justify-content: space-between;
+    background-color: $color-white-200;
+    color: $color-gray-200;
+    overflow: hidden;
+  }
+
+  &__live-city {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__live-time {
+    font-weight: bold;
   }
 
   &__lang {
-    background-color: $color-gray-100;
+    background-color: $color-yellow;
   }
 
   @include from-medium {
@@ -150,20 +170,22 @@
 
     &--orange {
       background-color: $color-orange;
+      color: $color-gray-200;
     }
 
-    &--gray {
-      background-color: $color-gray-200;
-      color: $color-yellow;
+    &--yellow {
+      background-color: $color-yellow;
+      color: $color-gray-200;
     }
 
     &--purple {
       background-color: $color-purple;
-      color: $color-yellow;
+      color: $color-white-200;
     }
 
     &--white {
       background-color: $color-white-300;
+      color: $color-gray-200;
     }
 
     @include from-xxlarge {

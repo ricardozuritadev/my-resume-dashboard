@@ -8,5 +8,8 @@ export const ABOUT_CONSTANTS = {
   CODE: "about.code",
   MOVIES: "about.movies",
   VIDEOGAMES: "about.videoGames",
-  LIVED_IN: "about.livedIn"
+  LIVED_IN: "about.livedIn",
+  LANGUAGES: "about.languages",
+  SPANISH: "about.spanish",
+  ENGLISH: "about.english"
 };

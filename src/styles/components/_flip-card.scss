@@ -64,13 +64,35 @@
     background-color: $color-gray-100;
     transform: rotateY(-180deg);
     padding: 4rem;
+
+    @include from-medium {
+      padding: 2rem;
+    }
+
+    @include from-xxlarge {
+      padding: 4rem;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 4rem;
     font-size: $font-size-medium;
+
+    @include from-medium {
+      font-size: $font-size-base;
+      gap: 2rem;
+    }
+
+    @include from-large {
+      gap: 1rem;
+    }
+
+    @include from-xxlarge {
+      font-size: $font-size-medium;
+      gap: 4rem;
+    }
   }
 }
 

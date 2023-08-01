@@ -89,8 +89,6 @@ const Sidenav = () => {
             </ul>
           </nav>
         </section>
-
-        <section>THEME TOGGLE</section>
       </div>
 
       {/* <div className="l-sidenav__bottom">

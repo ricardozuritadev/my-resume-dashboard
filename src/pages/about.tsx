@@ -7,6 +7,8 @@ import { faTicketSimple } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 
+import { handleDownloadResume } from "utils/functions";
+
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 
 import { ButtonColor, ButtonSize } from "types/button.types";
@@ -19,7 +21,7 @@ import Slideshow from "components/slideshow";
 import CircleChart from "components/circle-chart";
 
 const About = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="p-about">
@@ -36,7 +38,13 @@ const About = () => {
         <Button
           color={ButtonColor.yellow}
           size={ButtonSize.medium}
-          handleClick={() => alert("Logica para descargar PDF")}
+          handleClick={() => {
+            if (i18n.language === "es") {
+              handleDownloadResume(ABOUT_CONSTANTS.PDF_FILE_URL_ES);
+            } else {
+              handleDownloadResume(ABOUT_CONSTANTS.PDF_FILE_URL_ES);
+            }
+          }}
         >
           {t(ABOUT_CONSTANTS.DOWNLOAD_RESUME)}
         </Button>

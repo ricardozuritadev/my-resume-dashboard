@@ -1,4 +1,25 @@
 .l-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 10rem;
+  padding: 0 3rem;
+
+  @include from-medium {
+    width: calc(100% - 8rem);
+    margin-left: 8rem;
+    padding: 0 4rem;
+  }
+
+  @include from-large {
+    width: calc(100% - 28rem);
+    margin-left: 28rem;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
 }

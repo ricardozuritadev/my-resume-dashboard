@@ -4,15 +4,18 @@
   @include from-medium {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     padding: 5rem 0;
-    border-right: 1px solid $color-gray-200;
     text-align: center;
     width: 8rem;
     height: 100vh;
     user-select: none;
+
+    @include from-large {
+      justify-content: space-between;
+    }
 
     &__top {
       display: flex;
@@ -90,11 +93,25 @@
     &__text {
       display: block;
     }
-
-    &__link {
-      &:hover {
-        background-color: $color-gray-200;
-      }
-    }
   }
+}
+
+#dark .l-sidenav {
+  border-right: 1px solid $color-gray-200;
+  transition: 150ms;
+}
+
+#light .l-sidenav {
+  border-right: 1px solid $color-white-300;
+  transition: 150ms;
+}
+
+#dark .l-sidenav__link:hover {
+  background-color: $hover-color-dark;
+  transition: 150ms;
+}
+
+#light .l-sidenav__link:hover {
+  background-color: $hover-color-light;
+  transition: 150ms;
 }

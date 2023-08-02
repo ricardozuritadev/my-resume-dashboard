@@ -37,7 +37,6 @@
   }
 
   &__front {
-    background-color: $color-white-200;
     background-image: url("/images/rz_front_profile_alpha.png");
     background-position: center;
     background-size: cover;
@@ -98,4 +97,19 @@
 
 .flip {
   transform: rotateY(-180deg);
+}
+
+#dark .c-flip-card__front {
+  background-color: $card-background-color-dark;
+  transition: 150ms;
+}
+
+#light .c-flip-card__front {
+  background-color: $card-background-color-light;
+  transition: 150ms;
+}
+
+#light .c-flip-card__back {
+  background-color: $card-background-color-light;
+  transition: 150ms;
 }

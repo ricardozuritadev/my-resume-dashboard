@@ -1,6 +1,9 @@
 // VARIABLES
 @import "./variables";
 
+// THEME
+@import "./theme";
+
 // MIXINS
 @import "./mixins";
 
@@ -16,6 +19,7 @@
 @import "styles/components/slideshow";
 @import "styles/components/circle-chart";
 @import "styles/components/flip-card";
+@import "styles/components/toggle";
 @import "styles/components/about/bio-card";
 @import "styles/components/about/resume-card";
 @import "styles/components/about/hobbies-card";

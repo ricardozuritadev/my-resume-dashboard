@@ -1,0 +1,51 @@
+.c-toggle {
+  position: relative;
+  width: 6rem;
+  height: 3.5rem;
+
+  &__label {
+    position: absolute;
+    width: 100%;
+    height: 3.5rem;
+    background-color: $color-gray-300;
+    border-radius: 5rem;
+    border: 1px solid $color-white-400;
+    cursor: pointer;
+  }
+
+  &__input {
+    position: absolute;
+    display: none;
+  }
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  transition: 0.3s;
+}
+
+input:checked ~ .slider {
+  background-color: $color-gray-100;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  box-shadow: inset 1.2rem -0.4rem 0 0 $color-white-200;
+  background-color: $color-gray-300;
+  transition: 0.2s;
+}
+
+input:checked ~ .slider::before {
+  transform: translateX(2.3rem);
+  background-color: $color-yellow;
+  box-shadow: none;
+}

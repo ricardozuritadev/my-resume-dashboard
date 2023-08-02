@@ -1,7 +1,7 @@
 .c-toggle {
   position: relative;
   width: 6rem;
-  height: 3.5rem;
+  height: 3.6rem;
 
   &__label {
     position: absolute;
@@ -34,7 +34,7 @@ input:checked ~ .slider {
 .slider::before {
   content: "";
   position: absolute;
-  top: 0.3rem;
+  top: 0.2rem;
   left: 0.3rem;
   width: 2.8rem;
   height: 2.8rem;

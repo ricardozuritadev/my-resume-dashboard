@@ -115,3 +115,13 @@
   background-color: $hover-color-light;
   transition: 50ms;
 }
+
+#dark .active {
+  background-color: $hover-color-dark;
+  transition: 50ms;
+}
+
+#light .active {
+  background-color: $hover-color-light;
+  transition: 50ms;
+}

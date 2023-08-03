@@ -1,4 +1,8 @@
 export const ABOUT_CONSTANTS = {
+  BIO_FIRST_PART: "about.bioFirstPart",
+  BIO_SECOND_PART: "about.bioSecondPart",
+  BIO_THIRD_PART: "about.bioThirdPart",
+  BIO_FOURTH_PART: "about.bioFourthPart",
   MY_STORY: "+ info",
   BIO: "Info",
   BACK: "about.back",

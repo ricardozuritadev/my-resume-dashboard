@@ -1,13 +1,10 @@
 import { useTranslation } from "react-i18next";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import { faBuilding } from "@fortawesome/free-solid-svg-icons";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { faIdCard } from "@fortawesome/free-solid-svg-icons";
-
 import { SIDENAV_CONSTANTS } from "constants/sidenav.constants";
+
+import { links } from "utils/data/links";
+
+import LinkComponent from "components/link-component";
 
 const Sidenav = () => {
   const { t } = useTranslation();
@@ -36,65 +33,18 @@ const Sidenav = () => {
         <section className="l-sidenav__nav">
           <nav>
             <ul className="l-sidenav__links">
-              <a href="#" className="l-sidenav__link">
-                <li className="l-sidenav__element">
-                  <span className="l-sidenav__icon">
-                    <FontAwesomeIcon icon={faUser} />
-                  </span>
-                  <span className="l-sidenav__text">
-                    {t(SIDENAV_CONSTANTS.ABOUT)}
-                  </span>
-                </li>
-              </a>
-              <a href="#" className="l-sidenav__link">
-                <li className="l-sidenav__element">
-                  <span className="l-sidenav__icon">
-                    <FontAwesomeIcon icon={faLaptopCode} />
-                  </span>
-                  <span className="l-sidenav__text">
-                    {t(SIDENAV_CONSTANTS.SKILLS)}
-                  </span>
-                </li>
-              </a>
-              <a href="#" className="l-sidenav__link">
-                <li className="l-sidenav__element">
-                  <span className="l-sidenav__icon">
-                    <FontAwesomeIcon icon={faBuilding} />
-                  </span>
-                  <span className="l-sidenav__text">
-                    {t(SIDENAV_CONSTANTS.EXPERIENCE)}
-                  </span>
-                </li>
-              </a>
-              <a href="#" className="l-sidenav__link">
-                <li className="l-sidenav__element">
-                  <span className="l-sidenav__icon">
-                    <FontAwesomeIcon icon={faGraduationCap} />
-                  </span>
-                  <span className="l-sidenav__text">
-                    {t(SIDENAV_CONSTANTS.EDUCATION)}
-                  </span>
-                </li>
-              </a>
-              <a href="#" className="l-sidenav__link">
-                <li className="l-sidenav__element">
-                  <span className="l-sidenav__icon">
-                    <FontAwesomeIcon icon={faIdCard} />
-                  </span>
-                  <span className="l-sidenav__text">
-                    {t(SIDENAV_CONSTANTS.CONTACT)}
-                  </span>
-                </li>
-              </a>
+              {links.map((link) => (
+                <LinkComponent
+                  key={link.text}
+                  url={link.url}
+                  icon={link.icon}
+                  text={t(link.text)}
+                />
+              ))}
             </ul>
           </nav>
         </section>
       </div>
-
-      {/* <div className="l-sidenav__bottom">
-        <button onClick={() => i18n.changeLanguage("es")}>ESPAÑOL</button>
-        <button onClick={() => i18n.changeLanguage("en")}>INGLES</button>
-      </div> */}
     </aside>
   );
 };

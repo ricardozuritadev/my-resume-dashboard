@@ -12,6 +12,7 @@
       "components/*": ["components/*"],
       "layout/*": ["layout/*"],
       "pages/*": ["pages/*"],
+      "routes/*": ["routes/*"],
       "constants/*": ["constants/*"],
       "contexts/*": ["contexts/*"],
       "types/*": ["types/*"],

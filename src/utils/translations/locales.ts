@@ -1,4 +1,4 @@
-export const locales = {
-  en: { title: "English" },
-  es: { title: "Español" }
+export const languages = {
+  es: { title: "Español", code: "es" },
+  en: { title: "Inglés", code: "en" }
 };

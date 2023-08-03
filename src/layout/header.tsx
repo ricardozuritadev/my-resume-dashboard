@@ -1,11 +1,12 @@
+import LanguageSelector from "components/language-selector";
 import Toggle from "components/toggle";
 
 const Header = () => {
   return (
     <header className="l-header">
-      <div>About me</div>
+      <h2 className="l-header__title">Acerca de mí</h2>
       <div className="l-header__actions">
-        <div>language</div>
+        <LanguageSelector />
         <Toggle />
       </div>
     </header>

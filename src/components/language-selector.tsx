@@ -15,6 +15,7 @@ const LanguageSelector = () => {
       <div className="c-language-selector">
         {Object.keys(languages).map((language) => (
           <div
+            key={language}
             className={`c-language-selector__lang ${getSelectedClassname(
               language
             )}`}

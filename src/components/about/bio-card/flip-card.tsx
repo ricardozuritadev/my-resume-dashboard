@@ -44,7 +44,7 @@ const FlipCard = () => {
         </div>
         <div className="c-flip-card__front">
           <div className="card__header">
-            <h2>{ABOUT_CONSTANTS.BIO}</h2>
+            <h3>{ABOUT_CONSTANTS.BIO}</h3>
           </div>
           <Button
             color={ButtonColor.yellow}

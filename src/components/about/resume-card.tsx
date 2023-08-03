@@ -16,7 +16,7 @@ const ResumeCard = () => {
   return (
     <div className="card c-resume-card">
       <div className="card__header">
-        <h2>{t(ABOUT_CONSTANTS.RESUME)}</h2>
+        <h3>{t(ABOUT_CONSTANTS.RESUME)}</h3>
         <p>{ABOUT_CONSTANTS.YEAR}</p>
       </div>
       <FontAwesomeIcon

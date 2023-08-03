@@ -19,7 +19,7 @@ const HobbiesCard = () => {
   return (
     <div className="card c-hobbies-card">
       <div className="card__header">
-        <h2>{ABOUT_CONSTANTS.HOBBIES}</h2>
+        <h3>{ABOUT_CONSTANTS.HOBBIES}</h3>
         <div></div>
       </div>
       <div className="c-hobbies-card__container">

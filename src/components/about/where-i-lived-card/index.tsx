@@ -10,7 +10,7 @@ const WhereILivedCard = () => {
   return (
     <div className="card c-where-i-lived-card">
       <div className="card__header">
-        <h2>{t(ABOUT_CONSTANTS.LIVED_IN)}</h2>
+        <h3>{t(ABOUT_CONSTANTS.LIVED_IN)}</h3>
       </div>
       <Slideshow />
     </div>

@@ -2,14 +2,12 @@ import { useEffect, useState } from "react";
 
 type CircleChartProps = {
   endValue: number;
-  size: number;
   topText?: string;
   bottomText?: string;
 };
 
 const CircleChart = ({
   endValue = 100,
-  size = 14,
   topText,
   bottomText
 }: CircleChartProps) => {
@@ -34,15 +32,10 @@ const CircleChart = ({
         style={{
           background: `conic-gradient(#242529 ${
             startValue * 3.6
-          }deg, #b1acaa 0deg)`,
-          width: `${size}rem`,
-          height: `${size}rem`
+          }deg, #b1acaa 0deg)`
         }}
       >
-        <div
-          className="c-circle-chart__wrapper"
-          style={{ width: `${size - 3}rem`, height: `${size - 3}rem` }}
-        >
+        <div className="c-circle-chart__wrapper">
           <span className="c-circle-chart__value">{startValue}%</span>
         </div>
       </div>

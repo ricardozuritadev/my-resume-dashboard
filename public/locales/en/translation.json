@@ -8,6 +8,10 @@
     "contact": "Contact"
   },
   "about": {
+    "bioFirstPart": "Hello! I'm Ricardo, a Front End developer and cross-platform applications.",
+    "bioSecondPart": "Initially, programming was a curiosity for me. Now it has become a passion, and I strive to improve and learn new technologies every day.",
+    "bioThirdPart": "On this page you will find more information about me.",
+    "bioFourthPart": "Thanks for visiting!",
     "back": "Go back",
     "resume": "Resume",
     "downloadResume": "Download Resume",

@@ -8,6 +8,10 @@
     "contact": "Contacto"
   },
   "about": {
+    "bioFirstPart": " ¡Hola! Soy Ricardo, desarrollador Front End y de aplicaciones multiplataforma.",
+    "bioSecondPart": "Al inicio, la programación era una curiosidad para mí. Ahora se ha convertido en una pasión y día a día estoy mejorando y en constante aprendizaje de nuevas tecnologías.",
+    "bioThirdPart": "En esta página encontrarás más información sobre mí.",
+    "bioFourthPart": "¡Gracias por visitarla!",
     "back": "Volver",
     "resume": "Curriculum",
     "downloadResume": "Descargar CV",

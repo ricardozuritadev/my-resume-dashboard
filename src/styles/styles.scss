@@ -13,19 +13,6 @@
 // GENERAL
 @import "./general";
 
-// COMPONENTS
-@import "styles/components/button";
-@import "styles/components/card-item";
-@import "styles/components/slideshow";
-@import "styles/components/circle-chart";
-@import "styles/components/flip-card";
-@import "styles/components/toggle";
-@import "styles/components/about/bio-card";
-@import "styles/components/about/resume-card";
-@import "styles/components/about/hobbies-card";
-@import "styles/components/about/where-i-lived-card";
-@import "styles/components/about/languages-card";
-
 // LAYOUT
 @import "styles/layout/sidenav";
 @import "styles/layout/header";
@@ -33,3 +20,17 @@
 
 // PAGES
 @import "styles/pages/about";
+
+// COMPONENTS
+@import "styles/components/button";
+@import "styles/components/toggle";
+@import "styles/components/language-selector";
+@import "styles/components/about/bio-card";
+@import "styles/components/about/resume-card";
+@import "styles/components/about/hobbies-card";
+@import "styles/components/about/where-i-lived-card";
+@import "styles/components/about/languages-card";
+@import "styles/components/about/hobbies-card/card-item";
+@import "styles/components/about/where-i-lived-card/slideshow";
+@import "styles/components/about/languages-card/circle-chart";
+@import "styles/components/about/bio-card/flip-card";

@@ -98,20 +98,20 @@
 
 #dark .l-sidenav {
   border-right: 1px solid $color-gray-200;
-  transition: 150ms;
+  transition: 50ms;
 }
 
 #light .l-sidenav {
   border-right: 1px solid $color-white-300;
-  transition: 150ms;
+  transition: 50ms;
 }
 
 #dark .l-sidenav__link:hover {
   background-color: $hover-color-dark;
-  transition: 150ms;
+  transition: 50ms;
 }
 
 #light .l-sidenav__link:hover {
   background-color: $hover-color-light;
-  transition: 150ms;
+  transition: 50ms;
 }

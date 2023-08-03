@@ -6,14 +6,14 @@
 
   &__charts {
     display: flex;
-    gap: 6rem;
+    gap: 4rem;
 
     @include from-medium {
-      gap: 1rem;
+      gap: 3rem;
     }
 
     @include from-xxlarge {
-      gap: 8rem;
+      gap: 6rem;
     }
   }
 }

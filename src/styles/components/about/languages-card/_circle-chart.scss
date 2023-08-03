@@ -1,0 +1,50 @@
+.container {
+  margin-top: 2rem;
+}
+
+.container,
+.c-circle-chart,
+.c-circle-chart__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.c-circle-chart {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+
+  @include from-medium {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  @include from-xxlarge {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  &__wrapper {
+    background-color: $color-yellow;
+    border-radius: 50%;
+    width: 11rem;
+    height: 11rem;
+
+    @include from-medium {
+      width: 9rem;
+      height: 9rem;
+    }
+
+    @include from-xxlarge {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+
+  &__value {
+    font-weight: bold;
+  }
+}

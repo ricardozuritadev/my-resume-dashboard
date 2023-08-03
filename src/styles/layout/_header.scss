@@ -5,6 +5,7 @@
   width: 100%;
   height: 10rem;
   padding: 0 3rem;
+  user-select: none;
 
   @include from-medium {
     width: calc(100% - 8rem);
@@ -17,9 +18,17 @@
     margin-left: 28rem;
   }
 
+  &__title {
+    font-size: $font-size-medium;
+
+    @include from-medium {
+      font-size: $font-size-large;
+    }
+  }
+
   &__actions {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
   }
 }

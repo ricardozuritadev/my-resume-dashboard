@@ -83,15 +83,15 @@
 
 #dark .c-flip-card__front {
   background-color: $card-background-color-dark;
-  transition: 150ms;
+  transition: 50ms;
 }
 
 #light .c-flip-card__front {
   background-color: $card-background-color-light;
-  transition: 150ms;
+  transition: 50ms;
 }
 
 #light .c-flip-card__back {
   background-color: $card-background-color-light;
-  transition: 150ms;
+  transition: 50ms;
 }

@@ -20,17 +20,10 @@ const FlipCard = () => {
         <div className="c-flip-card__back">
           <div></div>
           <div className="c-flip-card__content">
-            <p>
-              ¡Hola! Soy Ricardo, desarrollador Front End y de aplicaciones
-              multiplataforma.
-            </p>
-            <p>
-              Al inicio, la programación era una curiosidad para mí. Ahora se ha
-              convertido en una pasión y día a día estoy mejorando y en
-              constante aprendizaje de nuevas tecnologías.
-            </p>
-            <p>En esta página encontrarás más información sobre mí.</p>
-            <p>¡Gracias por la visita!</p>
+            <p>{t(ABOUT_CONSTANTS.BIO_FIRST_PART)}</p>
+            <p>{t(ABOUT_CONSTANTS.BIO_SECOND_PART)}</p>
+            <p> {t(ABOUT_CONSTANTS.BIO_THIRD_PART)}</p>
+            <p> {t(ABOUT_CONSTANTS.BIO_FOURTH_PART)}</p>
           </div>
           <Button
             color={ButtonColor.yellow}

@@ -1,9 +1,9 @@
-import About from "pages/about";
+import { Outlet } from "react-router-dom";
 
 const Main = () => {
   return (
     <main className="l-main">
-      <About />
+      <Outlet />
     </main>
   );
 };

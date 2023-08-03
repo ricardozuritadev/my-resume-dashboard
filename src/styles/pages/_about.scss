@@ -3,10 +3,9 @@
   justify-content: center;
   grid-template-columns: 1;
   gap: 3rem;
-  padding: 4rem;
 
   @include from-medium {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
     gap: 4rem;
 
     &__card {
@@ -21,7 +20,7 @@
   }
 
   @include from-large {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
   }
 
   &__slideshow {

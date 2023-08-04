@@ -8,9 +8,9 @@ import { childrenRoutes } from "routes/children-routes";
 import ThemeContextProvider from "contexts/theme.context";
 
 import ErrorPage from "pages/error";
+import Sidenav from "layout/sidenav";
 import Header from "layout/header";
 import Main from "layout/main";
-import Sidenav from "layout/sidenav";
 
 const App = () => {
   const { theme } = useTheme();
@@ -18,11 +18,11 @@ const App = () => {
   return (
     <>
       <div className="l-app" id={theme}>
-        <Sidenav />
-        <div className="l-app__main">
+        <div className="l-app__menus">
+          <Sidenav />
           <Header />
-          <Main />
         </div>
+        <Main />
       </div>
     </>
   );

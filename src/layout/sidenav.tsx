@@ -12,9 +12,9 @@ const Sidenav = () => {
   return (
     <aside className="l-sidenav">
       <div className="l-sidenav__top">
-        <section>LOGO</section>
+        <section className="l-sidenav__logo">LOGO</section>
 
-        <section>
+        <section className="l-sidenav__profile">
           <div className="l-sidenav__pic-container">
             <img
               src="images/rz_avatar.png"

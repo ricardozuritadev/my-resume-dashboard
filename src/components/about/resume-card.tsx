@@ -5,8 +5,7 @@ import { handleDownloadResume } from "utils/functions";
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 import { ButtonColor, ButtonSize } from "types/button.types";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { FaRegFilePdf } from "react-icons/fa";
 
 import Button from "components/button";
 
@@ -19,11 +18,7 @@ const ResumeCard = () => {
         <h3>{t(ABOUT_CONSTANTS.RESUME)}</h3>
         <p>{ABOUT_CONSTANTS.YEAR}</p>
       </div>
-      <FontAwesomeIcon
-        icon={faFilePdf}
-        size="7x"
-        className="c-resume-card__pdf"
-      />
+      <FaRegFilePdf className="c-resume-card__pdf" size={"12rem"} />
       <Button
         color={ButtonColor.yellow}
         size={ButtonSize.medium}

@@ -1,11 +1,8 @@
 import { NavLink } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-
 type LinkComponentProps = {
   url: string;
-  icon: IconProp;
+  icon: JSX.Element;
   text: string;
 };
 
@@ -18,9 +15,7 @@ const LinkComponent = ({ url, icon, text }: LinkComponentProps) => {
       }
     >
       <li className="l-sidenav__element">
-        <span className="l-sidenav__icon">
-          <FontAwesomeIcon icon={icon} />
-        </span>
+        <span className="l-sidenav__icon">{icon}</span>
         <span className="l-sidenav__text">{text}</span>
       </li>
     </NavLink>

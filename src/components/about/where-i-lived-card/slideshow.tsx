@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 import { cities } from "utils/data/images";
 
@@ -53,10 +51,9 @@ const Slideshow = () => {
               </div>
               <div className="c-slideshow__overlay">
                 {index > 0 ? (
-                  <FontAwesomeIcon
-                    icon={faAngleLeft}
-                    size="xl"
+                  <FaAngleLeft
                     className="c-slideshow__angle c-slideshow__angle--left"
+                    size={30}
                     onClick={() => {
                       setIndex((prev) => prev - 1);
                       setWasBtnClicked(true);
@@ -72,10 +69,9 @@ const Slideshow = () => {
                 </div>
 
                 {index < cities.length - 1 ? (
-                  <FontAwesomeIcon
-                    icon={faAngleRight}
-                    size="xl"
+                  <FaAngleRight
                     className="c-slideshow__angle c-slideshow__angle--right"
+                    size={30}
                     onClick={() => {
                       setIndex((prev) => prev + 1);
                       setWasBtnClicked(true);

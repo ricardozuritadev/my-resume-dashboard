@@ -4,12 +4,7 @@ import { ABOUT_CONSTANTS } from "constants/about.constants";
 
 import { IconColor } from "types/card-item.types";
 
-import {
-  faCode,
-  faGamepad,
-  faGuitar,
-  faTicketSimple
-} from "@fortawesome/free-solid-svg-icons";
+import { FaGuitar, FaCode, FaTicketAlt, FaGamepad } from "react-icons/fa";
 
 import CardItem from "components/about/hobbies-card/card-item";
 
@@ -24,23 +19,23 @@ const HobbiesCard = () => {
       </div>
       <div className="c-hobbies-card__container">
         <CardItem
-          icon={faGuitar}
+          icon={<FaGuitar size="4rem" />}
           iconColor={IconColor.orange}
           text={t(ABOUT_CONSTANTS.GUITAR)}
         />
         <CardItem
-          icon={faCode}
-          iconColor={IconColor.yellow}
+          icon={<FaCode size="4rem" />}
+          iconColor={IconColor.purple}
           text={t(ABOUT_CONSTANTS.CODE)}
         />
         <CardItem
-          icon={faTicketSimple}
-          iconColor={IconColor.purple}
+          icon={<FaTicketAlt size="4rem" />}
+          iconColor={IconColor.white}
           text={t(ABOUT_CONSTANTS.MOVIES)}
         />
         <CardItem
-          icon={faGamepad}
-          iconColor={IconColor.white}
+          icon={<FaGamepad size="4rem" />}
+          iconColor={IconColor.yellow}
           text={t(ABOUT_CONSTANTS.VIDEOGAMES)}
         />
       </div>

@@ -1,9 +1,14 @@
 import About from "pages/about";
 import Skills from "pages/skills";
+import { Navigate } from "react-router-dom";
 
 export const childrenRoutes = [
   {
     path: "/",
+    element: <Navigate to="/about" />
+  },
+  {
+    path: "/about",
     element: <About />
   },
   {

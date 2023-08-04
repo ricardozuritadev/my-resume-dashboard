@@ -10,7 +10,7 @@ import {
 
 export const links = [
   {
-    url: "/",
+    url: "/about",
     icon: faUser,
     text: SIDENAV_CONSTANTS.ABOUT
   },

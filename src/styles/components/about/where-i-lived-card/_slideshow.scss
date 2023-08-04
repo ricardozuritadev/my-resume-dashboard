@@ -67,9 +67,17 @@
 
   &__angle {
     position: absolute;
-    padding: 4rem;
     z-index: 100;
+    width: 10rem;
     cursor: pointer;
+
+    @include from-medium {
+      width: 6rem;
+    }
+
+    @include from-xxlarge {
+      width: 14rem;
+    }
 
     &--left {
       left: 0;
@@ -78,14 +86,6 @@
     &--right {
       right: 0;
     }
-
-    @include from-medium {
-      padding: 4rem 2rem;
-    }
-
-    @include from-xxlarge {
-      padding: 4rem 6rem;
-    }
   }
 }
 
@@ -93,13 +93,13 @@
   position: absolute;
   padding: 5rem;
 
-  &--left {
-    left: 0;
-  }
+  // &--left {
+  //   left: 0;
+  // }
 
-  &--right {
-    right: 0;
-  }
+  // &--right {
+  //   right: 0;
+  // }
 
   @include from-medium {
     padding: 5rem 3rem;

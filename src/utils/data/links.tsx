@@ -1,37 +1,37 @@
 import { SIDENAV_CONSTANTS } from "constants/sidenav.constants";
 
 import {
-  faBuilding,
-  faGraduationCap,
-  faIdCard,
-  faLaptopCode,
-  faUser
-} from "@fortawesome/free-solid-svg-icons";
+  FaBuilding,
+  FaGraduationCap,
+  FaIdCard,
+  FaLaptopCode,
+  FaUser
+} from "react-icons/fa";
 
 export const links = [
   {
     url: "/about",
-    icon: faUser,
+    icon: <FaUser />,
     text: SIDENAV_CONSTANTS.ABOUT
   },
   {
     url: "/skills",
-    icon: faLaptopCode,
+    icon: <FaLaptopCode />,
     text: SIDENAV_CONSTANTS.SKILLS
   },
   {
     url: "/experience",
-    icon: faBuilding,
+    icon: <FaBuilding />,
     text: SIDENAV_CONSTANTS.EXPERIENCE
   },
   {
     url: "/education",
-    icon: faGraduationCap,
+    icon: <FaGraduationCap />,
     text: SIDENAV_CONSTANTS.EDUCATION
   },
   {
     url: "/contact",
-    icon: faIdCard,
+    icon: <FaIdCard />,
     text: SIDENAV_CONSTANTS.CONTACT
   }
 ];

@@ -23,5 +23,15 @@
     "languages": "Languages",
     "spanish": "Spanish",
     "english": "English"
+  },
+  "skills": {
+    "markupLanguages": "Markup languages",
+    "stylesheetLanguages": "Stylesheet languages",
+    "programmingLanguages": "Programming languages",
+    "frontendLibraries": "Frontend libraries",
+    "frameworksEnvironments": "Frameworks & environments",
+    "databases": "Databases",
+    "versionControl": "Version control",
+    "otherTools": "Other tools"
   }
 }

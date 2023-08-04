@@ -6,16 +6,18 @@
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 14rem);
     gap: 2rem;
 
     @include from-medium {
+      grid-template-columns: repeat(2, 12rem);
       gap: 1rem;
     }
 
     @include from-xxlarge {
+      grid-template-columns: repeat(2, 16rem);
       margin-top: 1rem;
-      gap: 2rem;
+      gap: 4rem;
     }
   }
 }

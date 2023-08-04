@@ -23,6 +23,15 @@ ul {
   list-style: none;
 }
 
+.l-app {
+  min-height: 100vh;
+
+  &__menus {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .card {
   justify-self: center;
   display: flex;

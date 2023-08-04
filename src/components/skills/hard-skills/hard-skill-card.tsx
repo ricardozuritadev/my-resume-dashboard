@@ -1,11 +1,14 @@
-const HardSkillCard = () => {
+type HardSkillCardProps = {
+  id: number;
+  title: string;
+  icons: JSX.Element[];
+};
+
+const HardSkillCard = ({ title, icons }: HardSkillCardProps) => {
   return (
     <div className="c-hard-skill-card">
-      <p>Lenguajes de marcado</p>
-      <div>
-        <span>HTML</span>
-        <span>XML</span>
-      </div>
+      <p>{title}</p>
+      <div className="c-hard-skill-card__icons">{icons}</div>
     </div>
   );
 };

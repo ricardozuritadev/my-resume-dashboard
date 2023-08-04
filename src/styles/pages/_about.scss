@@ -2,6 +2,7 @@
   display: grid;
   justify-content: center;
   grid-template-columns: 1;
+  padding: 4rem;
   gap: 3rem;
 
   @include from-medium {

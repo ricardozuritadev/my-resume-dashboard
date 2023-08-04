@@ -1,2 +1,17 @@
 .c-hard-skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: $color-gray-100;
+  border-radius: $border-radius-medium;
+  padding: 2rem 3rem;
+  text-align: center;
+  height: 15rem;
+
+  &__icons {
+    display: flex;
+    gap: 4rem;
+  }
 }

@@ -1,27 +1,44 @@
+import { ChartData } from "types/hard-skill.types";
+
 type HardSkillCardProps = {
   title: string;
-  languages: string[];
+  items: string[];
   icons: JSX.Element[];
-  percentages: number[];
+  chartData: ChartData[];
+  index: number;
+  selectedIndex: number;
+  setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
   setXAxisData: React.Dispatch<React.SetStateAction<string[]>>;
-  setSeriesData: React.Dispatch<React.SetStateAction<number[]>>;
+  setChartData: React.Dispatch<React.SetStateAction<ChartData[]>>;
 };
 
 const HardSkillCard = ({
   title,
-  languages,
+  items,
   icons,
-  percentages,
+  chartData,
+  index,
+  selectedIndex,
+  setSelectedIndex,
   setXAxisData,
-  setSeriesData
+  setChartData
 }: HardSkillCardProps) => {
   const selectHardSkill = () => {
-    setXAxisData(languages);
-    setSeriesData(percentages);
+    setXAxisData(items);
+    setChartData(chartData);
+    setSelectedIndex(index);
   };
 
   return (
-    <div className="c-hard-skill-card" onClick={selectHardSkill}>
+    <div
+      className="c-hard-skill-card"
+      style={
+        selectedIndex === index
+          ? { border: `2px solid ${chartData[0].color}` }
+          : {}
+      }
+      onClick={selectHardSkill}
+    >
       <p className="c-hard-skill-card__title">{title}</p>
       <div className="c-hard-skill-card__icons">{icons}</div>
     </div>

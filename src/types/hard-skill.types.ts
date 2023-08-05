@@ -1,7 +1,12 @@
+export type ChartData = {
+  value: number;
+  color: string;
+};
+
 export type HardSkill = {
   id: string;
   title: string;
-  languages: string[];
+  items: string[];
   icons: JSX.Element[];
-  percentages: number[];
+  data: ChartData[];
 };

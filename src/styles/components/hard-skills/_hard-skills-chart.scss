@@ -1,0 +1,11 @@
+.c-hard-skills-chart {
+  padding: 0 2rem;
+
+  @include from-medium {
+    padding: 0 4rem;
+  }
+
+  @include from-large {
+    padding: 0;
+  }
+}

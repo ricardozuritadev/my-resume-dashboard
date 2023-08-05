@@ -1,0 +1,23 @@
+.p-skills {
+  padding: 4rem 0;
+
+  @include from-large {
+    padding: 4rem;
+  }
+
+  &__subtitle {
+    padding-left: 2rem;
+
+    @include from-medium {
+      padding-left: 4rem;
+    }
+
+    @include from-large {
+      padding-left: 0;
+    }
+  }
+
+  &__hardskills {
+    background-color: rebeccapurple;
+  }
+}

@@ -1,10 +1,27 @@
 export const SKILLS = {
   MARKUP: "skills.markupLanguages",
+  HTML: "HTML",
+  XML: "XML",
   STYLESHEET: "skills.stylesheetLanguages",
+  CSS: "CSS",
+  SASS: "SASS",
   PROGRAMMING: "skills.programmingLanguages",
+  JAVASCRIPT: "JavaScript",
+  TYPESCRIPT: "TypeScript",
+  JAVA: "Java",
   FRONTEND_LIBRARIES: "skills.frontendLibraries",
+  REACT: "React",
+  REDUX: "Redux",
   FRAMEWORKS_ENVIRONMENTS: "skills.frameworksEnvironments",
+  NODE_JS: "Node.js",
+  EXPRESS: "Express",
   DATABASES: "skills.databases",
+  POSTGRESQL: "PostgreSQL",
+  MONGODB: "MongoDB",
   VERSION_CONTROL: "skills.versionControl",
-  OTHER_TOOLS: "skills.otherTools"
+  GIT: "Git",
+  GITHUB: "GitHub",
+  OTHER_TOOLS: "skills.otherTools",
+  THREE_JS: "Three.js",
+  JIRA: "Jira"
 };

@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 import {
   FaHtml5,
   FaReact,
@@ -26,52 +28,70 @@ import { SKILLS } from "constants/skills.constants";
 
 export const HARD_SKILLS = [
   {
-    id: 1,
+    id: uuidv4(),
     title: SKILLS.MARKUP,
-    icons: [<FaHtml5 size={40} />, <BsFiletypeXml size={40} />]
+    icons: [
+      <FaHtml5 key={uuidv4()} size={40} />,
+      <BsFiletypeXml key={uuidv4()} size={40} />
+    ]
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: SKILLS.STYLESHEET,
-    icons: [<FaCss3Alt size={40} />, <FaSass size={40} />]
+    icons: [
+      <FaCss3Alt key={uuidv4()} size={40} />,
+      <FaSass key={uuidv4()} size={40} />
+    ]
   },
   {
-    id: 3,
+    id: uuidv4(),
     title: SKILLS.PROGRAMMING,
     icons: [
-      <BiLogoJavascript size={40} />,
-      <BiLogoTypescript size={40} />,
-      <FaJava size={40} />
+      <BiLogoJavascript key={uuidv4()} size={40} />,
+      <BiLogoTypescript key={uuidv4()} size={40} />,
+      <FaJava key={uuidv4()} size={40} />
     ]
   },
   {
-    id: 4,
+    id: uuidv4(),
     title: SKILLS.FRONTEND_LIBRARIES,
-    icons: [<FaReact size={40} />, <BiLogoRedux size={40} />]
+    icons: [
+      <FaReact key={uuidv4()} size={40} />,
+      <BiLogoRedux key={uuidv4()} size={40} />
+    ]
   },
   {
-    id: 5,
+    id: uuidv4(),
     title: SKILLS.FRAMEWORKS_ENVIRONMENTS,
-    icons: [<FaNodeJs size={40} />, <SiExpress size={40} />]
+    icons: [
+      <FaNodeJs key={uuidv4()} size={40} />,
+      <SiExpress key={uuidv4()} size={40} />
+    ]
   },
   {
-    id: 6,
+    id: uuidv4(),
     title: SKILLS.DATABASES,
-    icons: [<BiLogoPostgresql size={40} />, <BiLogoMongodb size={40} />]
+    icons: [
+      <BiLogoPostgresql key={uuidv4()} size={40} />,
+      <BiLogoMongodb key={uuidv4()} size={40} />
+    ]
   },
   {
-    id: 7,
+    id: uuidv4(),
     title: SKILLS.VERSION_CONTROL,
     icons: [
-      <FaGitAlt size={40} />,
-      <FaGithub size={40} />,
-      <FaGitlab size={40} />,
-      <FaBitbucket size={40} />
+      <FaGitAlt key={uuidv4()} size={40} />,
+      <FaGithub key={uuidv4()} size={40} />,
+      <FaGitlab key={uuidv4()} size={40} />,
+      <FaBitbucket key={uuidv4()} size={40} />
     ]
   },
   {
-    id: 8,
+    id: uuidv4(),
     title: SKILLS.OTHER_TOOLS,
-    icons: [<TbBrandThreejs size={40} />, <FaJira size={40} />]
+    icons: [
+      <TbBrandThreejs key={uuidv4()} size={40} />,
+      <FaJira key={uuidv4()} size={40} />
+    ]
   }
 ];

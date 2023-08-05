@@ -1,7 +1,8 @@
 .c-hard-skills {
   display: flex;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
   overflow-x: scroll;
 
   @include from-medium {

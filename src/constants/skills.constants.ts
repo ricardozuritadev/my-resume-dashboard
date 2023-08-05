@@ -11,7 +11,7 @@ export const SKILLS = {
   JAVA: "Java",
   FRONTEND_LIBRARIES: "skills.frontendLibraries",
   REACT: "React",
-  REDUX: "Redux",
+  ANGULAR: "Angular",
   FRAMEWORKS_ENVIRONMENTS: "skills.frameworksEnvironments",
   NODE_JS: "Node.js",
   EXPRESS: "Express",

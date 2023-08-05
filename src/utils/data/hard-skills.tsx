@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import {
   FaHtml5,
   FaReact,
+  FaAngular,
   FaSass,
   FaJava,
   FaCss3Alt,
@@ -15,97 +16,121 @@ import {
   BiLogoJavascript,
   BiLogoMongodb,
   BiLogoPostgresql,
-  BiLogoRedux,
   BiLogoTypescript
 } from "react-icons/bi";
 import { SiExpress } from "react-icons/si";
 import { BsFiletypeXml } from "react-icons/bs";
 import { TbBrandThreejs } from "react-icons/tb";
 
-import { HardSkill } from "types/hard-skill.types";
-
 import { SKILLS } from "constants/skills.constants";
+
+import { HardSkill } from "types/hard-skill.types";
 
 export const HARD_SKILLS: HardSkill[] = [
   {
     id: uuidv4(),
     title: SKILLS.MARKUP,
-    languages: [SKILLS.HTML, SKILLS.XML],
+    items: [SKILLS.HTML, SKILLS.XML],
     icons: [
-      <FaHtml5 key={uuidv4()} size={40} />,
-      <BsFiletypeXml key={uuidv4()} size={40} />
+      <FaHtml5 key={uuidv4()} size={30} color="#f06529" />,
+      <BsFiletypeXml key={uuidv4()} size={30} />
     ],
-    percentages: [100, 80]
+    data: [
+      { value: 100, color: "#f06529" },
+      { value: 80, color: "#51459e" }
+    ]
   },
   {
     id: uuidv4(),
     title: SKILLS.STYLESHEET,
-    languages: [SKILLS.CSS, SKILLS.SASS],
+    items: [SKILLS.CSS, SKILLS.SASS],
     icons: [
-      <FaCss3Alt key={uuidv4()} size={40} />,
-      <FaSass key={uuidv4()} size={40} />
+      <FaCss3Alt key={uuidv4()} size={30} color="#2965f1" />,
+      <FaSass key={uuidv4()} size={30} color="#CD6799" />
     ],
-    percentages: [90, 70]
+    data: [
+      { value: 90, color: "#2965f1" },
+      { value: 70, color: "#CD6799" }
+    ]
   },
   {
     id: uuidv4(),
     title: SKILLS.PROGRAMMING,
-    languages: [SKILLS.JAVASCRIPT, SKILLS.TYPESCRIPT, SKILLS.JAVA],
+    items: [SKILLS.JAVASCRIPT, SKILLS.TYPESCRIPT, SKILLS.JAVA],
     icons: [
-      <BiLogoJavascript key={uuidv4()} size={40} />,
-      <BiLogoTypescript key={uuidv4()} size={40} />,
-      <FaJava key={uuidv4()} size={40} />
+      <BiLogoJavascript key={uuidv4()} size={30} color="#f0db4f" />,
+      <BiLogoTypescript key={uuidv4()} size={30} color="#007acc" />,
+      <FaJava key={uuidv4()} size={30} color="#ED1D25" />
     ],
-    percentages: [90, 80, 40]
+    data: [
+      { value: 90, color: "#f0db4f" },
+      { value: 80, color: "#007acc" },
+      { value: 40, color: "#ED1D25" }
+    ]
   },
   {
     id: uuidv4(),
     title: SKILLS.FRONTEND_LIBRARIES,
-    languages: [SKILLS.REACT, SKILLS.REDUX],
+    items: [SKILLS.REACT, SKILLS.ANGULAR],
     icons: [
-      <FaReact key={uuidv4()} size={40} />,
-      <BiLogoRedux key={uuidv4()} size={40} />
+      <FaReact key={uuidv4()} size={30} color="#61DBFB" />,
+      <FaAngular key={uuidv4()} size={30} color="#B52E31" />
     ],
-    percentages: [90, 80]
+    data: [
+      { value: 90, color: "#61DBFB" },
+      { value: 30, color: "#B52E31" }
+    ]
   },
   {
     id: uuidv4(),
     title: SKILLS.FRAMEWORKS_ENVIRONMENTS,
-    languages: [SKILLS.NODE_JS, SKILLS.EXPRESS],
+    items: [SKILLS.NODE_JS, SKILLS.EXPRESS],
     icons: [
-      <FaNodeJs key={uuidv4()} size={40} />,
-      <SiExpress key={uuidv4()} size={40} />
+      <FaNodeJs key={uuidv4()} size={30} color="#3C873A" />,
+      <SiExpress key={uuidv4()} size={30} />
     ],
-    percentages: [80, 70]
+    data: [
+      { value: 80, color: "#3C873A" },
+      { value: 60, color: "#51459e" }
+    ]
   },
   {
     id: uuidv4(),
     title: SKILLS.DATABASES,
-    languages: [SKILLS.POSTGRESQL, SKILLS.MONGODB],
+    items: [SKILLS.POSTGRESQL, SKILLS.MONGODB],
     icons: [
-      <BiLogoPostgresql key={uuidv4()} size={40} />,
-      <BiLogoMongodb key={uuidv4()} size={40} />
+      <BiLogoPostgresql key={uuidv4()} size={30} color="#336791" />,
+      <BiLogoMongodb key={uuidv4()} size={30} color="#4db33d" />
     ],
-    percentages: [80, 70]
+    data: [
+      { value: 80, color: "#336791" },
+      { value: 70, color: "#4db33d" }
+    ]
   },
   {
     id: uuidv4(),
     title: SKILLS.VERSION_CONTROL,
-    languages: [SKILLS.GIT, SKILLS.GITHUB],
+    items: [SKILLS.GIT, SKILLS.GITHUB],
     icons: [
-      <FaGitAlt key={uuidv4()} size={40} />,
-      <FaGithub key={uuidv4()} size={40} />
+      <FaGitAlt key={uuidv4()} size={30} color="#f1502f" />,
+      <FaGithub key={uuidv4()} size={30} />
     ],
-    percentages: [90, 80]
+    data: [
+      { value: 90, color: "#f1502f" },
+      { value: 80, color: "#51459e" }
+    ]
   },
   {
     id: uuidv4(),
     title: SKILLS.OTHER_TOOLS,
-    languages: [SKILLS.THREE_JS, SKILLS.JIRA],
+    items: [SKILLS.JIRA, SKILLS.THREE_JS],
     icons: [
-      <TbBrandThreejs key={uuidv4()} size={40} />,
-      <FaJira key={uuidv4()} size={40} />
+      <FaJira key={uuidv4()} size={30} color="#0052cc" />,
+      <TbBrandThreejs key={uuidv4()} size={30} color="#51459e" />
     ],
-    percentages: [70, 90]
+    data: [
+      { value: 90, color: "#0052cc" },
+      { value: 70, color: "#51459e" }
+    ]
   }
 ];

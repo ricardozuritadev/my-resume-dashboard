@@ -123,30 +123,30 @@
 
 #dark .l-sidenav {
   border-right: 1px solid $color-gray-200;
-  transition: 50ms;
+  transition: $transition-medium;
 }
 
 #light .l-sidenav {
   border-right: 1px solid $color-white-300;
-  transition: 50ms;
+  transition: $transition-medium;
 }
 
 #dark .l-sidenav__link:hover {
   background-color: $hover-color-dark;
-  transition: 50ms;
+  transition: $transition-medium;
 }
 
 #light .l-sidenav__link:hover {
   background-color: $hover-color-light;
-  transition: 50ms;
+  transition: $transition-medium;
 }
 
 #dark .active {
   background-color: $hover-color-dark;
-  transition: 50ms;
+  transition: $transition-medium;
 }
 
 #light .active {
   background-color: $hover-color-light;
-  transition: 50ms;
+  transition: $transition-medium;
 }

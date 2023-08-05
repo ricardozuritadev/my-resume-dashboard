@@ -6,20 +6,20 @@
 
 #dark .c-resume-card {
   background-color: $card-background-color-dark;
-  transition: 50ms;
+  transition: $transition-medium;
 }
 
 #light .c-resume-card {
   background-color: $card-background-color-light;
-  transition: 50ms;
+  transition: $transition-medium;
 }
 
 #dark .c-resume-card__pdf {
   color: $color-white-300;
-  transition: 50ms;
+  transition: $transition-medium;
 }
 
 #light .c-resume-card__pdf {
   color: $color-white-200;
-  transition: 50ms;
+  transition: $transition-medium;
 }

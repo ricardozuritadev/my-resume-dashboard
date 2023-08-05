@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  background-color: $color-gray-100;
   border-radius: $border-radius-medium;
+  box-shadow: $box-shadow-small;
   padding: 2rem 3rem;
   text-align: center;
   height: 15rem;
@@ -15,4 +15,14 @@
     display: flex;
     gap: 4rem;
   }
+}
+
+#dark .c-hard-skill-card {
+  background-color: $card-background-color-dark-2;
+  transition: $transition-fast;
+}
+
+#light .c-hard-skill-card {
+  background-color: $card-background-color-light;
+  transition: $transition-fast;
 }

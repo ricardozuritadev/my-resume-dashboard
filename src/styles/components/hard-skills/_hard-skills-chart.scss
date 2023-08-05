@@ -1,16 +1,16 @@
 .c-hard-skills-chart {
   padding: 0 2rem;
-  background-color: $color-gray-100;
   border-radius: $border-radius-medium;
+  box-shadow: $box-shadow-small;
   margin: 0 2rem;
-  padding: 4rem 2rem 0 2rem;
+  padding: 1rem 2rem 0 2rem;
 
   @include from-medium {
     margin: 0 4rem;
-    padding: 4rem 12rem 0 12rem;
+    padding: 1rem 12rem 0 12rem;
   }
 
   @include from-large {
-    padding: 0;
+    margin: 0;
   }
 }

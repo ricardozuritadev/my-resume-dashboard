@@ -1,6 +1,7 @@
 //Dark theme
 $background-color-dark: $color-gray-300;
 $card-background-color-dark: $color-white-200;
+$card-background-color-dark-2: $color-gray-100;
 $text-color-dark: $color-white-100;
 $hover-color-dark: $color-gray-200;
 
@@ -13,11 +14,11 @@ $hover-color-light: $color-white-300;
 #dark {
   background-color: $background-color-dark;
   color: $text-color-dark;
-  transition: 100ms;
+  transition: $transition-medium;
 }
 
 #light {
   background-color: $background-color-light;
   color: $text-color-light;
-  transition: 100ms;
+  transition: $transition-medium;
 }

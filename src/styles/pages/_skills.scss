@@ -2,7 +2,9 @@
   padding: 4rem 0;
 
   @include from-large {
-    padding: 4rem;
+    display: flex;
+    padding: 0 4rem;
+    height: 100vh;
   }
 
   &__subtitle {
@@ -19,5 +21,15 @@
 
   &__hardskills {
     margin-bottom: 6rem;
+    @include from-large {
+      width: 250rem;
+    }
+  }
+
+  &__softskills {
+    @include from-large {
+      margin-left: 4rem;
+      width: 100%;
+    }
   }
 }

@@ -1,7 +1,7 @@
 .c-hard-skills {
   display: flex;
   gap: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   margin-bottom: 1rem;
   overflow-x: scroll;
 
@@ -11,8 +11,9 @@
 
   @include from-large {
     display: grid;
-    grid-template-columns: repeat(4, minmax(20rem, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     overflow: auto;
     padding: 2rem 0;
+    margin-bottom: 0;
   }
 }

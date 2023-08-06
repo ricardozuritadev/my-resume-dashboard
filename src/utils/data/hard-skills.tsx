@@ -29,8 +29,8 @@ import { HardSkill } from "types/hard-skill.types";
 export const HARD_SKILLS: HardSkill[] = [
   {
     id: uuidv4(),
-    title: SKILLS.MARKUP,
-    items: [SKILLS.HTML, SKILLS.XML],
+    title: SKILLS.HARD_SKILLS.MARKUP,
+    items: [SKILLS.HARD_SKILLS.HTML, SKILLS.HARD_SKILLS.XML],
     icons: [
       <FaHtml5 key={uuidv4()} size={30} color="#f06529" />,
       <BsFiletypeXml key={uuidv4()} size={30} />
@@ -42,8 +42,8 @@ export const HARD_SKILLS: HardSkill[] = [
   },
   {
     id: uuidv4(),
-    title: SKILLS.STYLESHEET,
-    items: [SKILLS.CSS, SKILLS.SASS],
+    title: SKILLS.HARD_SKILLS.STYLESHEET,
+    items: [SKILLS.HARD_SKILLS.CSS, SKILLS.HARD_SKILLS.SASS],
     icons: [
       <FaCss3Alt key={uuidv4()} size={30} color="#2965f1" />,
       <FaSass key={uuidv4()} size={30} color="#CD6799" />
@@ -55,8 +55,12 @@ export const HARD_SKILLS: HardSkill[] = [
   },
   {
     id: uuidv4(),
-    title: SKILLS.PROGRAMMING,
-    items: [SKILLS.JAVASCRIPT, SKILLS.TYPESCRIPT, SKILLS.JAVA],
+    title: SKILLS.HARD_SKILLS.PROGRAMMING,
+    items: [
+      SKILLS.HARD_SKILLS.JAVASCRIPT,
+      SKILLS.HARD_SKILLS.TYPESCRIPT,
+      SKILLS.HARD_SKILLS.JAVA
+    ],
     icons: [
       <BiLogoJavascript key={uuidv4()} size={30} color="#f0db4f" />,
       <BiLogoTypescript key={uuidv4()} size={30} color="#007acc" />,
@@ -70,8 +74,8 @@ export const HARD_SKILLS: HardSkill[] = [
   },
   {
     id: uuidv4(),
-    title: SKILLS.FRONTEND_LIBRARIES,
-    items: [SKILLS.REACT, SKILLS.ANGULAR],
+    title: SKILLS.HARD_SKILLS.FRONTEND_LIBRARIES,
+    items: [SKILLS.HARD_SKILLS.REACT, SKILLS.HARD_SKILLS.ANGULAR],
     icons: [
       <FaReact key={uuidv4()} size={30} color="#61DBFB" />,
       <FaAngular key={uuidv4()} size={30} color="#B52E31" />
@@ -83,8 +87,8 @@ export const HARD_SKILLS: HardSkill[] = [
   },
   {
     id: uuidv4(),
-    title: SKILLS.FRAMEWORKS_ENVIRONMENTS,
-    items: [SKILLS.NODE_JS, SKILLS.EXPRESS],
+    title: SKILLS.HARD_SKILLS.FRAMEWORKS_ENVIRONMENTS,
+    items: [SKILLS.HARD_SKILLS.NODE_JS, SKILLS.HARD_SKILLS.EXPRESS],
     icons: [
       <FaNodeJs key={uuidv4()} size={30} color="#3C873A" />,
       <SiExpress key={uuidv4()} size={30} />
@@ -96,8 +100,8 @@ export const HARD_SKILLS: HardSkill[] = [
   },
   {
     id: uuidv4(),
-    title: SKILLS.DATABASES,
-    items: [SKILLS.POSTGRESQL, SKILLS.MONGODB],
+    title: SKILLS.HARD_SKILLS.DATABASES,
+    items: [SKILLS.HARD_SKILLS.POSTGRESQL, SKILLS.HARD_SKILLS.MONGODB],
     icons: [
       <BiLogoPostgresql key={uuidv4()} size={30} color="#336791" />,
       <BiLogoMongodb key={uuidv4()} size={30} color="#4db33d" />
@@ -109,8 +113,8 @@ export const HARD_SKILLS: HardSkill[] = [
   },
   {
     id: uuidv4(),
-    title: SKILLS.VERSION_CONTROL,
-    items: [SKILLS.GIT, SKILLS.GITHUB],
+    title: SKILLS.HARD_SKILLS.VERSION_CONTROL,
+    items: [SKILLS.HARD_SKILLS.GIT, SKILLS.HARD_SKILLS.GITHUB],
     icons: [
       <FaGitAlt key={uuidv4()} size={30} color="#f1502f" />,
       <FaGithub key={uuidv4()} size={30} />
@@ -122,8 +126,8 @@ export const HARD_SKILLS: HardSkill[] = [
   },
   {
     id: uuidv4(),
-    title: SKILLS.OTHER_TOOLS,
-    items: [SKILLS.JIRA, SKILLS.THREE_JS],
+    title: SKILLS.HARD_SKILLS.OTHER_TOOLS,
+    items: [SKILLS.HARD_SKILLS.JIRA, SKILLS.HARD_SKILLS.THREE_JS],
     icons: [
       <FaJira key={uuidv4()} size={30} color="#0052cc" />,
       <TbBrandThreejs key={uuidv4()} size={30} color="#51459e" />

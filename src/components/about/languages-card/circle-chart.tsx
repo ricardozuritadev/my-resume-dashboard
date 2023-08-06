@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTheme } from "utils/hooks/use-theme.hook";
 
 type CircleChartProps = {
   endValue: number;
@@ -12,6 +13,7 @@ const CircleChart = ({
   bottomText
 }: CircleChartProps) => {
   const [startValue, setStartValue] = useState<number>(0);
+  const { theme } = useTheme();
 
   useEffect(() => {
     const progress = setInterval(() => {
@@ -30,9 +32,10 @@ const CircleChart = ({
       <div
         className="c-circle-chart"
         style={{
-          background: `conic-gradient(#242529 ${
-            startValue * 3.6
-          }deg, #b1acaa 0deg)`
+          background: `conic-gradient(#a02cfa ${startValue * 3.6}deg, ${
+            theme === "dark" ? "#2e2b2b" : "#efefef"
+          } 0deg)`,
+          transition: "100ms"
         }}
       >
         <div className="c-circle-chart__wrapper">

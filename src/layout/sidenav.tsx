@@ -23,7 +23,7 @@ const Sidenav = () => {
             />
           </div>
           <div className="l-sidenav__info">
-            <h3>{SIDENAV_CONSTANTS.NAME}</h3>
+            <h3 className="l-sidenav__name">{SIDENAV_CONSTANTS.NAME}</h3>
             <p className="l-sidenav__profession">
               {t(SIDENAV_CONSTANTS.PROFESSION)}
             </p>
@@ -44,6 +44,8 @@ const Sidenav = () => {
             </ul>
           </nav>
         </section>
+
+        <div></div>
       </div>
     </aside>
   );

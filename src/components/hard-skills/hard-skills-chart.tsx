@@ -38,7 +38,7 @@ const HardSkillsChart = ({ xAxisData, chartData }: HardSkillsChartProps) => {
       option={option}
       style={{
         height: "100%",
-        backgroundColor: theme === "dark" ? "#36373e" : "#fff",
+        backgroundColor: theme === "dark" ? "#1f1d1d" : "#fff",
         transition: "50ms"
       }}
       opts={{ renderer: "svg" }}

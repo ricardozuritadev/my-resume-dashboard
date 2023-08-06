@@ -2,7 +2,7 @@ import FlipCard from "components/about/bio-card/flip-card";
 
 const BioCard = () => {
   return (
-    <div className="card c-bio-card">
+    <div className="c-bio-card">
       <FlipCard />
     </div>
   );

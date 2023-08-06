@@ -15,12 +15,12 @@ const ResumeCard = () => {
   return (
     <div className="card c-resume-card">
       <div className="card__header">
-        <h3>{t(ABOUT_CONSTANTS.RESUME)}</h3>
-        <p>{ABOUT_CONSTANTS.YEAR}</p>
+        <h3 className="card__title">{t(ABOUT_CONSTANTS.RESUME)}</h3>
+        <p className="card__subtitle">{ABOUT_CONSTANTS.YEAR}</p>
       </div>
       <FaRegFilePdf className="c-resume-card__pdf" size={"12rem"} />
       <Button
-        color={ButtonColor.yellow}
+        color={ButtonColor.purple}
         size={ButtonSize.medium}
         handleClick={() => {
           if (i18n.language === "es") {

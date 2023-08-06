@@ -14,13 +14,13 @@ const HobbiesCard = () => {
   return (
     <div className="card c-hobbies-card">
       <div className="card__header">
-        <h3>{ABOUT_CONSTANTS.HOBBIES}</h3>
+        <h3 className="card__title">{ABOUT_CONSTANTS.HOBBIES}</h3>
         <div></div>
       </div>
       <div className="c-hobbies-card__container">
         <CardItem
           icon={<FaGuitar size="4rem" />}
-          iconColor={IconColor.orange}
+          iconColor={IconColor.green}
           text={t(ABOUT_CONSTANTS.GUITAR)}
         />
         <CardItem
@@ -30,7 +30,7 @@ const HobbiesCard = () => {
         />
         <CardItem
           icon={<FaTicketAlt size="4rem" />}
-          iconColor={IconColor.white}
+          iconColor={IconColor.pink}
           text={t(ABOUT_CONSTANTS.MOVIES)}
         />
         <CardItem

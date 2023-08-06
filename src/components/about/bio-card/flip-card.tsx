@@ -26,7 +26,7 @@ const FlipCard = () => {
             <p> {t(ABOUT_CONSTANTS.BIO_FOURTH_PART)}</p>
           </div>
           <Button
-            color={ButtonColor.yellow}
+            color={ButtonColor.purple}
             size={ButtonSize.medium}
             handleClick={() => {
               setFlip(!flip);
@@ -37,10 +37,10 @@ const FlipCard = () => {
         </div>
         <div className="c-flip-card__front">
           <div className="card__header">
-            <h3>{ABOUT_CONSTANTS.BIO}</h3>
+            <h3 className="card__title">{ABOUT_CONSTANTS.BIO}</h3>
           </div>
           <Button
-            color={ButtonColor.yellow}
+            color={ButtonColor.purple}
             size={ButtonSize.medium}
             handleClick={() => {
               setFlip(!flip);

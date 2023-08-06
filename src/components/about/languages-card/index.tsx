@@ -9,7 +9,7 @@ const LanguagesCard = () => {
 
   return (
     <div className="card c-languages-card">
-      <div className="card__header card__header--line">
+      <div className="card__header">
         <h3>{t(ABOUT_CONSTANTS.LANGUAGES)}</h3>
       </div>
       <div className="c-languages-card__charts">

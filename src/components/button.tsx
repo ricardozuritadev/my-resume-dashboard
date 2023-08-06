@@ -16,7 +16,7 @@ const Button = ({
   isOutlineBtn
 }: ButtonProps) => {
   const outlineBtn = isOutlineBtn ? "outline" : "";
-  const buttonColor = color ? color : "yellow";
+  const buttonColor = color ? color : "purple";
   const buttonSize = size ? size : "medium";
 
   return (

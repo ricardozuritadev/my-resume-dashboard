@@ -1,10 +1,11 @@
 .c-soft-skills-card {
+  @include gradient-purple;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: purple;
   border-radius: $border-radius-medium;
   padding: 2rem;
+  color: $color-white-100;
 
   &__text {
     width: 15rem;

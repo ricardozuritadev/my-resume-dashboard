@@ -13,7 +13,7 @@
   }
 
   &--purple {
-    background-color: $color-purple;
+    @include gradient-purple;
     color: $color-white-100;
 
     &:hover {

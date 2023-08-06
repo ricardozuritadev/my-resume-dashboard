@@ -9,10 +9,10 @@
     height: 30rem;
 
     @include from-large {
-      height: 40%;
+      height: 26rem;
     }
     @include from-xxlarge {
-      height: 50%;
+      height: 42rem;
     }
   }
 

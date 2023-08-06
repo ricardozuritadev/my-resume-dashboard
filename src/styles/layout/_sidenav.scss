@@ -59,10 +59,6 @@
       display: none;
     }
 
-    &__name {
-      color: $color-white-200;
-    }
-
     &__profession {
       font-size: $font-size-small;
     }
@@ -145,4 +141,13 @@
 #light .l-sidenav {
   background-color: $card-background-color-light;
   transition: $transition-medium;
+}
+
+#dark .l-sidenav__name {
+  color: $color-white-100;
+  transition: $transition-fast;
+}
+
+#light .l-sidenav__name {
+  transition: $transition-fast;
 }

@@ -1,6 +1,8 @@
-import ReactECharts from "echarts-for-react";
-import { ChartData } from "types/hard-skill.types";
 import { useTheme } from "utils/hooks/use-theme.hook";
+
+import ReactECharts from "echarts-for-react";
+
+import { ChartData } from "types/hard-skill.types";
 
 type HardSkillsChartProps = {
   xAxisData: string[];
@@ -11,9 +13,8 @@ const HardSkillsChart = ({ xAxisData, chartData }: HardSkillsChartProps) => {
   const { theme } = useTheme();
 
   const option = {
-    title: { title: "Hard Skills" },
+    title: {},
     tooltip: {},
-    legend: {},
     xAxis: {
       data: xAxisData
     },
@@ -24,7 +25,8 @@ const HardSkillsChart = ({ xAxisData, chartData }: HardSkillsChartProps) => {
         data: chartData.map((data) => ({
           value: data.value,
           itemStyle: {
-            color: data.color
+            color: data.color,
+            borderRadius: [15, 15, 0, 0]
           }
         }))
       }
@@ -35,12 +37,11 @@ const HardSkillsChart = ({ xAxisData, chartData }: HardSkillsChartProps) => {
     <ReactECharts
       option={option}
       style={{
-        height: 300,
+        height: "100%",
         backgroundColor: theme === "dark" ? "#36373e" : "#fff",
         transition: "50ms"
       }}
       opts={{ renderer: "svg" }}
-      theme={"light"}
       className="c-hard-skills-chart"
     />
   );

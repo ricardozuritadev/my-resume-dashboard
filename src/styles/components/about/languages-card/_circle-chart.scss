@@ -36,7 +36,6 @@
   }
 
   &__wrapper {
-    background-color: $color-yellow;
     border-radius: 50%;
     width: 11rem;
     height: 11rem;
@@ -55,4 +54,14 @@
   &__value {
     font-weight: bold;
   }
+}
+
+#dark .c-circle-chart__wrapper {
+  background-color: $card-background-color-dark;
+  transition: $transition-medium;
+}
+
+#light .c-circle-chart__wrapper {
+  background-color: $card-background-color-light;
+  transition: $transition-medium;
 }

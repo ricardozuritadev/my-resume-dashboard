@@ -10,7 +10,8 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: $font-size-base;
+  font-size: $font-size-medium;
+  font-weight: 600;
   line-height: 1.5;
 }
 
@@ -61,16 +62,31 @@ ul {
     padding: 2rem 4rem 2rem 4rem;
     width: 100%;
     z-index: 100;
-
-    &--line {
-      border-bottom: 1px solid $color-white-400;
-      padding-bottom: 2rem;
-    }
   }
 }
 
 .vertical-line {
   width: 1px;
   height: 100%;
-  background-color: $color-white-400;
+  background-color: red;
+}
+
+#dark .card {
+  background-color: $card-background-color-dark;
+  color: $text-color-dark;
+  transition: $transition-medium;
+}
+
+#light .card {
+  background-color: $card-background-color-light;
+  color: $text-color-light;
+  transition: $transition-medium;
+}
+
+#dark .card__title {
+  color: $color-white-100;
+}
+
+#light .card__title {
+  color: $color-gray-200;
 }

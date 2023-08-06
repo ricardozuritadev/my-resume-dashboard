@@ -1,7 +1,5 @@
 .c-hobbies-card {
-  background-color: $color-gray-100;
   box-shadow: $box-shadow-small;
-  color: $color-white-100;
   justify-content: space-between;
 
   &__container {
@@ -16,8 +14,7 @@
 
     @include from-xxlarge {
       grid-template-columns: repeat(2, 16rem);
-      margin-top: 1rem;
-      gap: 4rem;
+      gap: 3rem;
     }
   }
 }

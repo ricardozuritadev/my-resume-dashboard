@@ -7,9 +7,8 @@
     position: absolute;
     width: 100%;
     height: 3.5rem;
-    background-color: $color-gray-300;
     border-radius: 5rem;
-    border: 1px solid $color-white-400;
+    border: 1px solid $color-purple;
     cursor: pointer;
   }
 
@@ -27,10 +26,6 @@
   transition: 0.3s;
 }
 
-input:checked ~ .slider {
-  background-color: $color-gray-100;
-}
-
 .slider::before {
   content: "";
   position: absolute;
@@ -40,12 +35,11 @@ input:checked ~ .slider {
   height: 2.8rem;
   border-radius: 50%;
   box-shadow: inset 1.2rem -0.4rem 0 0 $color-white-200;
-  background-color: $color-gray-300;
   transition: 0.2s;
 }
 
 input:checked ~ .slider::before {
   transform: translateX(2.3rem);
-  background-color: $color-yellow;
+  background-color: $color-purple;
   box-shadow: none;
 }

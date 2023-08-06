@@ -1,5 +1,4 @@
 .c-resume-card {
-  color: $color-gray-300;
   box-shadow: $box-shadow-small;
   justify-content: space-between;
 }
@@ -9,17 +8,12 @@
   transition: $transition-medium;
 }
 
-#light .c-resume-card {
-  background-color: $card-background-color-light;
-  transition: $transition-medium;
-}
-
 #dark .c-resume-card__pdf {
-  color: $color-white-300;
+  opacity: 0.05;
   transition: $transition-medium;
 }
 
 #light .c-resume-card__pdf {
-  color: $color-white-200;
+  opacity: 0.1;
   transition: $transition-medium;
 }

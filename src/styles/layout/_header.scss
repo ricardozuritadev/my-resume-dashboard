@@ -32,3 +32,14 @@
     gap: 2rem;
   }
 }
+
+#dark .l-header {
+  background-color: $card-background-color-dark;
+  color: $color-white-200;
+  transition: $transition-medium;
+}
+
+#light .l-header {
+  background-color: $card-background-color-light;
+  transition: $transition-medium;
+}

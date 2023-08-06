@@ -1,9 +1,9 @@
 .p-skills {
-  padding: 4rem 0;
+  padding: 2rem 0;
 
   @include from-large {
     display: flex;
-    padding: 0 4rem;
+    padding: 2rem 4rem;
     height: calc(100vh - 10rem);
   }
 

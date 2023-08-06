@@ -1,7 +1,9 @@
 .wraper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .c-card-item {
@@ -9,38 +11,66 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   cursor: pointer;
 
   @include from-medium {
-    width: 9rem;
-    height: 9rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   @include from-xxlarge {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
   }
+}
 
-  &--orange {
-    background-color: $color-orange;
-    color: $color-gray-200;
-  }
+#dark .c-card-item--green {
+  color: $color-green;
+  background-color: $color-green-dark-2;
+  transition: $transition-fast;
+}
 
-  &--yellow {
-    background-color: $color-yellow;
-    color: $color-gray-200;
-  }
+#light .c-card-item--green {
+  color: $color-green;
+  background-color: $color-green-dark;
+  transition: $transition-fast;
+}
 
-  &--purple {
-    background-color: $color-purple;
-    color: $color-white-200;
-  }
+#dark .c-card-item--purple {
+  color: $color-purple;
+  background-color: $color-purple-2;
+  transition: $transition-fast;
+}
 
-  &--white {
-    background-color: $color-white-300;
-    color: $color-gray-200;
-  }
+#light .c-card-item--purple {
+  color: $color-purple;
+  background-color: $color-purple-3;
+  transition: $transition-fast;
+}
+
+#dark .c-card-item--pink {
+  color: $color-pink;
+  background-color: $color-pink-dark-2;
+  transition: $transition-fast;
+}
+
+#light .c-card-item--pink {
+  color: $color-pink;
+  background-color: $color-pink-dark;
+  transition: $transition-fast;
+}
+
+#dark .c-card-item--yellow {
+  color: $color-yellow;
+  background-color: $color-yellow-dark-2;
+  transition: $transition-fast;
+}
+
+#light .c-card-item--yellow {
+  color: $color-yellow;
+  background-color: $color-yellow-dark;
+  transition: $transition-fast;
 }

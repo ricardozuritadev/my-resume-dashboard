@@ -25,7 +25,22 @@ const HardSkillsChart = ({ xAxisData, chartData }: HardSkillsChartProps) => {
         data: chartData.map((data) => ({
           value: data.value,
           itemStyle: {
-            color: data.color,
+            color: {
+              type: "radial",
+              x: 0.4,
+              y: 0.3,
+              r: 1,
+              colorStops: [
+                {
+                  offset: 0,
+                  color: data.colors[0]
+                },
+                {
+                  offset: 1,
+                  color: data.colors[1]
+                }
+              ]
+            },
             borderRadius: [15, 15, 0, 0]
           }
         }))

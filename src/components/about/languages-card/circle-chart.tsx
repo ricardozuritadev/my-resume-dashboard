@@ -15,6 +15,10 @@ const CircleChart = ({
   const [startValue, setStartValue] = useState<number>(0);
   const { theme } = useTheme();
 
+  const backgroundColorStyle = `conic-gradient(#a02cfa ${
+    startValue * 3.6
+  }deg, ${theme === "dark" ? "#2e2b2b" : "#efefef"} 0deg)`;
+
   useEffect(() => {
     const progress = setInterval(() => {
       setStartValue(startValue + 1);
@@ -32,9 +36,7 @@ const CircleChart = ({
       <div
         className="c-circle-chart"
         style={{
-          background: `conic-gradient(#a02cfa ${startValue * 3.6}deg, ${
-            theme === "dark" ? "#2e2b2b" : "#efefef"
-          } 0deg)`,
+          background: backgroundColorStyle,
           transition: "100ms"
         }}
       >

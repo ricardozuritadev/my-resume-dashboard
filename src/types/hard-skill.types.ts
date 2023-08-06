@@ -1,6 +1,6 @@
 export type ChartData = {
   value: number;
-  color: string;
+  colors: string[];
 };
 
 export type HardSkill = {

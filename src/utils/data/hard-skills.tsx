@@ -36,8 +36,8 @@ export const HARD_SKILLS: HardSkill[] = [
       <BsFiletypeXml key={uuidv4()} size={30} />
     ],
     data: [
-      { value: 100, color: "#f06529" },
-      { value: 80, color: "#51459e" }
+      { value: 100, colors: ["#f06529", "#a54319"] },
+      { value: 80, colors: ["#51459e", "#3b3270"] }
     ]
   },
   {
@@ -49,8 +49,8 @@ export const HARD_SKILLS: HardSkill[] = [
       <FaSass key={uuidv4()} size={30} color="#CD6799" />
     ],
     data: [
-      { value: 90, color: "#2965f1" },
-      { value: 70, color: "#CD6799" }
+      { value: 90, colors: ["#2965f1"] },
+      { value: 70, colors: ["#CD6799"] }
     ]
   },
   {
@@ -67,9 +67,9 @@ export const HARD_SKILLS: HardSkill[] = [
       <FaJava key={uuidv4()} size={30} color="#ED1D25" />
     ],
     data: [
-      { value: 90, color: "#f0db4f" },
-      { value: 80, color: "#007acc" },
-      { value: 40, color: "#ED1D25" }
+      { value: 90, colors: ["#f0db4f"] },
+      { value: 80, colors: ["#007acc"] },
+      { value: 40, colors: ["#ED1D25"] }
     ]
   },
   {
@@ -81,8 +81,8 @@ export const HARD_SKILLS: HardSkill[] = [
       <FaAngular key={uuidv4()} size={30} color="#B52E31" />
     ],
     data: [
-      { value: 90, color: "#61DBFB" },
-      { value: 30, color: "#B52E31" }
+      { value: 90, colors: ["#61DBFB"] },
+      { value: 30, colors: ["#B52E31"] }
     ]
   },
   {
@@ -94,8 +94,8 @@ export const HARD_SKILLS: HardSkill[] = [
       <SiExpress key={uuidv4()} size={30} />
     ],
     data: [
-      { value: 80, color: "#3C873A" },
-      { value: 60, color: "#51459e" }
+      { value: 80, colors: ["#3C873A"] },
+      { value: 60, colors: ["#51459e"] }
     ]
   },
   {
@@ -107,8 +107,8 @@ export const HARD_SKILLS: HardSkill[] = [
       <BiLogoMongodb key={uuidv4()} size={30} color="#4db33d" />
     ],
     data: [
-      { value: 80, color: "#336791" },
-      { value: 70, color: "#4db33d" }
+      { value: 80, colors: ["#336791"] },
+      { value: 70, colors: ["#4db33d"] }
     ]
   },
   {
@@ -120,8 +120,8 @@ export const HARD_SKILLS: HardSkill[] = [
       <FaGithub key={uuidv4()} size={30} />
     ],
     data: [
-      { value: 90, color: "#f1502f" },
-      { value: 80, color: "#51459e" }
+      { value: 90, colors: ["#f1502f"] },
+      { value: 80, colors: ["#51459e"] }
     ]
   },
   {
@@ -133,8 +133,8 @@ export const HARD_SKILLS: HardSkill[] = [
       <TbBrandThreejs key={uuidv4()} size={30} color="#51459e" />
     ],
     data: [
-      { value: 90, color: "#0052cc" },
-      { value: 70, color: "#51459e" }
+      { value: 90, colors: ["#0052cc"] },
+      { value: 70, colors: ["#51459e"] }
     ]
   }
 ];

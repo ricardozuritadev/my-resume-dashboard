@@ -34,7 +34,7 @@ const HardSkillCard = ({
       className="c-hard-skill-card"
       style={
         selectedIndex === index
-          ? { border: `2px solid ${chartData[0].color}` }
+          ? { border: `3px solid ${chartData[0].color}` }
           : {}
       }
       onClick={selectHardSkill}

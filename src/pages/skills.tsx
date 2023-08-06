@@ -2,11 +2,13 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { HARD_SKILLS } from "utils/data/hard-skills";
+import { SOFT_SKILLS } from "utils/data/soft-skills";
 
 import { ChartData } from "types/hard-skill.types";
 
 import HardSkillCard from "components/hard-skills/hard-skill-card";
 import HardSkillsChart from "components/hard-skills/hard-skills-chart";
+import SoftSkillsCard from "components/soft-skills/soft-skills-card";
 
 const Skills = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -34,11 +36,22 @@ const Skills = () => {
             />
           ))}
         </div>
-        <HardSkillsChart xAxisData={xAxisData} chartData={chartData} />
+        <div className="c-hard-skills__chart">
+          <HardSkillsChart xAxisData={xAxisData} chartData={chartData} />
+        </div>
       </section>
 
       <section className="p-skills__softskills">
         <h3 className="p-skills__subtitle">Soft skills</h3>
+        <div className="c-soft-skills">
+          {SOFT_SKILLS.map((softSkill) => (
+            <SoftSkillsCard
+              key={softSkill.id}
+              {...softSkill}
+              text={t(softSkill.text)}
+            />
+          ))}
+        </div>
       </section>
     </div>
   );

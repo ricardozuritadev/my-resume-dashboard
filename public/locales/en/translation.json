@@ -25,13 +25,22 @@
     "english": "English"
   },
   "skills": {
-    "markupLanguages": "Markup languages",
-    "stylesheetLanguages": "Stylesheet languages",
-    "programmingLanguages": "Programming languages",
-    "frontendLibraries": "Frontend libraries",
-    "frameworksEnvironments": "Frameworks & environments",
-    "databases": "Databases",
-    "versionControl": "Version control",
-    "otherTools": "Other tools"
+    "hardSkills": {
+      "markupLanguages": "Markup languages",
+      "stylesheetLanguages": "Stylesheet languages",
+      "programmingLanguages": "Programming languages",
+      "frontendLibraries": "Frontend libraries",
+      "frameworksEnvironments": "Frameworks & environments",
+      "databases": "Databases",
+      "versionControl": "Version control",
+      "otherTools": "Other tools"
+    },
+    "softSkills": {
+      "problemSolving": "Problem solving",
+      "selfManagement": "Self management",
+      "abilityToTeach": "Ability to teach",
+      "teamwork": "Teamwork",
+      "adaptability": "Adaptability"
+    }
   }
 }

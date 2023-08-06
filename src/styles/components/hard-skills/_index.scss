@@ -5,6 +5,17 @@
   margin-bottom: 1rem;
   overflow-x: scroll;
 
+  &__chart {
+    height: 30rem;
+
+    @include from-large {
+      height: 40%;
+    }
+    @include from-xxlarge {
+      height: 50%;
+    }
+  }
+
   @include from-medium {
     padding: 2rem 4rem;
   }

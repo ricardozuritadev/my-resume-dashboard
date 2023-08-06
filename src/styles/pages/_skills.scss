@@ -4,7 +4,7 @@
   @include from-large {
     display: flex;
     padding: 0 4rem;
-    height: 100vh;
+    height: calc(100vh - 10rem);
   }
 
   &__subtitle {
@@ -21,15 +21,17 @@
 
   &__hardskills {
     margin-bottom: 6rem;
+
     @include from-large {
       width: 250rem;
     }
   }
 
   &__softskills {
+    width: 100%;
+
     @include from-large {
       margin-left: 4rem;
-      width: 100%;
     }
   }
 }

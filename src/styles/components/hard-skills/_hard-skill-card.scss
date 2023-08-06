@@ -9,11 +9,16 @@
   padding: 2rem 3rem;
   text-align: center;
   height: 15rem;
+  user-select: none;
   cursor: pointer;
 
   &__icons {
     display: flex;
     gap: 4rem;
+
+    @include from-large {
+      gap: 2rem;
+    }
   }
 }
 

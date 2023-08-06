@@ -1,0 +1,12 @@
+.c-soft-skills-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-purple;
+  border-radius: $border-radius-medium;
+  padding: 2rem;
+
+  &__text {
+    width: 15rem;
+  }
+}

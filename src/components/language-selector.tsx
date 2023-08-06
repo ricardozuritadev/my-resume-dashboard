@@ -8,7 +8,7 @@ const LanguageSelector = () => {
   const resolvedLanguage = i18n.resolvedLanguage;
 
   const getSelectedClassname = (language: string) =>
-    resolvedLanguage === language ? "selected" : "";
+    resolvedLanguage === language ? "selected-language" : "";
 
   return (
     <>

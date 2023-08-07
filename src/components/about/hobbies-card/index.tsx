@@ -1,10 +1,9 @@
 import { useTranslation } from "react-i18next";
 
+import { HOBBIES } from "utils/data/hobbies";
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 
 import { IconColor } from "types/card-item.types";
-
-import { FaGuitar, FaCode, FaTicketAlt, FaGamepad } from "react-icons/fa";
 
 import CardItem from "components/about/hobbies-card/card-item";
 
@@ -18,26 +17,14 @@ const HobbiesCard = () => {
         <div></div>
       </div>
       <div className="c-hobbies-card__container">
-        <CardItem
-          icon={<FaGuitar size="4rem" />}
-          iconColor={IconColor.green}
-          text={t(ABOUT_CONSTANTS.GUITAR)}
-        />
-        <CardItem
-          icon={<FaCode size="4rem" />}
-          iconColor={IconColor.purple}
-          text={t(ABOUT_CONSTANTS.CODE)}
-        />
-        <CardItem
-          icon={<FaTicketAlt size="4rem" />}
-          iconColor={IconColor.pink}
-          text={t(ABOUT_CONSTANTS.MOVIES)}
-        />
-        <CardItem
-          icon={<FaGamepad size="4rem" />}
-          iconColor={IconColor.yellow}
-          text={t(ABOUT_CONSTANTS.VIDEOGAMES)}
-        />
+        {HOBBIES.map((hobbie) => (
+          <CardItem
+            key={hobbie.id}
+            icon={hobbie.icon}
+            iconColor={hobbie.iconColor as IconColor}
+            text={t(hobbie.text)}
+          />
+        ))}
       </div>
     </div>
   );

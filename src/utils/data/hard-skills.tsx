@@ -10,6 +10,7 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaGithub,
+  FaBitbucket,
   FaJira
 } from "react-icons/fa";
 import {
@@ -18,7 +19,8 @@ import {
   BiLogoPostgresql,
   BiLogoTypescript
 } from "react-icons/bi";
-import { SiExpress } from "react-icons/si";
+import { TbBrandRedux } from "react-icons/tb";
+import { SiExpress, SiMysql } from "react-icons/si";
 import { BsFiletypeXml } from "react-icons/bs";
 import { TbBrandThreejs } from "react-icons/tb";
 
@@ -75,13 +77,19 @@ export const HARD_SKILLS: HardSkill[] = [
   {
     id: uuidv4(),
     title: SKILLS.HARD_SKILLS.FRONTEND_LIBRARIES,
-    items: [SKILLS.HARD_SKILLS.REACT, SKILLS.HARD_SKILLS.ANGULAR],
+    items: [
+      SKILLS.HARD_SKILLS.REACT,
+      SKILLS.HARD_SKILLS.REDUX,
+      SKILLS.HARD_SKILLS.ANGULAR
+    ],
     icons: [
       <FaReact key={uuidv4()} size={30} color="#61DBFB" />,
+      <TbBrandRedux key={uuidv4()} size={30} color="#764abc" />,
       <FaAngular key={uuidv4()} size={30} color="#B52E31" />
     ],
     data: [
       { value: 90, colors: ["#2e9fbd", "#61DBFB"] },
+      { value: 80, colors: ["#532a95", "#764abc"] },
       { value: 30, colors: ["#811012", "#B52E31"] }
     ]
   },
@@ -101,39 +109,57 @@ export const HARD_SKILLS: HardSkill[] = [
   {
     id: uuidv4(),
     title: SKILLS.HARD_SKILLS.DATABASES,
-    items: [SKILLS.HARD_SKILLS.POSTGRESQL, SKILLS.HARD_SKILLS.MONGODB],
+    items: [
+      SKILLS.HARD_SKILLS.POSTGRESQL,
+      SKILLS.HARD_SKILLS.MYSQL,
+      SKILLS.HARD_SKILLS.MONGODB
+    ],
     icons: [
       <BiLogoPostgresql key={uuidv4()} size={30} color="#336791" />,
+      <SiMysql key={uuidv4()} size={30} color="#00758f" />,
       <BiLogoMongodb key={uuidv4()} size={30} color="#4db33d" />
     ],
     data: [
       { value: 80, colors: ["#1a476c", "#336791"] },
+      { value: 80, colors: ["#005163", "#00758f"] },
       { value: 70, colors: ["#278518", "#4db33d"] }
     ]
   },
   {
     id: uuidv4(),
     title: SKILLS.HARD_SKILLS.VERSION_CONTROL,
-    items: [SKILLS.HARD_SKILLS.GIT, SKILLS.HARD_SKILLS.GITHUB],
+    items: [
+      SKILLS.HARD_SKILLS.GIT,
+      SKILLS.HARD_SKILLS.GITHUB,
+      SKILLS.HARD_SKILLS.BITBUCKET
+    ],
     icons: [
       <FaGitAlt key={uuidv4()} size={30} color="#f1502f" />,
-      <FaGithub key={uuidv4()} size={30} />
+      <FaGithub key={uuidv4()} size={30} />,
+      <FaBitbucket key={uuidv4()} size={30} color="#2684ff" />
     ],
     data: [
       { value: 90, colors: ["#c33214", "#f1502f"] },
-      { value: 80, colors: ["#362a80", "#51459e"] }
+      { value: 80, colors: ["#362a80", "#51459e"] },
+      { value: 80, colors: ["#1165d3", "#2684ff"] }
     ]
   },
   {
     id: uuidv4(),
     title: SKILLS.HARD_SKILLS.OTHER_TOOLS,
-    items: [SKILLS.HARD_SKILLS.JIRA, SKILLS.HARD_SKILLS.THREE_JS],
+    items: [
+      SKILLS.HARD_SKILLS.JIRA,
+      SKILLS.HARD_SKILLS.REACT_NATIVE,
+      SKILLS.HARD_SKILLS.THREE_JS
+    ],
     icons: [
       <FaJira key={uuidv4()} size={30} color="#0052cc" />,
+      <FaReact key={uuidv4()} size={30} color="#61DBFB" />,
       <TbBrandThreejs key={uuidv4()} size={30} color="#51459e" />
     ],
     data: [
       { value: 90, colors: ["#00398e", "#0052cc"] },
+      { value: 80, colors: ["#2e9fbd", "#61DBFB"] },
       { value: 70, colors: ["#362a80", "#51459e"] }
     ]
   }

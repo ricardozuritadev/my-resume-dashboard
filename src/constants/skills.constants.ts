@@ -28,9 +28,14 @@ export const SKILLS = {
   },
   SOFT_SKILLS: {
     PROBLEM_SOLVING: "skills.softSkills.problemSolving",
+    PROBLEM_SOLVING_SVG: "problem-solving",
     SELF_MANAGEMENT: "skills.softSkills.selfManagement",
+    SELF_MANAGEMENT_SVG: "self-management",
     ABILITY_TO_TEACH: "skills.softSkills.abilityToTeach",
+    ABILITY_TO_TEACH_SVG: "ability-to-teach",
     TEAMWORK: "skills.softSkills.teamwork",
-    ADAPTABILITY: "skills.softSkills.adaptability"
+    TEAMWORK_SVG: "teamwork",
+    ADAPTABILITY: "skills.softSkills.adaptability",
+    ADAPTABILITY_SVG: "adaptability"
   }
 };

@@ -10,7 +10,7 @@ const LanguagesCard = () => {
   return (
     <div className="card c-languages-card">
       <div className="card__header">
-        <h3>{t(ABOUT_CONSTANTS.LANGUAGES)}</h3>
+        <h3 className="card__title">{t(ABOUT_CONSTANTS.LANGUAGES)}</h3>
       </div>
       <div className="c-languages-card__charts">
         <CircleChart endValue={100} bottomText={t(ABOUT_CONSTANTS.SPANISH)} />

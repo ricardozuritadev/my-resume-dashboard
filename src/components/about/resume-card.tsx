@@ -1,3 +1,4 @@
+import { useTheme } from "utils/hooks/use-theme.hook";
 import { useTranslation } from "react-i18next";
 
 import { handleDownloadResume } from "utils/functions";
@@ -5,12 +6,14 @@ import { handleDownloadResume } from "utils/functions";
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 import { ButtonColor, ButtonSize } from "types/button.types";
 
-import { FaRegFilePdf } from "react-icons/fa";
-
 import Button from "components/button";
+import CVIcon from "components/cv-icon";
 
 const ResumeCard = () => {
+  const { theme } = useTheme();
   const { t, i18n } = useTranslation();
+
+  const iconBackgroundColor = theme === "dark" ? "#65501d" : "#feeab7";
 
   return (
     <div className="card c-resume-card">
@@ -18,7 +21,9 @@ const ResumeCard = () => {
         <h3 className="card__title">{t(ABOUT_CONSTANTS.RESUME)}</h3>
         <p className="card__subtitle">{ABOUT_CONSTANTS.YEAR}</p>
       </div>
-      <FaRegFilePdf className="c-resume-card__pdf" size={"12rem"} />
+
+      <CVIcon backgroundColor={iconBackgroundColor} />
+
       <Button
         color={ButtonColor.purple}
         size={ButtonSize.medium}

@@ -3,6 +3,18 @@
   justify-content: space-between;
 }
 
+.c-cv-icon {
+  width: 24rem;
+
+  @include from-medium {
+    width: 15rem;
+  }
+
+  @include from-xxlarge {
+    width: 20rem;
+  }
+}
+
 #dark .c-resume-card {
   background-color: $card-background-color-dark;
   transition: $transition-medium;

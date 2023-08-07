@@ -27,5 +27,13 @@
 
   &--medium {
     padding: 2rem 4rem;
+
+    @include from-medium {
+      padding: 1.6rem 2rem;
+    }
+
+    @include from-xxlarge {
+      padding: 2rem 4rem;
+    }
   }
 }

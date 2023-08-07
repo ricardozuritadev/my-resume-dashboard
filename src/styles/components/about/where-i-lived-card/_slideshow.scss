@@ -14,18 +14,17 @@
 
   &__img {
     position: absolute;
-    width: 100%;
-    height: 37rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      // background-color: rgb(160, 160, 160);
-      opacity: 0.3;
+    @include from-medium {
+      width: 25rem;
+    }
+
+    @include from-xxlarge {
+      width: 30rem;
     }
   }
 
@@ -37,9 +36,9 @@
     text-align: center;
     position: absolute;
     bottom: 0;
-    background-color: rgba(220, 220, 221, 0.6);
     padding: 2rem 0;
     width: 100%;
+    height: 100%;
     z-index: 100;
 
     @include from-medium {
@@ -68,15 +67,15 @@
   &__angle {
     position: absolute;
     z-index: 100;
-    width: 10rem;
+    width: 6rem;
     cursor: pointer;
 
     @include from-medium {
-      width: 6rem;
+      width: 4rem;
     }
 
     @include from-xxlarge {
-      width: 14rem;
+      width: 6rem;
     }
 
     &--left {
@@ -93,14 +92,6 @@
   position: absolute;
   padding: 5rem;
 
-  // &--left {
-  //   left: 0;
-  // }
-
-  // &--right {
-  //   right: 0;
-  // }
-
   @include from-medium {
     padding: 5rem 3rem;
   }
@@ -108,4 +99,8 @@
   @include from-xxlarge {
     padding: 5rem 7rem;
   }
+}
+
+#dark .c-slideshow__angle {
+  color: $color-white-100;
 }

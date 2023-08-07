@@ -3,35 +3,29 @@ import { SIDENAV_CONSTANTS } from "constants/sidenav.constants";
 import {
   FaBuilding,
   FaGraduationCap,
-  FaIdCard,
   FaLaptopCode,
   FaUser
 } from "react-icons/fa";
 
-export const links = [
+export const PAGES = [
   {
     url: "/about",
-    icon: <FaUser />,
+    icon: <FaUser size={20} />,
     text: SIDENAV_CONSTANTS.ABOUT
   },
   {
     url: "/skills",
-    icon: <FaLaptopCode />,
+    icon: <FaLaptopCode size={20} />,
     text: SIDENAV_CONSTANTS.SKILLS
   },
   {
     url: "/experience",
-    icon: <FaBuilding />,
+    icon: <FaBuilding size={20} />,
     text: SIDENAV_CONSTANTS.EXPERIENCE
   },
   {
     url: "/education",
-    icon: <FaGraduationCap />,
+    icon: <FaGraduationCap size={20} />,
     text: SIDENAV_CONSTANTS.EDUCATION
-  },
-  {
-    url: "/contact",
-    icon: <FaIdCard />,
-    text: SIDENAV_CONSTANTS.CONTACT
   }
 ];

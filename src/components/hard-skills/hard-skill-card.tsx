@@ -23,6 +23,11 @@ const HardSkillCard = ({
   setXAxisData,
   setChartData
 }: HardSkillCardProps) => {
+  const cardStyle =
+    selectedIndex === index
+      ? { border: `3px solid ${chartData[0].colors[1]}` }
+      : {};
+
   const selectHardSkill = () => {
     setXAxisData(items);
     setChartData(chartData);
@@ -32,11 +37,7 @@ const HardSkillCard = ({
   return (
     <div
       className="c-hard-skill-card"
-      style={
-        selectedIndex === index
-          ? { border: `3px solid ${chartData[0].color}` }
-          : {}
-      }
+      style={cardStyle}
       onClick={selectHardSkill}
     >
       <p className="c-hard-skill-card__title">{title}</p>

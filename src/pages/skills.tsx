@@ -20,7 +20,7 @@ const Skills = () => {
   return (
     <div className="p-skills">
       <section className="p-skills__hardskills">
-        <h3 className="p-skills__subtitle">Hard skills</h3>
+        <h3 className="card__title p-skills__subtitle">Hard skills</h3>
         <div className="c-hard-skills">
           {HARD_SKILLS.map((hardSkill, index) => (
             <HardSkillCard
@@ -42,7 +42,7 @@ const Skills = () => {
       </section>
 
       <section className="p-skills__softskills">
-        <h3 className="p-skills__subtitle">Soft skills</h3>
+        <h3 className="card__title p-skills__subtitle">Soft skills</h3>
         <div className="c-soft-skills">
           {SOFT_SKILLS.map((softSkill) => (
             <SoftSkillsCard

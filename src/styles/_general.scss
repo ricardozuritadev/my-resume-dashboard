@@ -79,8 +79,10 @@ ul {
 
 #dark .card__title {
   color: $color-white-100;
+  transition: $transition-fast;
 }
 
 #light .card__title {
   color: $color-gray-200;
+  transition: $transition-fast;
 }

@@ -33,5 +33,9 @@
     @include from-large {
       margin-left: 2rem;
     }
+
+    @include from-xxlarge {
+      width: 90rem;
+    }
   }
 }

@@ -1,13 +1,53 @@
 .c-soft-skills-card {
-  @include gradient-purple;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: $border-radius-medium;
-  padding: 2rem;
+  padding-left: 2rem;
   color: $color-white-100;
+  overflow: hidden;
+  height: 9rem;
 
-  &__text {
-    width: 15rem;
+  @include from-xxlarge {
+    height: 11.5rem;
   }
+
+  &__svg {
+    position: relative;
+    top: 1rem;
+    right: -1rem;
+    opacity: 0.2;
+    width: 10rem;
+
+    @include from-large {
+      right: -1rem;
+      width: 8rem;
+    }
+
+    @include from-xxlarge {
+      top: 1rem;
+      right: -1rem;
+      width: 10rem;
+    }
+  }
+
+  &--purple {
+    @include gradient-purple;
+  }
+
+  &--yellow {
+    @include gradient-yellow;
+  }
+
+  &--pink {
+    @include gradient-pink;
+  }
+
+  &--green {
+    @include gradient-green;
+  }
+}
+
+.problem-solving-card {
+  background-image: url("/svg/problem-solving.svg");
 }

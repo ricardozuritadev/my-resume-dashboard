@@ -27,19 +27,79 @@
 @mixin gradient-purple {
   background: rgb(160, 44, 250);
   background: -moz-linear-gradient(
-    135deg,
+    190deg,
     rgba(160, 44, 250, 1) 0%,
-    rgba(95, 53, 128, 1) 100%
+    rgba(123, 24, 199, 1) 100%
   );
   background: -webkit-linear-gradient(
-    135deg,
+    190deg,
     rgba(160, 44, 250, 1) 0%,
-    rgba(95, 53, 128, 1) 100%
+    rgba(123, 24, 199, 1) 100%
   );
   background: linear-gradient(
-    135deg,
+    190deg,
     rgba(160, 44, 250, 1) 0%,
-    rgba(95, 53, 128, 1) 100%
+    rgba(123, 24, 199, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a02cfa",endColorstr="#5f3580",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a02cfa",endColorstr="#7b18c7",GradientType=1);
+}
+
+@mixin gradient-yellow {
+  background: rgb(255, 188, 17);
+  background: -moz-linear-gradient(
+    190deg,
+    rgba(255, 188, 17, 1) 0%,
+    rgba(228, 165, 3, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    190deg,
+    rgba(255, 188, 17, 1) 0%,
+    rgba(228, 165, 3, 1) 100%
+  );
+  background: linear-gradient(
+    190deg,
+    rgba(255, 188, 17, 1) 0%,
+    rgba(228, 165, 3, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffbc11",endColorstr="#e4a503",GradientType=1);
+}
+
+@mixin gradient-pink {
+  background: rgb(223, 40, 161);
+  background: -moz-linear-gradient(
+    190deg,
+    rgba(223, 40, 161, 1) 0%,
+    rgba(185, 15, 127, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    190deg,
+    rgba(223, 40, 161, 1) 0%,
+    rgba(185, 15, 127, 1) 100%
+  );
+  background: linear-gradient(
+    190deg,
+    rgba(223, 40, 161, 1) 0%,
+    rgba(185, 15, 127, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#df28a1",endColorstr="#b90f7f",GradientType=1);
+}
+
+@mixin gradient-green {
+  background: rgb(39, 188, 72);
+  background: -moz-linear-gradient(
+    190deg,
+    rgba(39, 188, 72, 1) 0%,
+    rgba(17, 150, 47, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    190deg,
+    rgba(39, 188, 72, 1) 0%,
+    rgba(17, 150, 47, 1) 100%
+  );
+  background: linear-gradient(
+    190deg,
+    rgba(39, 188, 72, 1) 0%,
+    rgba(17, 150, 47, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#27bc48",endColorstr="#11962f",GradientType=1);
 }

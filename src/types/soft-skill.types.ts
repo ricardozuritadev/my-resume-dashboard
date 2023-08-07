@@ -1,5 +1,13 @@
+export enum GradientColor {
+  purple = "purple",
+  yellow = "yellow",
+  pink = "pink",
+  green = "green"
+}
+
 export type SoftSkill = {
   id: string;
   text: string;
-  icon: JSX.Element;
+  svg: string;
+  gradientColor: GradientColor;
 };

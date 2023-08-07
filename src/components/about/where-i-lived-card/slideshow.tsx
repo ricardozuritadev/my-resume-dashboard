@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
-import { cities } from "utils/data/images";
+import { CITIES } from "utils/data/cities";
 
 const delay = 4000;
 
@@ -12,7 +12,7 @@ const Slideshow = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (index < cities.length - 1) {
+      if (index < CITIES.length - 1) {
         setIndex((prev) => prev + 1);
       } else {
         setIndex(0);
@@ -33,11 +33,10 @@ const Slideshow = () => {
         className="c-slideshow"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
-        {cities.map(
+        {CITIES.map(
           ({
             id,
             name,
-            years,
             imgUrl
           }: {
             id: number;
@@ -46,8 +45,8 @@ const Slideshow = () => {
             imgUrl: string;
           }) => (
             <div className="c-slideshow__slide" key={id}>
-              <div className="c-slideshow__img">
-                <img src={imgUrl} alt={name} />
+              <div>
+                <img src={imgUrl} alt={name} className="c-slideshow__img" />
               </div>
               <div className="c-slideshow__overlay">
                 {index > 0 ? (
@@ -63,12 +62,7 @@ const Slideshow = () => {
                   <div className="empty-angle empty-angle--left"></div>
                 )}
 
-                <div>
-                  <p className="c-slideshow__city">{name}</p>
-                  <p className="c-slideshow__years">{years}</p>
-                </div>
-
-                {index < cities.length - 1 ? (
+                {index < CITIES.length - 1 ? (
                   <FaAngleRight
                     className="c-slideshow__angle c-slideshow__angle--right"
                     size={30}

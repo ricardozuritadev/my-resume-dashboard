@@ -9,6 +9,7 @@
     /* Paths */
     "baseUrl": "./src",
     "paths": {
+      "assets/*": ["assets/*"],
       "components/*": ["components/*"],
       "layout/*": ["layout/*"],
       "pages/*": ["pages/*"],

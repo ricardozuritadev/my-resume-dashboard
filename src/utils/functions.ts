@@ -30,11 +30,15 @@ export const getChartOptions = (
           color: {
             type: "linear",
             x: 0.3,
-            y: 3,
+            y: 1.1,
             colorStops: [
               {
                 offset: 0,
                 color: data.colors[0]
+              },
+              {
+                offset: 0.5,
+                color: data.colors[1]
               },
               {
                 offset: 1,

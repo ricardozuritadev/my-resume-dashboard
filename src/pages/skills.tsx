@@ -10,7 +10,7 @@ import HardSkillCard from "components/hard-skills/hard-skill-card";
 import HardSkillsChart from "components/hard-skills/hard-skills-chart";
 import SoftSkillsCard from "components/soft-skills/soft-skills-card";
 
-const Skills = () => {
+const SkillsPage = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [xAxisData, setXAxisData] = useState<string[]>(HARD_SKILLS[0].items);
   const [chartData, setChartData] = useState<ChartData[]>(HARD_SKILLS[0].data);
@@ -57,4 +57,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsPage;

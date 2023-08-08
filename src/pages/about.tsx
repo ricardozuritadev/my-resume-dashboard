@@ -4,7 +4,7 @@ import HobbiesCard from "components/about/hobbies-card";
 import WhereILivedCard from "components/about/where-i-lived-card";
 import LanguagesCard from "components/about/languages-card";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <div className="p-about">
       <BioCard />
@@ -16,4 +16,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

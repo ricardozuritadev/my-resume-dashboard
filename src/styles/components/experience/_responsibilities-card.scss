@@ -1,0 +1,9 @@
+.c-responsibilities-card {
+  background-color: $color-gray-200;
+  border-radius: $border-radius-medium;
+  padding: 1rem;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+}

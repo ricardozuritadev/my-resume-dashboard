@@ -1,0 +1,11 @@
+.c-applied-skills {
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

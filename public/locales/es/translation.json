@@ -1,4 +1,18 @@
 {
+  "months": {
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril",
+    "may": "Mayo",
+    "june": "Junio",
+    "july": "Julio",
+    "august": "Agosto",
+    "september": "Septiembre",
+    "october": "Octubre",
+    "november": "Noviembre",
+    "december": "Diciembre"
+  },
   "sidenav": {
     "profession": "Desarrollador Frontend",
     "about": "Acerca de mi",
@@ -41,6 +55,39 @@
       "abilityToTeach": "Capacidad para enseñar",
       "teamwork": "Trabajo en equipo",
       "adaptability": "Adaptabilidad"
+    }
+  },
+  "experience": {
+    "month": "meses",
+    "year": "año",
+    "currently": "Actualmente",
+    "position": "Puesto",
+    "responsibilities": "Responsabilidades",
+    "appliedSkills": "Habilidades aplicadas",
+    "learning": "Aprendizajes",
+    "challenges": "Desafíos",
+    "companies": {
+      "cyc": {
+        "description": "CYC es una consultora tecnológica especializada en proyectos de transformación digital, a través de plataformas colaborativas, desarrollo de soluciones y analítica de datos e inteligencia artificial. Ayudan a las organizaciones a mejorar su competitividad y su forma de trabajar.",
+        "position": "Desarrollador Front End",
+        "responsibilities": "Desarrollo de soluciones e intranets para diferentes clientes utilizando el entorno de Microsoft SharePoint y el framework SPFx con React y Typescript. Uso de metodologías Ágiles y control de versiones con Git y Azure DevOps.",
+        "learning": "En CYC aprendí a programar en el framework SPFx de Microsoft utilizando React. También tuve la oportunidad de aprender las bases de C#. Tuve mis primeras reuniones con clientes y aprendí a trabajar en equipo con otros desarrolladores realizando reuniones diarias de control.",
+        "challenges": "El principal reto que tuve en CYC fue aprender todo el entorno de desarrollo de Microsoft SharePoint, el framework SPFx y todas las herramientas que ofrece, pero me adapté rápidamente a el y pude realizar mi trabajo de forma eficiente."
+      },
+      "theBridge": {
+        "description": "Su actividad incluye la formación directa en profesiones digitales, la asesoría a empresas en el desarrollo de sus capacidades tecnológicas, la colaboración con universidades e instituciones educativas y el desarrollo de proyectos de base tech para terceros.Se ofrecen programas formativos tipo bootcamp en Desarrollo Web Full Stack, Data Science, UX/UI Product Design, Marketing Digital, Ciberseguridad y Cloud & DevOps.",
+        "position": "Asistente de profesor",
+        "responsibilities": "Asistente de profesor en el bootcamp de desarrollo web fullstack en modalidad part-time. Apoyé a los instructores con las dudas que tenían los estudiantes y ayudé a resolver los ejercicios propuestos en el pensum.",
+        "learning": "El principal aprendizaje que me he llevado de mi paso por The Bridge es la capacidad de enseñar a otros y la paciencia que hay que tener para ello. También aprendí a trabajar en equipo con otros profesores y a resolver problemas de forma rápida y eficiente.",
+        "challenges": "Uno de los retos al que me tuve que afrontar en este trabajo fue el de enseñar a otros a programar, ya que no es una tarea fácil. Pero con el tiempo y la práctica, aprendí a hacerlo de forma eficiente y disfruté mucho haciéndolo."
+      },
+      "cleverpy": {
+        "description": "Cleverpy es una consultora de software especializada en el desarrollo de soluciones basadas en Machine Learning, Computer Vision y Sistemas de Información Georreferenciada para Industria y Smart Cities. Actualmente pertenece a la empresa Idrica que lidera el desarrollo de una plataforma integrada de software y análisis que permite a las empresas de servicios públicos como el agua potable a conectar y gestionar sus activos digitales y agilizar las operaciones de forma sencilla, segura y holística.",
+        "position": "Desarrollador Front End",
+        "responsibilities": "Desarrollo de la plataforma 'Go-Aigua' de la empresa IDRICA para la gestión del agua que captura, procesa, homogeneiza y explota los datos de múltiples fuentes. Esta plataforma da respuesta a los retos del ciclo del agua, para todos los sectores y fases operativas, impulsando la eficiencia y optimizando la operación.",
+        "learning": "En Cleverpy aprendí, sobre todo, a ser más autosuficiente y a resolver problemas investigando por mi cuenta. Aprendí nuevas librerías de mapas y he afianzado mis conocimientos en React con TypeScript. También aprendí mucho sobre el ciclo del agua y la gestión de los recursos hídricos.",
+        "challenges": "El principal reto que tuve en Cleverpy fue el de aprender el proceso de gestión del agua y la plataforma, ya que es un proyecto muy grande y complejo. Pero con el tiempo, la práctica y la ayuda de mis compañeros, no tuve problema en volverme autosuficiente y realizar mi trabajo de forma eficiente."
+      }
     }
   }
 }

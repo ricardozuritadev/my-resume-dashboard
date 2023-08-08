@@ -24,9 +24,5 @@ export const childrenRoutes = [
   {
     path: "/education",
     element: <div>cambiar</div>
-  },
-  {
-    path: "/contact",
-    element: <div>cambiar</div>
   }
 ];

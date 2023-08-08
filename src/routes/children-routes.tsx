@@ -1,6 +1,8 @@
+import { Navigate } from "react-router-dom";
+
 import About from "pages/about";
 import Skills from "pages/skills";
-import { Navigate } from "react-router-dom";
+import Experience from "pages/experience";
 
 export const childrenRoutes = [
   {
@@ -17,7 +19,7 @@ export const childrenRoutes = [
   },
   {
     path: "/experience",
-    element: <div>cambiar</div>
+    element: <Experience />
   },
   {
     path: "/education",

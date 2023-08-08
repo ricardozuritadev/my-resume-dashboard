@@ -31,10 +31,10 @@ const CVIcon = ({ backgroundColor }: CVIconProps) => {
         />
       </mask>
       <g mask="url(#mask0_5_553)">
-        <path d="M436 0V42H484" stroke="#FFBC11" stroke-width="6" />
+        <path d="M436 0V42H484" stroke="#FFBC11" strokeWidth="6" />
       </g>
-      <circle cx="109" cy="91" r="49" stroke="#FFBC11" stroke-width="10" />
-      <circle cx="109" cy="77" r="13" stroke="#FFBC11" stroke-width="8" />
+      <circle cx="109" cy="91" r="49" stroke="#FFBC11" strokeWidth="10" />
+      <circle cx="109" cy="77" r="13" stroke="#FFBC11" strokeWidth="8" />
       <mask
         id="mask1_5_553"
         style={{ maskType: "alpha" }}
@@ -47,67 +47,67 @@ const CVIcon = ({ backgroundColor }: CVIconProps) => {
         <circle cx="109" cy="91" r="49" fill="#D9D9D9" />
       </mask>
       <g mask="url(#mask1_5_553)">
-        <circle cx="110" cy="130" r="28" stroke="#FFBC11" stroke-width="8" />
+        <circle cx="110" cy="130" r="28" stroke="#FFBC11" strokeWidth="8" />
       </g>
       <path
         d="M208 116H400"
         stroke="#FFBC11"
-        stroke-width="16"
-        stroke-linecap="round"
+        strokeWidth="16"
+        strokeLinecap="round"
       />
       <path
         d="M218 184H238"
         stroke="#FFBC11"
-        stroke-width="32"
-        stroke-linecap="round"
+        strokeWidth="32"
+        strokeLinecap="round"
       />
       <path
         d="M218 228H238"
         stroke="#FFBC11"
-        stroke-width="32"
-        stroke-linecap="round"
+        strokeWidth="32"
+        strokeLinecap="round"
       />
       <path
         d="M294 184H314"
         stroke="#FFBC11"
-        stroke-width="32"
-        stroke-linecap="round"
+        strokeWidth="32"
+        strokeLinecap="round"
       />
       <path
         d="M294 228H314"
         stroke="#FFBC11"
-        stroke-width="32"
-        stroke-linecap="round"
+        strokeWidth="32"
+        strokeLinecap="round"
       />
       <path
         d="M370 184H390"
         stroke="#FFBC11"
-        stroke-width="32"
-        stroke-linecap="round"
+        strokeWidth="32"
+        strokeLinecap="round"
       />
       <path
         d="M370 228H390"
         stroke="#FFBC11"
-        stroke-width="32"
-        stroke-linecap="round"
+        strokeWidth="32"
+        strokeLinecap="round"
       />
       <path
         d="M60 174H158"
         stroke="#FFBC11"
-        stroke-width="12"
-        stroke-linecap="round"
+        strokeWidth="12"
+        strokeLinecap="round"
       />
       <path
         d="M60 206H158"
         stroke="#FFBC11"
-        stroke-width="12"
-        stroke-linecap="round"
+        strokeWidth="12"
+        strokeLinecap="round"
       />
       <path
         d="M60 238H158"
         stroke="#FFBC11"
-        stroke-width="12"
-        stroke-linecap="round"
+        strokeWidth="12"
+        strokeLinecap="round"
       />
     </svg>
   );

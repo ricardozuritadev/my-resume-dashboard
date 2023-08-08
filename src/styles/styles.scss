@@ -21,10 +21,12 @@
 // PAGES
 @import "styles/pages/about";
 @import "styles/pages/skills";
+@import "styles/pages/experience";
 
 // COMPONENTS
 @import "styles/components/button";
 @import "styles/components/toggle";
+@import "styles/components/tag";
 @import "styles/components/language-selector";
 @import "styles/components/about/bio-card";
 @import "styles/components/about/resume-card";
@@ -40,3 +42,5 @@
 @import "styles/components/hard-skills/hard-skills-chart";
 @import "styles/components/soft-skills";
 @import "styles/components/soft-skills/soft-skills-card";
+@import "styles/components/experience/experience-card";
+@import "styles/components/experience/experience-details";

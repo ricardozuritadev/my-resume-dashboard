@@ -1,0 +1,42 @@
+.p-experience {
+  &__cards {
+    display: flex;
+    gap: 1rem;
+    padding: 4rem 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+    overflow-x: scroll;
+
+    @include from-medium {
+      padding: 4rem 4rem 2rem 4rem;
+    }
+
+    @include from-large {
+      display: flex;
+      padding: 4rem 4rem 0 4rem;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    @include from-xxlarge {
+      padding: 7rem 4rem 0 4rem;
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    gap: 2rem;
+
+    @include from-large {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__details {
+    padding: 0 2rem 2rem 2rem;
+
+    @include from-medium {
+      padding: 0 4rem;
+    }
+  }
+}

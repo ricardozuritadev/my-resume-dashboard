@@ -1,13 +1,16 @@
 .p-about {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1;
-  padding: 4rem;
-  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 2rem;
 
   @include from-medium {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1;
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
-    gap: 4rem;
+    padding: 4rem;
+    gap: 2rem;
 
     &__card {
       width: 32rem;
@@ -36,5 +39,9 @@
 
   &__live-time {
     font-weight: bold;
+  }
+
+  @include from-xxlarge {
+    padding-top: 7rem;
   }
 }

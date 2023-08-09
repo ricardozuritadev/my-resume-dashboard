@@ -5,3 +5,13 @@
   border-radius: $border-radius-medium;
   padding: 1rem;
 }
+
+#dark .c-position-card {
+  background-color: $color-black-150;
+  transition: $transition-fast;
+}
+
+#light .c-position-card {
+  background-color: $color-white-150;
+  transition: $transition-fast;
+}

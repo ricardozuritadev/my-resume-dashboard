@@ -2,5 +2,51 @@
   display: inline-block;
   background-color: #ffffff30;
   border-radius: $border-radius-medium;
+  color: $color-white-100;
+  font-weight: 500;
   padding: 0.5rem 1.5rem;
+}
+
+#dark .c-tag__purple {
+  background-color: $color-purple-dark;
+  transition: $transition-fast;
+}
+
+#dark .c-tag__yellow {
+  background-color: $color-yellow-dark;
+  transition: $transition-fast;
+}
+
+#dark .c-tag__pink {
+  background-color: $color-pink-dark;
+  transition: $transition-fast;
+}
+
+#dark .c-tag__green {
+  background-color: $color-green-dark;
+  transition: $transition-fast;
+}
+
+#light .c-tag__purple {
+  background-color: $color-purple-light;
+  color: $color-purple;
+  transition: $transition-fast;
+}
+
+#light .c-tag__yellow {
+  background-color: $color-yellow-light;
+  color: $color-yellow;
+  transition: $transition-fast;
+}
+
+#light .c-tag__pink {
+  background-color: $color-pink-light;
+  color: $color-pink;
+  transition: $transition-fast;
+}
+
+#light .c-tag__green {
+  background-color: $color-green-light;
+  color: $color-green;
+  transition: $transition-fast;
 }

@@ -1,10 +1,11 @@
 .c-experience-card {
   position: relative;
-  background-color: $card-background-color-dark;
   border-radius: $border-radius-medium;
   padding: 2rem;
   width: 32rem;
   height: 28rem;
+  user-select: none;
+  cursor: pointer;
 
   @include from-large {
     width: 100%;
@@ -34,4 +35,14 @@
       height: 8rem;
     }
   }
+}
+
+#dark .c-experience-card {
+  background-color: $card-background-color-dark;
+  transition: $transition-medium;
+}
+
+#light .c-experience-card {
+  background-color: $card-background-color-light;
+  transition: $transition-medium;
 }

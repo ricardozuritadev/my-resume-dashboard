@@ -1,9 +1,20 @@
 .c-responsibilities-card {
-  background-color: $color-gray-200;
+  background-color: $color-black-150;
   border-radius: $border-radius-medium;
+  font-weight: 500;
   padding: 2rem;
 
   &__title {
     margin-bottom: 1rem;
   }
+}
+
+#dark .c-responsibilities-card {
+  background-color: $color-black-150;
+  transition: $transition-fast;
+}
+
+#light .c-responsibilities-card {
+  background-color: $color-white-150;
+  transition: $transition-fast;
 }

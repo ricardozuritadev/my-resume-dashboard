@@ -8,6 +8,7 @@ import ExperienceCard from "components/ad-hoc/experience/experience-card";
 import ExperienceDetails from "components/ad-hoc/experience/experience-details";
 
 const ExperiencePage = () => {
+  const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [selectedExperience, setSelectedExperience] = useState<Experience>(
     EXPERIENCE_DATA[0]
   );
@@ -16,12 +17,15 @@ const ExperiencePage = () => {
     <div className="p-experience">
       <section className="p-experience__cards">
         <div className="p-experience__cards-container">
-          {EXPERIENCE_DATA.map((experience) => (
+          {EXPERIENCE_DATA.map((experience, index) => (
             <ExperienceCard
               key={experience.id}
               companyName={experience.company}
               initialDate={experience.initialDate}
               endDate={experience.endDate}
+              index={index}
+              selectedIndex={selectedIndex}
+              setSelectedIndex={setSelectedIndex}
               setSelectedExperience={setSelectedExperience}
             />
           ))}

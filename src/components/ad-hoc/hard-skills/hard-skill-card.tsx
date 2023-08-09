@@ -26,8 +26,7 @@ const HardSkillCard = ({
   const cardStyle =
     selectedIndex === index
       ? {
-          border: `3px solid ${chartData[0].colors[1]}`,
-          boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 20px 0px"
+          border: `3px solid ${chartData[0].colors[1]}`
         }
       : {};
 

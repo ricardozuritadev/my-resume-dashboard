@@ -23,6 +23,7 @@ const ExperiencePage = () => {
               companyName={experience.company}
               initialDate={experience.initialDate}
               endDate={experience.endDate}
+              positionIcon={experience.positionIcon}
               index={index}
               selectedIndex={selectedIndex}
               setSelectedIndex={setSelectedIndex}

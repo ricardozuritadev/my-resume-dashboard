@@ -1,3 +1,8 @@
+export enum Position {
+  developer = "developer",
+  teacher = "teacher"
+}
+
 export type Experience = {
   id: string;
   company: string;
@@ -6,6 +11,7 @@ export type Experience = {
   endDate: string | null;
   description: string;
   position: string;
+  positionIcon: Position;
   responsibilities: string;
   appliedSkills: string[];
   learning: string;

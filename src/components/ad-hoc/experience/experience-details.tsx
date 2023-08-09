@@ -31,7 +31,10 @@ const ExperienceDetails = ({ selectedExperience }: ExperienceDetailsProps) => {
               : t(EXPERIENCE.CURRENTLY)}
           </p>
         </div>
-        <PositionCard position={selectedExperience.position} />
+        <PositionCard
+          position={selectedExperience.position}
+          positionIcon={selectedExperience.positionIcon}
+        />
         <p className="c-experience-details__description">
           {t(selectedExperience.description)}
         </p>

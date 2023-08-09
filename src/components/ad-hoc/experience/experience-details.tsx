@@ -46,13 +46,21 @@ const ExperienceDetails = ({ selectedExperience }: ExperienceDetailsProps) => {
 
       <section className="c-experience-details__third">
         <div>
-          <h3>{t(EXPERIENCE.LEARNING)}</h3>
-          <p>{t(selectedExperience.learning)}</p>
+          <h3 className="card__title c-experience-details__subtitle">
+            {t(EXPERIENCE.LEARNING)}
+          </h3>
+          <p className="c-experience-details__text">
+            {t(selectedExperience.learning)}
+          </p>
         </div>
 
         <div>
-          <h3>{t(EXPERIENCE.CHALENGES)}</h3>
-          <p>{t(selectedExperience.challenges)}</p>
+          <h3 className="card__title c-experience-details__subtitle">
+            {t(EXPERIENCE.CHALENGES)}
+          </h3>
+          <p className="c-experience-details__text">
+            {t(selectedExperience.challenges)}
+          </p>
         </div>
       </section>
     </div>

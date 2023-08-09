@@ -11,12 +11,12 @@ const AppliedSkills = ({ appliedSkills }: AppliedSkillsProps) => {
 
   return (
     <div className="c-applied-skills">
-      <h3 className="c-applied-skills__title">
+      <h3 className="card__title c-applied-skills__title">
         {t(EXPERIENCE.APPLIED_SKILLS)}
       </h3>
       <ul className="c-applied-skills__list">
         {appliedSkills.map((skill, index) => (
-          <Tag key={index} text={skill} />
+          <Tag key={index} text={skill} hasRandomColor />
         ))}
       </ul>
     </div>

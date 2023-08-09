@@ -20,15 +20,17 @@ const ExperienceDetails = ({ selectedExperience }: ExperienceDetailsProps) => {
   return (
     <div className="c-experience-details">
       <section className="c-experience-details__first">
-        <h3 className="card__title c-experience-details__company">
-          {t(selectedExperience.company)}
-        </h3>
-        <p className="c-experience-details__dates">
-          {formatDates(selectedExperience.initialDate, t)} -{" "}
-          {selectedExperience.endDate
-            ? formatDates(selectedExperience.endDate, t)
-            : t(EXPERIENCE.CURRENTLY)}
-        </p>
+        <div>
+          <h3 className="card__title c-experience-details__company">
+            {t(selectedExperience.company)}
+          </h3>
+          <p className="c-experience-details__dates">
+            {formatDates(selectedExperience.initialDate, t)} -{" "}
+            {selectedExperience.endDate
+              ? formatDates(selectedExperience.endDate, t)
+              : t(EXPERIENCE.CURRENTLY)}
+          </p>
+        </div>
         <PositionCard position={selectedExperience.position} />
         <p className="c-experience-details__description">
           {t(selectedExperience.description)}

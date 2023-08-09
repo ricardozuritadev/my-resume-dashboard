@@ -11,19 +11,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 8rem;
-  height: 8rem;
   border-radius: 50%;
   cursor: pointer;
 
-  @include from-medium {
+  &--small {
     width: 6rem;
     height: 6rem;
+
+    @include from-medium {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    @include from-xxlarge {
+      width: 6rem;
+      height: 6rem;
+    }
   }
 
-  @include from-xxlarge {
+  &--large {
     width: 8rem;
     height: 8rem;
+
+    @include from-medium {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    @include from-xxlarge {
+      width: 8rem;
+      height: 8rem;
+    }
   }
 }
 

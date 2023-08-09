@@ -17,12 +17,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  &__dates {
-    margin-bottom: 2rem;
-  }
-
   &__first {
     grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 
     @include from-medium {
       margin-bottom: 2rem;
@@ -36,6 +35,9 @@
 
   &__second {
     grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 
     @include from-medium {
       margin-right: 1rem;
@@ -50,6 +52,9 @@
 
   &__third {
     grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 
     @include from-medium {
       margin-left: 1rem;

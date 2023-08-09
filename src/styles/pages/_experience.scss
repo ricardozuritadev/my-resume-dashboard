@@ -1,4 +1,12 @@
 .p-experience {
+  @include from-medium {
+    padding-bottom: 4rem;
+  }
+
+  @include from-xxlarge {
+    padding-bottom: 0;
+  }
+
   &__cards {
     display: flex;
     gap: 1rem;

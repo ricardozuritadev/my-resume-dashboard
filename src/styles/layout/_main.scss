@@ -8,8 +8,11 @@
 
   @include from-large {
     width: calc(100% - 28rem);
-    height: calc(100vh - 10rem);
     margin-left: 28rem;
+  }
+
+  @include from-xxlarge {
+    height: calc(100vh - 10rem);
     overflow: hidden;
   }
 }

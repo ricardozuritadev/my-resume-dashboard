@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 
-import CircleChart from "components/about/languages-card/circle-chart";
+import CircleChart from "components/ad-hoc/about/languages-card/circle-chart";
 
 const LanguagesCard = () => {
   const { t } = useTranslation();

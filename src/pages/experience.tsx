@@ -4,8 +4,8 @@ import { EXPERIENCE_DATA } from "utils/data/experience";
 
 import { Experience } from "types/experience.types";
 
-import ExperienceCard from "components/experience/experience-card";
-import ExperienceDetails from "components/experience/experience-details";
+import ExperienceCard from "components/ad-hoc/experience/experience-card";
+import ExperienceDetails from "components/ad-hoc/experience/experience-details";
 
 const ExperiencePage = () => {
   const [selectedExperience, setSelectedExperience] = useState<Experience>(

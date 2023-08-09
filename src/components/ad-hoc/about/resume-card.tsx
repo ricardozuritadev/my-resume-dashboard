@@ -6,8 +6,8 @@ import { handleDownloadResume } from "utils/functions";
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 import { ButtonColor, ButtonSize } from "types/button.types";
 
-import Button from "components/button";
-import CVIcon from "components/cv-icon";
+import Button from "components/generic/button";
+import CVIcon from "components/generic/cv-icon";
 
 const ResumeCard = () => {
   const { theme } = useTheme();

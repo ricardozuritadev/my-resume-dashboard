@@ -1,8 +1,8 @@
-import BioCard from "components/about/bio-card";
-import ResumeCard from "components/about/resume-card";
-import HobbiesCard from "components/about/hobbies-card";
-import WhereILivedCard from "components/about/where-i-lived-card";
-import LanguagesCard from "components/about/languages-card";
+import BioCard from "components/ad-hoc/about/bio-card";
+import ResumeCard from "components/ad-hoc/about/resume-card";
+import HobbiesCard from "components/ad-hoc/about/hobbies-card";
+import WhereILivedCard from "components/ad-hoc/about/where-i-lived-card";
+import LanguagesCard from "components/ad-hoc/about/languages-card";
 
 const AboutPage = () => {
   return (

@@ -6,7 +6,7 @@ import { IconColor } from "types/card-item.types";
 
 import { EXPERIENCE } from "constants/experience.constants";
 
-import CardItem from "../about/hobbies-card/card-item";
+import CustomIcon from "../../generic/custom-icon";
 
 type PositionCardProps = {
   position: string;
@@ -18,9 +18,9 @@ const PositionCard = ({ position }: PositionCardProps) => {
   return (
     <div className="c-position-card">
       <div>
-        <CardItem
+        <CustomIcon
           icon={<FaCode size="4rem" />}
-          iconColor={IconColor.green}
+          iconColor={IconColor.purple}
           text=""
         />
       </div>

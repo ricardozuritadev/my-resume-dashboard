@@ -1,4 +1,4 @@
-import FlipCard from "components/about/bio-card/flip-card";
+import FlipCard from "components/ad-hoc/about/bio-card/flip-card";
 
 const BioCard = () => {
   return (

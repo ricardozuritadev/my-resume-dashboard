@@ -6,9 +6,9 @@ import { SOFT_SKILLS } from "utils/data/soft-skills";
 
 import { ChartData } from "types/hard-skill.types";
 
-import HardSkillCard from "components/hard-skills/hard-skill-card";
-import HardSkillsChart from "components/hard-skills/hard-skills-chart";
-import SoftSkillsCard from "components/soft-skills/soft-skills-card";
+import HardSkillCard from "components/ad-hoc/hard-skills/hard-skill-card";
+import HardSkillsChart from "components/ad-hoc/hard-skills/hard-skills-chart";
+import SoftSkillsCard from "components/ad-hoc/soft-skills/soft-skills-card";
 
 const SkillsPage = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);

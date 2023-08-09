@@ -4,7 +4,7 @@ import { ABOUT_CONSTANTS } from "constants/about.constants";
 
 import { ButtonColor, ButtonSize } from "types/button.types";
 
-import Button from "components/button";
+import Button from "components/generic/button";
 import { useState } from "react";
 
 const FlipCard = () => {

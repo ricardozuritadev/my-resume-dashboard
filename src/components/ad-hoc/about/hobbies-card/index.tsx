@@ -5,7 +5,7 @@ import { ABOUT_CONSTANTS } from "constants/about.constants";
 
 import { IconColor } from "types/card-item.types";
 
-import CardItem from "components/about/hobbies-card/card-item";
+import CustomIcon from "components/generic/custom-icon";
 
 const HobbiesCard = () => {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ const HobbiesCard = () => {
       </div>
       <div className="c-hobbies-card__container">
         {HOBBIES.map((hobbie) => (
-          <CardItem
+          <CustomIcon
             key={hobbie.id}
             icon={hobbie.icon}
             iconColor={hobbie.iconColor as IconColor}

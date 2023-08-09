@@ -1,5 +1,5 @@
 import { Experience } from "types/experience.types";
-import Tag from "../tag";
+import Tag from "../../generic/tag";
 import { calculateExperienceDuration } from "utils/functions";
 import { useTranslation } from "react-i18next";
 import { EXPERIENCE } from "constants/experience.constants";

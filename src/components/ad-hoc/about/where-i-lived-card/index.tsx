@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 
-import Slideshow from "components/about/where-i-lived-card/slideshow";
+import Slideshow from "components/ad-hoc/about/where-i-lived-card/slideshow";
 
 const WhereILivedCard = () => {
   const { t } = useTranslation();

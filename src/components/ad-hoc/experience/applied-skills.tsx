@@ -1,4 +1,4 @@
-import Tag from "components/tag";
+import Tag from "components/generic/tag";
 import { EXPERIENCE } from "constants/experience.constants";
 import { useTranslation } from "react-i18next";
 

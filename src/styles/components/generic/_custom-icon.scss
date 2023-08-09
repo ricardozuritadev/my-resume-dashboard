@@ -6,7 +6,7 @@
   gap: 1rem;
 }
 
-.c-card-item {
+.c-custom-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,49 +27,49 @@
   }
 }
 
-#dark .c-card-item--green {
+#dark .c-custom-icon--green {
   color: $color-green;
   background-color: $color-green-dark;
   transition: $transition-fast;
 }
 
-#light .c-card-item--green {
+#light .c-custom-icon--green {
   color: $color-green;
   background-color: $color-green-light;
   transition: $transition-fast;
 }
 
-#dark .c-card-item--purple {
+#dark .c-custom-icon--purple {
   color: $color-purple;
   background-color: $color-purple-dark;
   transition: $transition-fast;
 }
 
-#light .c-card-item--purple {
+#light .c-custom-icon--purple {
   color: $color-purple;
   background-color: $color-purple-light;
   transition: $transition-fast;
 }
 
-#dark .c-card-item--pink {
+#dark .c-custom-icon--pink {
   color: $color-pink;
   background-color: $color-pink-dark;
   transition: $transition-fast;
 }
 
-#light .c-card-item--pink {
+#light .c-custom-icon--pink {
   color: $color-pink;
   background-color: $color-pink-light;
   transition: $transition-fast;
 }
 
-#dark .c-card-item--yellow {
+#dark .c-custom-icon--yellow {
   color: $color-yellow;
   background-color: $color-yellow-dark;
   transition: $transition-fast;
 }
 
-#light .c-card-item--yellow {
+#light .c-custom-icon--yellow {
   color: $color-yellow;
   background-color: $color-yellow-light;
   transition: $transition-fast;

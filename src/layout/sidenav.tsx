@@ -6,7 +6,7 @@ import { PAGES } from "utils/data/pages";
 
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
-import LinkComponent from "components/link-component";
+import LinkComponent from "components/generic/link-component";
 
 const Sidenav = () => {
   const { t } = useTranslation();

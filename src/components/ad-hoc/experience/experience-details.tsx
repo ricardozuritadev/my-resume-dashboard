@@ -6,7 +6,7 @@ import { EXPERIENCE } from "constants/experience.constants";
 
 import { Experience } from "types/experience.types";
 
-import PositionCard from "components/experience/position-card";
+import PositionCard from "components/ad-hoc/experience/position-card";
 import ResponsibilitiesCard from "./responsibilities-card";
 import AppliedSkills from "./applied-skills";
 
@@ -19,7 +19,7 @@ const ExperienceDetails = ({ selectedExperience }: ExperienceDetailsProps) => {
 
   return (
     <div className="c-experience-details">
-      <div className="c-experience-details__first">
+      <section className="c-experience-details__first">
         <h3 className="card__title c-experience-details__company">
           {t(selectedExperience.company)}
         </h3>
@@ -29,21 +29,20 @@ const ExperienceDetails = ({ selectedExperience }: ExperienceDetailsProps) => {
             ? formatDates(selectedExperience.endDate, t)
             : t(EXPERIENCE.CURRENTLY)}
         </p>
+        <PositionCard position={selectedExperience.position} />
         <p className="c-experience-details__description">
           {t(selectedExperience.description)}
         </p>
-      </div>
+      </section>
 
-      <div className="c-experience-details__second">
-        <PositionCard position={selectedExperience.position} />
+      <section className="c-experience-details__second">
+        <AppliedSkills appliedSkills={selectedExperience.appliedSkills} />
         <ResponsibilitiesCard
           responsibilities={selectedExperience.responsibilities}
         />
-      </div>
+      </section>
 
-      <div className="c-experience-details__third">
-        <AppliedSkills appliedSkills={selectedExperience.appliedSkills} />
-
+      <section className="c-experience-details__third">
         <div>
           <h3>{t(EXPERIENCE.LEARNING)}</h3>
           <p>{t(selectedExperience.learning)}</p>
@@ -53,7 +52,7 @@ const ExperienceDetails = ({ selectedExperience }: ExperienceDetailsProps) => {
           <h3>{t(EXPERIENCE.CHALENGES)}</h3>
           <p>{t(selectedExperience.challenges)}</p>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

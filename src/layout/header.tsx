@@ -1,8 +1,8 @@
 import { useMatch } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import LanguageSelector from "components/language-selector";
-import Toggle from "components/toggle";
+import LanguageSelector from "components/generic/language-selector";
+import Toggle from "components/generic/toggle";
 
 const Header = () => {
   const { t } = useTranslation();

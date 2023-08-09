@@ -9,7 +9,7 @@ type CardItemProps = {
 const CardItem = ({ icon, iconColor, text }: CardItemProps) => {
   return (
     <div className="wraper">
-      <div className={`c-card-item c-card-item--${iconColor}`}>{icon}</div>
+      <div className={`c-custom-icon c-custom-icon--${iconColor}`}>{icon}</div>
       {text && <p>{text}</p>}
     </div>
   );

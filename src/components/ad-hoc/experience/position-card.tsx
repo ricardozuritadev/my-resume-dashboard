@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import { FaCode } from "react-icons/fa";
 
-import { IconColor } from "types/card-item.types";
+import { CustomIconSize, CustomIconColor } from "types/custom-icon.types";
 
 import { EXPERIENCE } from "constants/experience.constants";
 
@@ -19,8 +19,9 @@ const PositionCard = ({ position }: PositionCardProps) => {
     <div className="c-position-card">
       <div>
         <CustomIcon
-          icon={<FaCode size="4rem" />}
-          iconColor={IconColor.purple}
+          icon={<FaCode size={30} />}
+          iconColor={CustomIconColor.purple}
+          size={CustomIconSize.small}
           text=""
         />
       </div>

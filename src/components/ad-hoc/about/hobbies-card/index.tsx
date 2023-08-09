@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { HOBBIES } from "utils/data/hobbies";
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 
-import { IconColor } from "types/card-item.types";
+import { CustomIconColor, CustomIconSize } from "types/custom-icon.types";
 
 import CustomIcon from "components/generic/custom-icon";
 
@@ -21,7 +21,8 @@ const HobbiesCard = () => {
           <CustomIcon
             key={hobbie.id}
             icon={hobbie.icon}
-            iconColor={hobbie.iconColor as IconColor}
+            iconColor={hobbie.iconColor as CustomIconColor}
+            size={CustomIconSize.large}
             text={t(hobbie.text)}
           />
         ))}

@@ -1,4 +1,4 @@
-import { IconColor } from "./card-item.types";
+import { IconColor } from "./custom-icon.types";
 
 export type Hobbies = {
   id: string;

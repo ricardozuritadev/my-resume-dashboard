@@ -1,6 +1,14 @@
 .p-education {
   padding: 4rem 2rem;
 
+  &__timeline {
+    display: none;
+
+    @include from-medium {
+      display: block;
+    }
+  }
+
   @include from-medium {
     padding: 4rem;
   }

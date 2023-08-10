@@ -13,11 +13,13 @@
   }
 
   &__date {
+    color: $color-purple;
     font-size: $font-size-small;
     font-weight: 500;
   }
 
   &__degree {
+    font-size: $font-size-small;
     margin-bottom: 2rem;
   }
 
@@ -29,6 +31,10 @@
   &__button {
     display: flex;
     justify-content: flex-end;
+  }
+
+  &__inprogress {
+    font-size: $font-size-small;
   }
 }
 

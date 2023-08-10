@@ -1,8 +1,9 @@
 .c-education-timeline {
-  margin-bottom: 2rem;
-  width: 100%;
+  display: none;
 
   @include from-medium {
+    display: block;
+    margin-bottom: 2rem;
     width: 100%;
   }
 

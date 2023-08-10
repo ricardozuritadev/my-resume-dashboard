@@ -91,35 +91,37 @@
     }
   },
   "education": {
+    "downloadDiploma": "Descargar diploma",
+    "inProgress": "Actualmente estudiando",
     "ilerna": {
       "name": "Ilerna Online",
       "date": "2022 - 2024",
       "degree": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
-      "description": "Ciclo formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma en el que aprendo: Bases de datos SQLy objeto-relacionales, programación estructurada, programación orientada a objetos, desarrollo de interfaces, desarrollo de aplicaciones y juegos para dispositivos móviles."
+      "description": "Actualmente estoy haciendo un FP oficial de Desarrollo de Aplicaciones Multiplataforma. Mi objetivo es aprender a desarrollar aplicaciones móviles nativas. Aprendo los fundamentos de Java, progrmación orientada a objetos y bases de datos relacionales y no relacionales."
     },
     "theBridge": {
       "name": "The Bridge",
       "date": "2021 - 2022",
       "degree": "Bootcamp de Desarrollo Web Fullstack",
-      "description": "Bootcamp de desarrollo web fullstack donde aprendí el stack MERN, así como las bases de SQL, testing y dev-ops."
+      "description": "En este bootcamp aprendí las bases de la programación web. Fueron 4 meses muy intensos y desafiantes en los cuales perfeccioné mis conocimientos en HTML, CSS y Javascript y además, aprendí la librería React. También aprendí la parte backend con Node.js y Express."
     },
     "cei": {
       "name": "CEI",
       "date": "2019 - 2020",
       "degree": "Desarrollo y maquetación de páginas web.",
-      "description": "Desarrollo y maquetación de páginas web."
+      "description": "Decidí realizar este módulo para aprender el CMS WordPress, y al finalizar la primera mitad del módulo me dió mucha curiosidad en saber cómo están hechas las webs, así que decidí continuar con el módulo de HTML, CSS y JavaScript, con el cual quedé maravillado."
     },
     "trazos": {
       "name": "Trazos",
       "date": "2016 - 2017",
       "degree": "Máster en 3D generalista.",
-      "description": "Máster en 3D generalista."
+      "description": "Luego de terminar mi carrera universitaria, decidí venir a Madrid para continuar con mis estudios en modelado y animación digital 3D. Fue entonces que hice un máster en 3D Generalista en el que perfeccioné mis conocimientos en el software Autodesk Maya, entre otros."
     },
     "udla": {
       "name": "UDLA",
       "date": "2012 - 2015",
       "degree": "Ilustración y Animación Digital 2D y 3D",
-      "description": "Manejo de programas de modelado y animación 2D, 3D y diseño. Realización de storyboards. Edición y grabación de video. Stop motion."
+      "description": "Mis estudios profesionales empezaron cuando decidí, tras varios desaciertos, estudiar la carrera que me introdujo en el mundo del diseño digital. Aquí aprendí ilustración, storyboarding, fotografía y a manejar varios programas como Photoshop, Illustrator, After Effects, Autodesk Maya."
     }
   }
 }

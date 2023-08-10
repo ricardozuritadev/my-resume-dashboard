@@ -86,35 +86,37 @@
         "position": "Front End Developer",
         "responsibilities": "Development of the 'Go-Aigua' platform for IDRICA company for water management that captures, processes, homogenizes and exploits data from multiple sources. This platform responds to the challenges of the water cycle, for all sectors and operational phases, promoting efficiency and optimizing operations.",
         "learning": "In Cleverpy I learned, above all, to be more self-sufficient and to solve problems by researching on my own. I learned new map libraries and have solidified my knowledge in React with TypeScript. I also learned a lot about the water cycle and water resource management.",
-        "challenges": "The main challenge I had at Cleverpy was learning the water management process and platform, as it is a very large and complex project. But with time, practice and the help of my colleagues, I had no problem becoming self-sufficient and performing my job efficiently."
+        "challenges": "I am currently doing an official FP in Multiplatform Application Development. My goal is to learn how to develop native mobile applications. I learn the basics of Java, object oriented programming and relational and non-relational databases."
       }
     }
   },
   "education": {
+    "downloadDiploma": "Download diploma",
+    "inProgress": "In progress",
     "ilerna": {
       "name": "Ilerna Online",
       "degree": "Cross-platform application development",
-      "description": "Higher Degree Training Cycle in Cross-platform application development in which I learn: SQL and object-relational databases, structured programming, object-oriented programming, interface development, application development and games for mobile devices."
+      "description": "I am currently doing an official FP in Multiplatform Application Development. My goal is to learn how to develop native mobile applications. I learn the basics of Java as well as relational and non-relational databases."
     },
     "theBridge": {
       "name": "The Bridge",
       "degree": "Full Stack Web Development Bootcamp",
-      "description": "Fullstack web development bootcamp where I learned MERN stack and SQL, testing and dev-ops basics."
+      "description": "In this bootcamp I learned the basics of web programming. It was a very intense and challenging 4 months in which I perfected my knowledge in HTML, CSS and Javascript and also learned React library. I also learned the backend with Node.js and Express."
     },
     "cei": {
       "name": "CEI",
       "degree": "Higher Degree Training Cycle in Web Application Development",
-      "description": "Higher Degree Training Cycle in Web Application Development in which I learned"
+      "description": "I decided to take this module to learn the WordPress CMS, and after finishing the first half of the module I was very curious to know how the websites are made, so I decided to continue with the HTML, CSS and JavaScript module, with which I was amazed."
     },
     "trazos": {
       "name": "Trazos",
       "degree": "3D Generalist Master",
-      "description": "Higher Degree Training Cycle in Web Application Development in which I learned"
+      "description": "After finishing my university career, I decided to come to Madrid to continue my studies in 3D digital modeling and animation. It was then that I did a master's degree in 3D Generalist in which I perfected my knowledge in Autodesk Maya software, among others."
     },
     "udla": {
       "name": "UDLA",
       "degree": "2D and 3D Digital Illustration and Animation.",
-      "description": "2D and 3D Digital Illustration and Animation. 2D, 3D and design modeling and animation software. Storyboards. Video editing and recording. Stop-motion."
+      "description": "My professional studies began when I decided, after several setbacks, to study the career that introduced me to the world of digital design. Here I learned illustration, storyboarding, photography and how to handle various programs such as Photoshop, Illustrator, After Effects, Autodesk Maya."
     }
   }
 }

@@ -89,5 +89,37 @@
         "challenges": "El principal reto que tuve en Cleverpy fue el de aprender el proceso de gestión del agua y la plataforma, ya que es un proyecto muy grande y complejo. Pero con el tiempo, la práctica y la ayuda de mis compañeros, no tuve problema en volverme autosuficiente y realizar mi trabajo de forma eficiente."
       }
     }
+  },
+  "education": {
+    "ilerna": {
+      "name": "Ilerna Online",
+      "date": "2022 - 2024",
+      "degree": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
+      "description": "Ciclo formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma en el que aprendo: Bases de datos SQLy objeto-relacionales, programación estructurada, programación orientada a objetos, desarrollo de interfaces, desarrollo de aplicaciones y juegos para dispositivos móviles."
+    },
+    "theBridge": {
+      "name": "The Bridge",
+      "date": "2021 - 2022",
+      "degree": "Bootcamp de Desarrollo Web Fullstack",
+      "description": "Bootcamp de desarrollo web fullstack donde aprendí el stack MERN, así como las bases de SQL, testing y dev-ops."
+    },
+    "cei": {
+      "name": "CEI",
+      "date": "2019 - 2020",
+      "degree": "Desarrollo y maquetación de páginas web.",
+      "description": "Desarrollo y maquetación de páginas web."
+    },
+    "trazos": {
+      "name": "Trazos",
+      "date": "2016 - 2017",
+      "degree": "Máster en 3D generalista.",
+      "description": "Máster en 3D generalista."
+    },
+    "udla": {
+      "name": "UDLA",
+      "date": "2012 - 2015",
+      "degree": "Ilustración y Animación Digital 2D y 3D",
+      "description": "Manejo de programas de modelado y animación 2D, 3D y diseño. Realización de storyboards. Edición y grabación de video. Stop motion."
+    }
   }
 }

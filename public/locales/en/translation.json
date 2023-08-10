@@ -89,5 +89,32 @@
         "challenges": "The main challenge I had at Cleverpy was learning the water management process and platform, as it is a very large and complex project. But with time, practice and the help of my colleagues, I had no problem becoming self-sufficient and performing my job efficiently."
       }
     }
+  },
+  "education": {
+    "ilerna": {
+      "name": "Ilerna Online",
+      "degree": "Cross-platform application development",
+      "description": "Higher Degree Training Cycle in Cross-platform application development in which I learn: SQL and object-relational databases, structured programming, object-oriented programming, interface development, application development and games for mobile devices."
+    },
+    "theBridge": {
+      "name": "The Bridge",
+      "degree": "Full Stack Web Development Bootcamp",
+      "description": "Fullstack web development bootcamp where I learned MERN stack and SQL, testing and dev-ops basics."
+    },
+    "cei": {
+      "name": "CEI",
+      "degree": "Higher Degree Training Cycle in Web Application Development",
+      "description": "Higher Degree Training Cycle in Web Application Development in which I learned"
+    },
+    "trazos": {
+      "name": "Trazos",
+      "degree": "3D Generalist Master",
+      "description": "Higher Degree Training Cycle in Web Application Development in which I learned"
+    },
+    "udla": {
+      "name": "UDLA",
+      "degree": "2D and 3D Digital Illustration and Animation.",
+      "description": "2D and 3D Digital Illustration and Animation. 2D, 3D and design modeling and animation software. Storyboards. Video editing and recording. Stop-motion."
+    }
   }
 }

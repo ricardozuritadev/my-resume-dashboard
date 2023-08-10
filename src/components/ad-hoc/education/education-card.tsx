@@ -4,18 +4,25 @@ import { ButtonColor, ButtonSize } from "types/button.types";
 
 import Button from "components/generic/button";
 
+import { handleDownloadPdf } from "utils/functions";
+import { EDUCATION } from "constants/education.constants";
+
 type EducationCardProps = {
   school: string;
   date: string;
   degree: string;
   description: string;
+  diplomaUrl: string;
+  finished: boolean;
 };
 
 const EducationCard = ({
   school,
   date,
   degree,
-  description
+  description,
+  diplomaUrl,
+  finished
 }: EducationCardProps) => {
   const { t } = useTranslation();
 
@@ -31,15 +38,19 @@ const EducationCard = ({
         <p className="c-education-card__text">{t(description)}</p>
       </div>
       <div className="c-education-card__button">
-        <Button
-          color={ButtonColor.purple}
-          size={ButtonSize.small}
-          handleClick={() => {
-            console.log("click");
-          }}
-        >
-          Descargar titulación
-        </Button>
+        {finished ? (
+          <Button
+            color={ButtonColor.purple}
+            size={ButtonSize.small}
+            handleClick={() => handleDownloadPdf(diplomaUrl)}
+          >
+            {t(EDUCATION.DOWNLOAD_DIPLOMA)}
+          </Button>
+        ) : (
+          <p className="c-education-card__inprogress">
+            {t(EDUCATION.IN_PROGRESS)}
+          </p>
+        )}
       </div>
     </div>
   );

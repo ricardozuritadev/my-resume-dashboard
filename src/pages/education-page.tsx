@@ -5,7 +5,9 @@ import { education_data } from "data/education";
 const EducationPage = () => {
   return (
     <div className="p-education">
-      <EducationTimeline />
+      <div className="p-education__timeline">
+        <EducationTimeline />
+      </div>
       <div className="p-education__cards">
         {education_data.map((education) => (
           <EducationCard key={education.id} {...education} />

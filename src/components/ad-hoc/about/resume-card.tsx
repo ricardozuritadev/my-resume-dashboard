@@ -1,7 +1,7 @@
 import { useTheme } from "utils/hooks/use-theme.hook";
 import { useTranslation } from "react-i18next";
 
-import { handleDownloadResume } from "utils/functions";
+import { handleDownloadPdf } from "utils/functions";
 
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 import { ButtonColor, ButtonSize } from "types/button.types";
@@ -29,9 +29,9 @@ const ResumeCard = () => {
         size={ButtonSize.medium}
         handleClick={() => {
           if (i18n.language === "es") {
-            handleDownloadResume(ABOUT_CONSTANTS.PDF_FILE_URL_ES);
+            handleDownloadPdf(ABOUT_CONSTANTS.PDF_FILE_URL_ES);
           } else {
-            handleDownloadResume(ABOUT_CONSTANTS.PDF_FILE_URL_ES);
+            handleDownloadPdf(ABOUT_CONSTANTS.PDF_FILE_URL_ES);
           }
         }}
       >

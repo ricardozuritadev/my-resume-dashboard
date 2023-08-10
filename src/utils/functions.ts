@@ -5,7 +5,7 @@ import { EXPERIENCE } from "constants/experience.constants";
 import { ChartData } from "types/hard-skill.types";
 import { months } from "../data/months";
 
-export const handleDownloadResume = (url: string) => {
+export const handleDownloadPdf = (url: string) => {
   const fileName = url.split("/").pop();
   const aTag = document.createElement("a");
   aTag.href = url;

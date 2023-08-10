@@ -54,7 +54,6 @@ const EducationTimeline = () => {
             transition: "50ms"
           }}
           opts={{ renderer: "svg" }}
-          //   className="c-hard-skills-chart"
         />
       </section>
       <section></section>

@@ -68,21 +68,20 @@
     "challenges": "Challenges",
     "companies": {
       "cyc": {
-        "description": "CYC is a technology consulting firm specialized in digital transformation projects, through collaborative platforms, solution development, data analytics and artificial intelligence. They help organizations to improve their competitiveness and the way they work.",
-        "position": "Front End Developer",
+        "description": "CYC is a technology consulting firm specialized in digital transformation projects. They help organizations to improve their competitiveness and the way they work.",
         "responsibilities": "Intranets and solutions development for different clients using Microsoft SharePoint environment and SPFx framework with React and Typescript.",
         "learning": "At CYC I learned to program in Microsoft's SPFx framework using React. I also had the opportunity to learn the basics of C#. I had my first meetings with clients and learned to work in a team with other developers in daily monitoring meetings.",
         "challenges": "The main challenge I had at CYC was learning the whole Microsoft SharePoint development environment, the SPFx framework and all the tools it offers, but I adapted quickly and was able to perform my job effectively."
       },
       "theBridge": {
-        "description": "Its activity includes direct training in digital professions, advising companies in the development of their technological capabilities, collaboration with universities and educational institutions and the development of tech-based projects for third parties. It offers bootcamp training programs in Full Stack Web Development, Data Science, UX/UI Product Design, Digital Marketing, Cybersecurity and Cloud & DevOps.",
+        "description": "The Bridge offers bootcamp training programs in Full Stack Web Development, Data Science, UX/UI Product Design, Digital Marketing, Cybersecurity and Cloud & DevOps.",
         "position": "Teacher assistant",
         "responsibilities": "Teacher Assistant in the Fullstack Web Development bootcamp in part-time mode. I support the Lead Instructor with the doubts that the students have and help to solve the exercises proposed in the curriculum.",
         "learning": "The main learning I have taken away from my time at The Bridge is the ability to teach others and the patience it takes to do so. I also learned how to work as a team with other teachers and how to solve problems quickly and efficiently.",
         "challenges": "One of the challenges I had to face in this job was to teach others how to program, as it is not an easy task. But with time and practice, I learned to do it efficiently and I really enjoyed doing it."
       },
       "cleverpy": {
-        "description": "Cleverpy is a software consulting firm specialized in the development of solutions based on Machine Learning, Computer Vision and Georeferenced Information Systems for Industry and Smart Cities. It currently belongs to the company Idrica which leads the development of an integrated software and analytics platform that enables utilities such as drinking water to connect and manage their digital assets and streamline operations in a simple, secure and holistic way.",
+        "description": "Cleverpy is currently part of the company Idrica, which is leading the development of an integrated software and analytics platform that enables utilities such as water utilities to connect and manage their digital assets and streamline operations in a simple, secure and holistic way.",
         "position": "Front End Developer",
         "responsibilities": "Development of the 'Go-Aigua' platform for IDRICA company for water management that captures, processes, homogenizes and exploits data from multiple sources. This platform responds to the challenges of the water cycle, for all sectors and operational phases, promoting efficiency and optimizing operations.",
         "learning": "In Cleverpy I learned, above all, to be more self-sufficient and to solve problems by researching on my own. I learned new map libraries and have solidified my knowledge in React with TypeScript. I also learned a lot about the water cycle and water resource management.",

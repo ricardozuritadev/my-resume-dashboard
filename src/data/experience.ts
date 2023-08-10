@@ -55,7 +55,7 @@ export const experience_data: Experience[] = [
   {
     id: uuidv4(),
     company: EXPERIENCE.COMPANIES.CYC.NAME,
-    logo: EXPERIENCE.COMPANIES.CYC.LOGO,
+    logo: EXPERIENCE.COMPANIES.CYC.LOGO_WHITE,
     initialDate: "2022-03-07",
     endDate: "2022-08-01",
     description: EXPERIENCE.COMPANIES.CYC.DESCRIPTION,
@@ -72,6 +72,7 @@ export const experience_data: Experience[] = [
       EXPERIENCE.COMPANIES.CYC.APPLIED_SKILLS.AGILE
     ],
     learning: EXPERIENCE.COMPANIES.CYC.LEARNING,
-    challenges: EXPERIENCE.COMPANIES.CYC.CHALENGES
+    challenges: EXPERIENCE.COMPANIES.CYC.CHALENGES,
+    logoSecondary: EXPERIENCE.COMPANIES.CYC.LOGO_BLUE
   }
 ];

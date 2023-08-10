@@ -1,10 +1,18 @@
 .c-tag {
   display: inline-block;
-  background-color: #ffffff30;
   border-radius: $border-radius-medium;
-  color: $color-white-100;
   font-weight: 500;
   padding: 0.5rem 1.5rem;
+}
+
+#dark .c-tag {
+  background-color: $color-black-150;
+  transition: $transition-fast;
+}
+
+#light .c-tag {
+  background-color: $color-white-150;
+  transition: $transition-fast;
 }
 
 #dark .c-tag__purple {

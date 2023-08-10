@@ -16,47 +16,172 @@ export const handleDownloadResume = (url: string) => {
   aTag.remove();
 };
 
-export const getChartOptions = (
-  xAxisData: string[],
-  chartData: ChartData[]
-) => ({
-  title: {},
-  tooltip: {},
-  xAxis: {
-    data: xAxisData
+export const getSkillsChartSeries = (chartData: ChartData[]) => [
+  {
+    type: "bar",
+    data: chartData.map((data) => ({
+      value: data.value,
+      itemStyle: {
+        color: {
+          type: "linear",
+          x: 0.3,
+          y: 1.1,
+          colorStops: [
+            {
+              offset: 0,
+              color: data.colors[0]
+            },
+            {
+              offset: 0.5,
+              color: data.colors[1]
+            },
+            {
+              offset: 1,
+              color: data.colors[1]
+            }
+          ]
+        },
+        borderRadius: [15, 15, 0, 0]
+      }
+    }))
+  }
+];
+
+export const getEducationChartSeries = () => [
+  {
+    name: "Año de inicio",
+    type: "bar",
+    stack: "Total",
+    barWidth: 40,
+    itemStyle: {
+      borderColor: "transparent",
+      color: "transparent"
+    },
+    emphasis: {
+      itemStyle: {
+        borderColor: "transparent",
+        color: "transparent"
+      }
+    },
+    data: [2012, 2016, 2020, 2021, 2022]
   },
-  yAxis: {},
-  series: [
-    {
-      type: "bar",
-      data: chartData.map((data) => ({
-        value: data.value,
+  {
+    name: "Años de estudio",
+    type: "bar",
+    stack: "Total",
+    label: {
+      show: false,
+      formatter: "{b}"
+    },
+    data: [
+      {
+        value: 3,
         itemStyle: {
           color: {
             type: "linear",
-            x: 0.3,
-            y: 1.1,
+            x: 0,
+            y: 0.8,
             colorStops: [
               {
                 offset: 0,
-                color: data.colors[0]
-              },
-              {
-                offset: 0.5,
-                color: data.colors[1]
+                color: "#751db6"
               },
               {
                 offset: 1,
-                color: data.colors[1]
+                color: "#a02cfa"
               }
             ]
           },
-          borderRadius: [15, 15, 0, 0]
+          borderRadius: [30, 30, 30, 30]
         }
-      }))
-    }
-  ]
-});
+      },
+      {
+        value: 1,
+        itemStyle: {
+          color: {
+            type: "linear",
+            x: 0,
+            y: 0.8,
+            colorStops: [
+              {
+                offset: 0,
+                color: "#cc920b"
+              },
+              {
+                offset: 1,
+                color: "#ffbc11"
+              }
+            ]
+          },
+          borderRadius: [30, 30, 30, 30]
+        }
+      },
+      {
+        value: 1,
+        itemStyle: {
+          color: {
+            type: "linear",
+            x: 0,
+            y: 0.8,
+            colorStops: [
+              {
+                offset: 0,
+                color: "#a51e7a"
+              },
+              {
+                offset: 1,
+                color: "#df28a1"
+              }
+            ]
+          },
+          borderRadius: [30, 30, 30, 30]
+        }
+      },
+      {
+        value: 1,
+        itemStyle: {
+          color: {
+            type: "linear",
+            x: 0,
+            y: 0.8,
+            colorStops: [
+              {
+                offset: 0,
+                color: "#1e9140"
+              },
+              {
+                offset: 1,
+                color: "#27bc48"
+              }
+            ]
+          },
+          borderRadius: [30, 30, 30, 30]
+        }
+      },
+      {
+        value: 2,
+        itemStyle: {
+          color: {
+            type: "linear",
+            x: 0,
+            y: 0.8,
+            colorStops: [
+              {
+                offset: 0,
+                color: "#751db6"
+              },
+              {
+                offset: 1,
+                color: "#a02cfa"
+              }
+            ]
+          },
+          borderRadius: [30, 30, 30, 30]
+        }
+      }
+    ]
+  }
+];
 
 export const calculateExperienceDuration = (
   initialDate: string,

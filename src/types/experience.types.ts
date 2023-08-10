@@ -16,4 +16,5 @@ export type Experience = {
   appliedSkills: string[];
   learning: string;
   challenges: string;
+  logoSecondary?: string;
 };

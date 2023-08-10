@@ -16,6 +16,7 @@
       "routes/*": ["routes/*"],
       "constants/*": ["constants/*"],
       "contexts/*": ["contexts/*"],
+      "data/*": ["data/*"],
       "types/*": ["types/*"],
       "utils/*": ["utils/*"],
       "styles/*": ["styles/*"]

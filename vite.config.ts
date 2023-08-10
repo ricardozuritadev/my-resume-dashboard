@@ -14,6 +14,7 @@ export default defineConfig({
       routes: "/src/routes",
       constants: "/src/constants",
       contexts: "/src/contexts",
+      data: "/src/data",
       types: "/src/types",
       utils: "/src/utils",
       styles: "/src/styles"

@@ -12,7 +12,8 @@ export const EXPERIENCE = {
   COMPANIES: {
     CYC: {
       NAME: "CYC",
-      LOGO: "",
+      LOGO_WHITE: "/svg/companies/cyc-white.svg",
+      LOGO_BLUE: "/svg/companies/cyc-blue.svg",
       DESCRIPTION: "experience.companies.cyc.description",
       POSITION: "experience.companies.cyc.position",
       POSITION_ICON: Position.developer,
@@ -31,7 +32,7 @@ export const EXPERIENCE = {
     },
     THE_BRIDGE: {
       NAME: "The Bridge",
-      LOGO: "",
+      LOGO: "/svg/companies/the-bridge.svg",
       DESCRIPTION: "experience.companies.theBridge.description",
       POSITION: "experience.companies.theBridge.position",
       POSITION_ICON: Position.teacher,
@@ -51,7 +52,7 @@ export const EXPERIENCE = {
     },
     CLEVERPY: {
       NAME: "Cleverpy",
-      LOGO: "",
+      LOGO: "/svg/companies/cleverpy.svg",
       DESCRIPTION: "experience.companies.cleverpy.description",
       POSITION: "experience.companies.cleverpy.position",
       POSITION_ICON: Position.developer,

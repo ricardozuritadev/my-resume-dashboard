@@ -1,4 +1,4 @@
-export const CITIES = [
+export const cities_data = [
   {
     id: 1,
     name: "Quito",

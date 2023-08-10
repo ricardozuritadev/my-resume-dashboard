@@ -28,7 +28,7 @@ import { SKILLS } from "constants/skills.constants";
 
 import { HardSkill } from "types/hard-skill.types";
 
-export const HARD_SKILLS: HardSkill[] = [
+export const hard_skills_data: HardSkill[] = [
   {
     id: uuidv4(),
     title: SKILLS.HARD_SKILLS.MARKUP,

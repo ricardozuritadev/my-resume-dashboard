@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
-import { CITIES } from "utils/data/cities";
+import { cities_data } from "data/cities";
 
 const delay = 4000;
 
@@ -12,7 +12,7 @@ const Slideshow = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (index < CITIES.length - 1) {
+      if (index < cities_data.length - 1) {
         setIndex((prev) => prev + 1);
       } else {
         setIndex(0);
@@ -33,7 +33,7 @@ const Slideshow = () => {
         className="c-slideshow"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
-        {CITIES.map(
+        {cities_data.map(
           ({
             id,
             name,
@@ -62,7 +62,7 @@ const Slideshow = () => {
                   <div className="empty-angle empty-angle--left"></div>
                 )}
 
-                {index < CITIES.length - 1 ? (
+                {index < cities_data.length - 1 ? (
                   <FaAngleRight
                     className="c-slideshow__angle c-slideshow__angle--right"
                     size={30}

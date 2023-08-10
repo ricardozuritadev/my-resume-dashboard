@@ -7,7 +7,7 @@ import {
   FaUser
 } from "react-icons/fa";
 
-export const PAGES = [
+export const pages = [
   {
     url: "/about",
     icon: <FaUser size={20} />,

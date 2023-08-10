@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import { HOBBIES } from "utils/data/hobbies";
+import { hobbies_data } from "data/hobbies";
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 
 import { CustomIconColor, CustomIconSize } from "types/custom-icon.types";
@@ -17,7 +17,7 @@ const HobbiesCard = () => {
         <div></div>
       </div>
       <div className="c-hobbies-card__container">
-        {HOBBIES.map((hobbie) => (
+        {hobbies_data.map((hobbie) => (
           <CustomIcon
             key={hobbie.id}
             icon={hobbie.icon}

@@ -8,7 +8,7 @@ import { CustomIconColor } from "types/custom-icon.types";
 
 import { Hobbies } from "types/hobbies.types";
 
-export const HOBBIES: Hobbies[] = [
+export const hobbies_data: Hobbies[] = [
   {
     id: uuidv4(),
     icon: <FaGuitar size="4rem" />,

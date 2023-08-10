@@ -4,7 +4,7 @@ import { EXPERIENCE } from "constants/experience.constants";
 
 import { Experience } from "types/experience.types";
 
-export const EXPERIENCE_DATA: Experience[] = [
+export const experience_data: Experience[] = [
   {
     id: uuidv4(),
     company: EXPERIENCE.COMPANIES.CLEVERPY.NAME,

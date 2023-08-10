@@ -3,7 +3,7 @@ import { TFunction } from "i18next";
 import { EXPERIENCE } from "constants/experience.constants";
 
 import { ChartData } from "types/hard-skill.types";
-import { months } from "./data/months";
+import { months } from "../data/months";
 
 export const handleDownloadResume = (url: string) => {
   const fileName = url.split("/").pop();

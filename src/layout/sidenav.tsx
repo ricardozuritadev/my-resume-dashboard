@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import { SIDENAV_CONSTANTS } from "constants/sidenav.constants";
 
-import { PAGES } from "utils/data/pages";
+import { pages } from "data/pages";
 
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
@@ -35,7 +35,7 @@ const Sidenav = () => {
         <section className="l-sidenav__nav">
           <nav>
             <ul className="l-sidenav__links">
-              {PAGES.map((page) => (
+              {pages.map((page) => (
                 <LinkComponent
                   key={page.text}
                   url={page.url}

@@ -6,7 +6,7 @@ import { EXPERIENCE } from "constants/experience.constants";
 
 import { Experience, Position } from "types/experience.types";
 
-import { EXPERIENCE_DATA } from "utils/data/experience";
+import { experience_data } from "data/experience";
 
 import Tag from "components/generic/tag";
 
@@ -48,7 +48,7 @@ const ExperienceCard = ({
 
   const selectExperience = () => {
     setSelectedIndex(index);
-    setSelectedExperience(EXPERIENCE_DATA[index]);
+    setSelectedExperience(experience_data[index]);
   };
   return (
     <div

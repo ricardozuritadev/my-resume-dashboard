@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { HARD_SKILLS } from "utils/data/hard-skills";
-import { SOFT_SKILLS } from "utils/data/soft-skills";
+import { hard_skills_data } from "data/hard-skills";
+import { soft_skills_data } from "data/soft-skills";
 
 import { ChartData } from "types/hard-skill.types";
 
@@ -12,8 +12,12 @@ import SoftSkillsCard from "components/ad-hoc/soft-skills/soft-skills-card";
 
 const SkillsPage = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
-  const [xAxisData, setXAxisData] = useState<string[]>(HARD_SKILLS[0].items);
-  const [chartData, setChartData] = useState<ChartData[]>(HARD_SKILLS[0].data);
+  const [xAxisData, setXAxisData] = useState<string[]>(
+    hard_skills_data[0].items
+  );
+  const [chartData, setChartData] = useState<ChartData[]>(
+    hard_skills_data[0].data
+  );
 
   const { t } = useTranslation();
 
@@ -22,7 +26,7 @@ const SkillsPage = () => {
       <section className="p-skills__hardskills">
         <h3 className="card__title p-skills__subtitle">Hard skills</h3>
         <div className="c-hard-skills">
-          {HARD_SKILLS.map((hardSkill, index) => (
+          {hard_skills_data.map((hardSkill, index) => (
             <HardSkillCard
               key={hardSkill.id}
               {...hardSkill}
@@ -44,7 +48,7 @@ const SkillsPage = () => {
       <section className="p-skills__softskills">
         <h3 className="card__title p-skills__subtitle">Soft skills</h3>
         <div className="c-soft-skills">
-          {SOFT_SKILLS.map((softSkill) => (
+          {soft_skills_data.map((softSkill) => (
             <SoftSkillsCard
               key={softSkill.id}
               {...softSkill}

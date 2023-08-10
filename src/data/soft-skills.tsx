@@ -4,7 +4,7 @@ import { SKILLS } from "constants/skills.constants";
 
 import { GradientColor, SoftSkill } from "types/soft-skill.types";
 
-export const SOFT_SKILLS: SoftSkill[] = [
+export const soft_skills_data: SoftSkill[] = [
   {
     id: uuidv4(),
     text: SKILLS.SOFT_SKILLS.PROBLEM_SOLVING,

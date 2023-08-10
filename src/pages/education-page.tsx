@@ -1,6 +1,6 @@
 import EducationCard from "components/ad-hoc/education/education-card";
 import EducationTimeline from "components/ad-hoc/education/education-timeline";
-import { education_data } from "utils/data/education";
+import { education_data } from "data/education";
 
 const EducationPage = () => {
   return (

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { EXPERIENCE_DATA } from "utils/data/experience";
+import { experience_data } from "data/experience";
 
 import { Experience } from "types/experience.types";
 
@@ -10,14 +10,14 @@ import ExperienceDetails from "components/ad-hoc/experience/experience-details";
 const ExperiencePage = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [selectedExperience, setSelectedExperience] = useState<Experience>(
-    EXPERIENCE_DATA[0]
+    experience_data[0]
   );
 
   return (
     <div className="p-experience">
       <section className="p-experience__cards">
         <div className="p-experience__cards-container">
-          {EXPERIENCE_DATA.map((experience, index) => (
+          {experience_data.map((experience, index) => (
             <ExperienceCard
               key={experience.id}
               companyName={experience.company}

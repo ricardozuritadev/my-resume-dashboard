@@ -1,6 +1,7 @@
 import { useTheme } from "utils/hooks/use-theme.hook";
 
 import ReactECharts from "echarts-for-react";
+import { getEducationChartSeries } from "utils/functions";
 
 const EducationTimeline = () => {
   const { theme } = useTheme();
@@ -24,7 +25,11 @@ const EducationTimeline = () => {
       min: 2012,
       max: 2024,
       axisLabel: {
-        formatter: (value: number) => value.toFixed(0)
+        formatter: (value: number) => value.toFixed(0),
+        fontSize: 14
+      },
+      splitLine: {
+        lineStyle: { color: theme === "dark" ? "#424040" : "#edebef" }
       }
     },
     yAxis: {
@@ -33,43 +38,9 @@ const EducationTimeline = () => {
       axisLabel: { show: true },
       axisTick: { show: false },
       splitLine: { show: false },
-      data: [
-        "UDLA",
-        "Trazos",
-        "CEI",
-        "The Bridge",
-        "Three.js Journey",
-        "IFP / Ilerna"
-      ]
+      data: ["UDLA", "Trazos", "CEI", "The Bridge", "IFP / Ilerna"]
     },
-    series: [
-      {
-        name: "Placeholder",
-        type: "bar",
-        stack: "Total",
-        itemStyle: {
-          borderColor: "transparent",
-          color: "transparent"
-        },
-        emphasis: {
-          itemStyle: {
-            borderColor: "transparent",
-            color: "transparent"
-          }
-        },
-        data: [2012, 2016, 2020, 2021, 2022, 2022]
-      },
-      {
-        name: "Years",
-        type: "bar",
-        stack: "Total",
-        label: {
-          show: true,
-          formatter: "{b}"
-        },
-        data: [3, 1, 1, 1, 2, 2]
-      }
-    ]
+    series: getEducationChartSeries()
   };
 
   return (

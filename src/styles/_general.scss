@@ -65,6 +65,20 @@ ul {
   }
 }
 
+/* Barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-gray-200;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $color-black-100;
+}
+
 #dark .card {
   background-color: $card-background-color-dark;
   color: $text-color-dark;

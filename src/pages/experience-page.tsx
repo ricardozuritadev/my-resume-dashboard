@@ -24,6 +24,8 @@ const ExperiencePage = () => {
               initialDate={experience.initialDate}
               endDate={experience.endDate}
               positionIcon={experience.positionIcon}
+              logo={experience.logo}
+              logoSecondary={experience.logoSecondary}
               index={index}
               selectedIndex={selectedIndex}
               setSelectedIndex={setSelectedIndex}

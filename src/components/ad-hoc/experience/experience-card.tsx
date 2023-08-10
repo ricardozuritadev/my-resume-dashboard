@@ -1,3 +1,4 @@
+import { useTheme } from "utils/hooks/use-theme.hook";
 import { useTranslation } from "react-i18next";
 
 import { calculateExperienceDuration } from "utils/functions";
@@ -12,6 +13,7 @@ import Tag from "components/generic/tag";
 
 type ExperienceCardProps = {
   companyName: string;
+  logo: string;
   initialDate: string;
   endDate: string | null;
   positionIcon: Position;
@@ -19,23 +21,25 @@ type ExperienceCardProps = {
   selectedIndex: number;
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
   setSelectedExperience: React.Dispatch<React.SetStateAction<Experience>>;
+  logoSecondary?: string;
 };
 
 const ExperienceCard = ({
   companyName,
+  logo,
   initialDate,
   endDate,
   positionIcon,
   index,
   selectedIndex,
   setSelectedIndex,
-  setSelectedExperience
+  setSelectedExperience,
+  logoSecondary
 }: ExperienceCardProps) => {
   const { t } = useTranslation();
+  const { theme } = useTheme();
 
   const duration = calculateExperienceDuration(initialDate, endDate, t);
-
-  console.log("=> positionIcon: ", positionIcon);
 
   const color = positionIcon === "developer" ? "#a02cfa" : "#ffbc11";
 
@@ -45,6 +49,12 @@ const ExperienceCard = ({
           border: `3px solid ${color}`
         }
       : {};
+
+  const checkSecondaryLogo = logoSecondary
+    ? theme === "dark"
+      ? logo
+      : logoSecondary
+    : logo;
 
   const selectExperience = () => {
     setSelectedIndex(index);
@@ -58,6 +68,11 @@ const ExperienceCard = ({
       onClick={selectExperience}
     >
       <Tag text={`${duration ? duration : t(EXPERIENCE.CURRENTLY)}`} />
+      <img
+        src={checkSecondaryLogo}
+        alt="Company logo"
+        className="c-experience-card__company"
+      />
     </div>
   );
 };

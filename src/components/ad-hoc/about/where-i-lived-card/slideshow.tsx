@@ -33,51 +33,38 @@ const Slideshow = () => {
         className="c-slideshow"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
-        {cities_data.map(
-          ({
-            id,
-            name,
-            imgUrl
-          }: {
-            id: number;
-            name: string;
-            years: string;
-            imgUrl: string;
-          }) => (
-            <div className="c-slideshow__slide" key={id}>
-              <div>
-                <img src={imgUrl} alt={name} className="c-slideshow__img" />
-              </div>
-              <div className="c-slideshow__overlay">
-                {index > 0 ? (
-                  <FaAngleLeft
-                    className="c-slideshow__angle c-slideshow__angle--left"
-                    size={30}
-                    onClick={() => {
-                      setIndex((prev) => prev - 1);
-                      setWasBtnClicked(true);
-                    }}
-                  />
-                ) : (
-                  <div className="empty-angle empty-angle--left"></div>
-                )}
+        {cities_data.map(({ id, map }) => (
+          <div className="c-slideshow__slide" key={id}>
+            <div className="c-slideshow__img">{map}</div>
+            <div className="c-slideshow__overlay">
+              {index > 0 ? (
+                <FaAngleLeft
+                  className="c-slideshow__angle c-slideshow__angle--left"
+                  size={30}
+                  onClick={() => {
+                    setIndex((prev) => prev - 1);
+                    setWasBtnClicked(true);
+                  }}
+                />
+              ) : (
+                <div className="empty-angle empty-angle--left"></div>
+              )}
 
-                {index < cities_data.length - 1 ? (
-                  <FaAngleRight
-                    className="c-slideshow__angle c-slideshow__angle--right"
-                    size={30}
-                    onClick={() => {
-                      setIndex((prev) => prev + 1);
-                      setWasBtnClicked(true);
-                    }}
-                  />
-                ) : (
-                  <div className="empty-angle empty-angle--right"></div>
-                )}
-              </div>
+              {index < cities_data.length - 1 ? (
+                <FaAngleRight
+                  className="c-slideshow__angle c-slideshow__angle--right"
+                  size={30}
+                  onClick={() => {
+                    setIndex((prev) => prev + 1);
+                    setWasBtnClicked(true);
+                  }}
+                />
+              ) : (
+                <div className="empty-angle empty-angle--right"></div>
+              )}
             </div>
-          )
-        )}
+          </div>
+        ))}
       </div>
     </>
   );

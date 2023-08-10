@@ -4,10 +4,11 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { useTheme } from "utils/hooks/use-theme.hook";
 
 import { childrenRoutes } from "routes/children-routes";
+import { ROUTES } from "constants/routes.constants";
 
 import ThemeContextProvider from "contexts/theme.context";
 
-import ErrorPage from "pages/error";
+import ErrorPage from "pages/error-page";
 import Sidenav from "layout/sidenav";
 import Header from "layout/header";
 import Main from "layout/main";
@@ -30,7 +31,7 @@ const App = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: ROUTES.HOME,
     element: <App />,
     errorElement: <ErrorPage />,
     children: childrenRoutes

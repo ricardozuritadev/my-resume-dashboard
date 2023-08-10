@@ -1,3 +1,21 @@
 .p-education {
   padding: 4rem 2rem;
+
+  @include from-medium {
+    padding: 4rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @include from-medium {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include from-xxlarge {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }

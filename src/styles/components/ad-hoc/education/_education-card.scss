@@ -1,0 +1,43 @@
+.c-education-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: $border-radius-medium;
+  padding: 2rem;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__date {
+    font-size: $font-size-small;
+    font-weight: 500;
+  }
+
+  &__degree {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+#dark .c-education-card {
+  background-color: $card-background-color-dark;
+  transition: $transition-fast;
+}
+
+#light .c-education-card {
+  background-color: $card-background-color-light;
+  transition: $transition-fast;
+}

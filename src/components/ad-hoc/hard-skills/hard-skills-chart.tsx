@@ -2,7 +2,7 @@ import { useTheme } from "utils/hooks/use-theme.hook";
 
 import ReactECharts from "echarts-for-react";
 
-import { getChartOptions } from "utils/functions";
+import { getSkillsChartSeries } from "utils/functions";
 
 import { ChartData } from "types/hard-skill.types";
 
@@ -14,7 +14,15 @@ type HardSkillsChartProps = {
 const HardSkillsChart = ({ xAxisData, chartData }: HardSkillsChartProps) => {
   const { theme } = useTheme();
 
-  const chartOption = getChartOptions(xAxisData, chartData);
+  const chartOption = {
+    title: {},
+    tooltip: {},
+    xAxis: {
+      data: xAxisData
+    },
+    yAxis: {},
+    series: getSkillsChartSeries(chartData)
+  };
   const backgroundStyle = theme === "dark" ? "#1f1d1d" : "#fff";
 
   return (

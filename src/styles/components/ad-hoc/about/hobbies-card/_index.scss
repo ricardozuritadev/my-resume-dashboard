@@ -1,6 +1,8 @@
 .c-hobbies-card {
+  position: relative;
   box-shadow: $box-shadow-small;
   justify-content: space-between;
+  overflow: hidden;
 
   &__container {
     display: grid;
@@ -15,6 +17,63 @@
     @include from-xxlarge {
       grid-template-columns: repeat(2, 16rem);
       gap: 3rem;
+    }
+  }
+
+  &__description {
+    padding: 4rem;
+  }
+
+  &__details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: $border-radius-medium;
+    top: 36rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: all 0.3s ease-out;
+
+    &--visible {
+      top: 0;
+    }
+
+    #dark &--purple {
+      background-color: $color-purple-dark;
+      color: $color-white-100;
+    }
+    #dark &--yellow {
+      background-color: $color-yellow-dark;
+      color: $color-white-100;
+    }
+    #dark &--pink {
+      background-color: $color-pink-dark;
+      color: $color-white-100;
+    }
+    #dark &--green {
+      background-color: $color-green-dark;
+      color: $color-white-100;
+    }
+
+    #light &--purple {
+      background-color: $color-purple-light;
+      color: $color-black-100;
+    }
+    #light &--yellow {
+      background-color: $color-yellow-light;
+      color: $color-black-100;
+    }
+    #light &--pink {
+      background-color: $color-pink-light;
+      color: $color-black-100;
+    }
+    #light &--green {
+      background-color: $color-green-light;
+      color: $color-black-100;
     }
   }
 }

@@ -13,27 +13,31 @@ export const hobbies_data: Hobbies[] = [
     id: uuidv4(),
     icon: <FaGuitar size="4rem" />,
     iconColor: CustomIconColor.green,
-    text: ABOUT_CONSTANTS.GUITAR
+    title: ABOUT_CONSTANTS.GUITAR.TITLE,
+    description: ABOUT_CONSTANTS.GUITAR.DESCRIPTION
   },
   {
     id: uuidv4(),
 
     icon: <FaCode size="4rem" />,
     iconColor: CustomIconColor.purple,
-    text: ABOUT_CONSTANTS.CODE
+    title: ABOUT_CONSTANTS.CODE.TITLE,
+    description: ABOUT_CONSTANTS.CODE.DESCRIPTION
   },
   {
     id: uuidv4(),
 
     icon: <FaTicketAlt size="4rem" />,
     iconColor: CustomIconColor.pink,
-    text: ABOUT_CONSTANTS.MOVIES
+    title: ABOUT_CONSTANTS.MOVIES.TITLE,
+    description: ABOUT_CONSTANTS.MOVIES.DESCRIPTION
   },
   {
     id: uuidv4(),
 
     icon: <FaGamepad size="4rem" />,
     iconColor: CustomIconColor.yellow,
-    text: ABOUT_CONSTANTS.VIDEOGAMES
+    title: ABOUT_CONSTANTS.VIDEOGAMES.TITLE,
+    description: ABOUT_CONSTANTS.VIDEOGAMES.DESCRIPTION
   }
 ];

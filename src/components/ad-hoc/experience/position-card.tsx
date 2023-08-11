@@ -34,7 +34,7 @@ const PositionCard = ({ position, positionIcon }: PositionCardProps) => {
               : CustomIconColor.yellow
           }
           size={CustomIconSize.small}
-          text=""
+          title=""
         />
       </div>
       <div>

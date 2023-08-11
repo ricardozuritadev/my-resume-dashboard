@@ -36,7 +36,7 @@ const HobbiesCard = () => {
     <div className="card c-hobbies-card">
       <div className="card__header">
         <h3 className="card__title">{ABOUT_CONSTANTS.HOBBIES}</h3>
-        <div></div>
+        <p className="card__subtitle">{t(ABOUT_CONSTANTS.VIEW_DETAILS)}</p>
       </div>
       <div className="c-hobbies-card__container">
         {hobbies_data.map((hobbie) => (
@@ -54,14 +54,14 @@ const HobbiesCard = () => {
         ))}
       </div>
       <div className={detailsClasses}>
-        <FaAngleDown size={50} cursor="pointer" onClick={hideDetailsCard} />
+        <FaAngleDown size={40} cursor="pointer" onClick={hideDetailsCard} />
         {selectedHobbieDescription && (
           <p className="c-hobbies-card__description">
             {selectedHobbieDescription}
           </p>
         )}
         <div></div>
-        <div></div>
+        {/* <div></div> */}
       </div>
     </div>
   );

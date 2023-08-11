@@ -24,26 +24,25 @@
   "about": {
     "bioFirstPart": "Hello! I'm Ricardo, a Front End developer and cross-platform applications.",
     "bioSecondPart": "From a young age, creativity has been my constant companion. While I'll admit to making some misguided academic choices along the way, I ultimately discovered my true passion. I found that my heart was in programming, and I wholeheartedly dove into exploring this thrilling world. This change was undoubtedly the calling I had been waiting for.",
-    "bioThirdPart": "On this page you will find more information about me.",
-    "bioFourthPart": "Thanks for visiting!",
     "back": "Go back",
     "resume": "Resume",
     "downloadResume": "Download Resume",
+    "viewDetails": "/Click to view details",
     "guitar": {
       "title": "Guitar",
       "description": "From childhood, my grandfather, who was also a musician, instilled in me the passion for the guitar and music. This passion has endured throughout the years, reminding me that music is a precious heritage that transcends generations."
     },
     "code": {
       "title": "Code",
-      "description": "What started as a mere curiosity has transformed into my greatest passion: programming. Each line of code represents an exciting challenge and an opportunity to create. This evolution constantly drives me to learn and explore new technologies."
+      "description": "What started as a mere curiosity has transformed into my greatest passion. Each line of code represents an exciting challenge and an opportunity to create. Every day I'm learning and exploring new technologies."
     },
     "movies": {
       "title": "Movies",
-      "description": "I greatly enjoy cinema, especially the zombie genre, as I grew up fascinated by these types of movies. The apocalyptic and suspenseful stories have captivated me since I was young, creating a lasting connection with this film genre. Each movie immerses me in thrilling universes of challenges and survival."
+      "description": "I greatly enjoy cinema, especially the zombie genre, as I grew up fascinated by these types of movies. The apocalyptic and suspenseful stories have captivated me since I was young."
     },
     "videogames": {
       "title": "Video games",
-      "description": "I am a lover of video games, especially the survival horror genre. My favorite series is Resident Evil, as I enjoy exploring terrifying worlds, solving puzzles, and facing exciting challenges while experiencing intense survival stories."
+      "description": "I am a lover of survival horror genre. My favorite series is Resident Evil, as I enjoy exploring terrifying worlds, solving puzzles, and facing exciting challenges while experiencing intense survival stories."
     },
     "livedIn": "Lived in",
     "languages": "Languages",

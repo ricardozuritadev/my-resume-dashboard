@@ -24,26 +24,25 @@
   "about": {
     "bioFirstPart": " ¡Hola! Soy Ricardo, desarrollador Front End y de aplicaciones multiplataforma.",
     "bioSecondPart": "Desde temprana edad, la creatividad ha sido mi compañera constante. Aunque admito que tomé algunas decisiones académicas equivocadas en el camino, finalmente encontré mi verdadera pasión. Descubrí que mi corazón estaba en la programación y me lancé de lleno a explorar este emocionante mundo. Este cambio fue, sin duda, el llamado que siempre había estado esperando.",
-    "bioThirdPart": "En esta página encontrarás más información sobre mí.",
-    "bioFourthPart": "¡Gracias por visitarla!",
     "back": "Volver",
     "resume": "Curriculum",
     "downloadResume": "Descargar CV",
+    "viewDetails": "/Haz click para ver detalles",
     "guitar": {
       "title": "Guitarra",
       "description": "Desde niño, mi abuelo, quien también era músico, inculcó en mí la pasión por la guitarra y la música. Esta pasión ha perdurado a lo largo de los años, recordándome que la música es una herencia preciosa que trasciende generaciones."
     },
     "code": {
       "title": "Programación",
-      "description": "Lo que comenzó como una mera curiosidad se ha transformado en mi mayor pasión: la programación. Cada línea de código representa un emocionante desafío y una oportunidad para crear. Esta evolución me impulsa constantemente a aprender y explorar nuevas tecnologías."
+      "description": "Lo que comenzó como una mera curiosidad se ha transformado en mi mayor pasión. Cada línea de código representa un emocionante desafío y una oportunidad para crear. Me gusta aprender y explorar nuevas tecnologías."
     },
     "movies": {
       "title": "Cine",
-      "description": "Disfruto enormemente del cine, especialmente del género zombie, ya que crecí fascinado por este tipo de películas. Las historias apocalípticas y llenas de suspenso me han cautivado desde pequeño, creando una conexión duradera con este género cinematográfico. Cada película me sumerge en emocionantes universos de desafíos y supervivencia."
+      "description": "Disfruto enormemente del cine, especialmente del género zombie, ya que crecí fascinado por este tipo de películas. Las historias apocalípticas y llenas de suspenso me han cautivado desde pequeño."
     },
     "videogames": {
       "title": "Videojuegos",
-      "description": "Soy un amante de los videojuegos, especialmente del género survival horror. Mi saga favorita es Resident Evil, ya que me encanta explorar mundos aterradores, resolver enigmas y enfrentar desafíos emocionantes mientras experimento historias de supervivencia intensas."
+      "description": "Soy un amante del género survival horror. Mi saga favorita es Resident Evil, ya que me encanta explorar mundos aterradores, resolver enigmas y enfrentar desafíos emocionantes mientras experimento historias de supervivencia intensas."
     },
     "livedIn": "Viví en",
     "languages": "Idiomas",

@@ -23,16 +23,28 @@
   },
   "about": {
     "bioFirstPart": " ¡Hola! Soy Ricardo, desarrollador Front End y de aplicaciones multiplataforma.",
-    "bioSecondPart": "Al inicio, la programación era una curiosidad para mí. Ahora se ha convertido en una pasión y día a día estoy mejorando y en constante aprendizaje de nuevas tecnologías.",
+    "bioSecondPart": "Desde temprana edad, la creatividad ha sido mi compañera constante. Aunque admito que tomé algunas decisiones académicas equivocadas en el camino, finalmente encontré mi verdadera pasión. Descubrí que mi corazón estaba en la programación y me lancé de lleno a explorar este emocionante mundo. Este cambio fue, sin duda, el llamado que siempre había estado esperando.",
     "bioThirdPart": "En esta página encontrarás más información sobre mí.",
     "bioFourthPart": "¡Gracias por visitarla!",
     "back": "Volver",
     "resume": "Curriculum",
     "downloadResume": "Descargar CV",
-    "guitar": "Guitarra",
-    "code": "Programar",
-    "movies": "Cine",
-    "videoGames": "Videojuegos",
+    "guitar": {
+      "title": "Guitarra",
+      "description": "Desde niño, mi abuelo, quien también era músico, inculcó en mí la pasión por la guitarra y la música. Esta pasión ha perdurado a lo largo de los años, recordándome que la música es una herencia preciosa que trasciende generaciones."
+    },
+    "code": {
+      "title": "Programación",
+      "description": "Lo que comenzó como una mera curiosidad se ha transformado en mi mayor pasión: la programación. Cada línea de código representa un emocionante desafío y una oportunidad para crear. Esta evolución me impulsa constantemente a aprender y explorar nuevas tecnologías."
+    },
+    "movies": {
+      "title": "Cine",
+      "description": "Disfruto enormemente del cine, especialmente del género zombie, ya que crecí fascinado por este tipo de películas. Las historias apocalípticas y llenas de suspenso me han cautivado desde pequeño, creando una conexión duradera con este género cinematográfico. Cada película me sumerge en emocionantes universos de desafíos y supervivencia."
+    },
+    "videogames": {
+      "title": "Videojuegos",
+      "description": "Soy un amante de los videojuegos, especialmente del género survival horror. Mi saga favorita es Resident Evil, ya que me encanta explorar mundos aterradores, resolver enigmas y enfrentar desafíos emocionantes mientras experimento historias de supervivencia intensas."
+    },
     "livedIn": "Viví en",
     "languages": "Idiomas",
     "spanish": "Español",
@@ -82,7 +94,7 @@
         "challenges": "Uno de los retos al que me tuve que afrontar en este trabajo fue el de enseñar a otros a programar, ya que no es una tarea fácil. Pero con el tiempo y la práctica, aprendí a hacerlo de forma eficiente y disfruté mucho haciéndolo."
       },
       "cleverpy": {
-        "description": "Cleverpy actualmente es parte de la empresa Idrica, la cual lidera el desarrollo de una plataforma integrada de software y análisis que permite a las empresas de servicios públicos como el agua potable a conectar y gestionar sus activos digitales y agilizar las operaciones de forma sencilla, segura y holística.",
+        "description": "Cleverpy es parte de la empresa Idrica, la cual lidera el desarrollo de una plataforma integrada de software y análisis que permite a las empresas de servicios públicos como el agua potable a conectar y gestionar sus activos digitales y agilizar las operaciones de forma sencilla, segura y holística.",
         "position": "Desarrollador Front End",
         "responsibilities": "Desarrollo de la plataforma 'Go-Aigua' de la empresa IDRICA para la gestión del agua que captura, procesa, homogeneiza y explota los datos de múltiples fuentes. Esta plataforma da respuesta a los retos del ciclo del agua, para todos los sectores y fases operativas, impulsando la eficiencia y optimizando la operación.",
         "learning": "En Cleverpy aprendí, sobre todo, a ser más autosuficiente y a resolver problemas investigando por mi cuenta. Aprendí nuevas librerías de mapas y he afianzado mis conocimientos en React con TypeScript. También aprendí mucho sobre el ciclo del agua y la gestión de los recursos hídricos.",

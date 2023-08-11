@@ -23,16 +23,28 @@
   },
   "about": {
     "bioFirstPart": "Hello! I'm Ricardo, a Front End developer and cross-platform applications.",
-    "bioSecondPart": "Initially, programming was a curiosity for me. Now it has become a passion, and I strive to improve and learn new technologies every day.",
+    "bioSecondPart": "From a young age, creativity has been my constant companion. While I'll admit to making some misguided academic choices along the way, I ultimately discovered my true passion. I found that my heart was in programming, and I wholeheartedly dove into exploring this thrilling world. This change was undoubtedly the calling I had been waiting for.",
     "bioThirdPart": "On this page you will find more information about me.",
     "bioFourthPart": "Thanks for visiting!",
     "back": "Go back",
     "resume": "Resume",
     "downloadResume": "Download Resume",
-    "guitar": "Guitar",
-    "code": "Code",
-    "movies": "Movies",
-    "videoGames": "Games",
+    "guitar": {
+      "title": "Guitar",
+      "description": "From childhood, my grandfather, who was also a musician, instilled in me the passion for the guitar and music. This passion has endured throughout the years, reminding me that music is a precious heritage that transcends generations."
+    },
+    "code": {
+      "title": "Code",
+      "description": "What started as a mere curiosity has transformed into my greatest passion: programming. Each line of code represents an exciting challenge and an opportunity to create. This evolution constantly drives me to learn and explore new technologies."
+    },
+    "movies": {
+      "title": "Movies",
+      "description": "I greatly enjoy cinema, especially the zombie genre, as I grew up fascinated by these types of movies. The apocalyptic and suspenseful stories have captivated me since I was young, creating a lasting connection with this film genre. Each movie immerses me in thrilling universes of challenges and survival."
+    },
+    "videogames": {
+      "title": "Video games",
+      "description": "I am a lover of video games, especially the survival horror genre. My favorite series is Resident Evil, as I enjoy exploring terrifying worlds, solving puzzles, and facing exciting challenges while experiencing intense survival stories."
+    },
     "livedIn": "Lived in",
     "languages": "Languages",
     "spanish": "Spanish",
@@ -81,7 +93,7 @@
         "challenges": "One of the challenges I had to face in this job was to teach others how to program, as it is not an easy task. But with time and practice, I learned to do it efficiently and I really enjoyed doing it."
       },
       "cleverpy": {
-        "description": "Cleverpy is currently part of the company Idrica, which is leading the development of an integrated software and analytics platform that enables utilities such as water utilities to connect and manage their digital assets and streamline operations in a simple, secure and holistic way.",
+        "description": "Cleverpy is part of the company Idrica, which is leading the development of an integrated software and analytics platform that enables utilities such as water utilities to connect and manage their digital assets and streamline operations in a simple, secure and holistic way.",
         "position": "Front End Developer",
         "responsibilities": "Development of the 'Go-Aigua' platform for IDRICA company for water management that captures, processes, homogenizes and exploits data from multiple sources. This platform responds to the challenges of the water cycle, for all sectors and operational phases, promoting efficiency and optimizing operations.",
         "learning": "In Cleverpy I learned, above all, to be more self-sufficient and to solve problems by researching on my own. I learned new map libraries and have solidified my knowledge in React with TypeScript. I also learned a lot about the water cycle and water resource management.",

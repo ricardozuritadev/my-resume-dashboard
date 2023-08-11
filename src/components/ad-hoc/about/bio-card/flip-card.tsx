@@ -15,22 +15,18 @@ const FlipCard = () => {
   const flipStyles = flip ? "flip" : "";
 
   return (
-    <div className="c-flip-container">
+    <div className="c-flip-container" onClick={() => setFlip(!flip)}>
       <div className={`c-flip-card ${flipStyles}`}>
         <div className="c-flip-card__back">
           <div></div>
           <div className="c-flip-card__content">
             <p>{t(ABOUT_CONSTANTS.BIO_FIRST_PART)}</p>
             <p>{t(ABOUT_CONSTANTS.BIO_SECOND_PART)}</p>
-            <p> {t(ABOUT_CONSTANTS.BIO_THIRD_PART)}</p>
-            <p> {t(ABOUT_CONSTANTS.BIO_FOURTH_PART)}</p>
           </div>
           <Button
             color={ButtonColor.purple}
             size={ButtonSize.medium}
-            handleClick={() => {
-              setFlip(!flip);
-            }}
+            handleClick={() => setFlip(!flip)}
           >
             {t(ABOUT_CONSTANTS.BACK)}
           </Button>
@@ -42,9 +38,7 @@ const FlipCard = () => {
           <Button
             color={ButtonColor.purple}
             size={ButtonSize.medium}
-            handleClick={() => {
-              setFlip(!flip);
-            }}
+            handleClick={() => setFlip(!flip)}
           >
             {t(ABOUT_CONSTANTS.MY_STORY)}
           </Button>

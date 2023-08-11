@@ -1,8 +1,6 @@
 export const ABOUT_CONSTANTS = {
   BIO_FIRST_PART: "about.bioFirstPart",
   BIO_SECOND_PART: "about.bioSecondPart",
-  BIO_THIRD_PART: "about.bioThirdPart",
-  BIO_FOURTH_PART: "about.bioFourthPart",
   MY_STORY: "+ info",
   BIO: "Info",
   BACK: "about.back",
@@ -14,6 +12,7 @@ export const ABOUT_CONSTANTS = {
   PDF_FILE_URL_EN:
     "http://ricardo-zurita.vercel.app/files/cv_ricardozurita_en.pdf",
   HOBBIES: "Hobbies",
+  VIEW_DETAILS: "about.viewDetails",
   GUITAR: {
     TITLE: "about.guitar.title",
     DESCRIPTION: "about.guitar.description"

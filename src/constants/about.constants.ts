@@ -14,10 +14,22 @@ export const ABOUT_CONSTANTS = {
   PDF_FILE_URL_EN:
     "http://ricardo-zurita.vercel.app/files/cv_ricardozurita_en.pdf",
   HOBBIES: "Hobbies",
-  GUITAR: "about.guitar",
-  CODE: "about.code",
-  MOVIES: "about.movies",
-  VIDEOGAMES: "about.videoGames",
+  GUITAR: {
+    TITLE: "about.guitar.title",
+    DESCRIPTION: "about.guitar.description"
+  },
+  CODE: {
+    TITLE: "about.code.title",
+    DESCRIPTION: "about.code.description"
+  },
+  MOVIES: {
+    TITLE: "about.movies.title",
+    DESCRIPTION: "about.movies.description"
+  },
+  VIDEOGAMES: {
+    TITLE: "about.videogames.title",
+    DESCRIPTION: "about.videogames.description"
+  },
   LIVED_IN: "about.livedIn",
   LANGUAGES: "about.languages",
   SPANISH: "about.spanish",

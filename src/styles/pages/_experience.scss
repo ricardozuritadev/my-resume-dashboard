@@ -20,10 +20,6 @@
       width: 100%;
       overflow-x: hidden;
     }
-
-    @include from-xxlarge {
-      padding: 7rem 4rem 0 4rem;
-    }
   }
 
   &__cards-container {

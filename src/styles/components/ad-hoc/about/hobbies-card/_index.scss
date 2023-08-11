@@ -21,7 +21,16 @@
   }
 
   &__description {
+    font-weight: 500;
     padding: 4rem;
+
+    @include from-medium {
+      padding: 2rem;
+    }
+
+    @include from-xxlarge {
+      padding: 4rem;
+    }
   }
 
   &__details {

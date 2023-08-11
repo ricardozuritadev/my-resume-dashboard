@@ -14,6 +14,10 @@
   border-radius: 50%;
   cursor: pointer;
 
+  &:hover {
+    transform: scale(1.1);
+  }
+
   &--small {
     width: 6rem;
     height: 6rem;

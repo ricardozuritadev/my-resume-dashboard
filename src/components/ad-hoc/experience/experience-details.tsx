@@ -17,8 +17,14 @@ type ExperienceDetailsProps = {
 const ExperienceDetails = ({ selectedExperience }: ExperienceDetailsProps) => {
   const { t } = useTranslation();
 
+  const color =
+    selectedExperience.positionIcon === "developer" ? "#a02cfa" : "#ffbc11";
+
   return (
-    <div className="c-experience-details">
+    <div
+      className="c-experience-details"
+      style={{ border: `3px solid ${color}` }}
+    >
       <section className="c-experience-details__first">
         <div>
           <h3 className="card__title c-experience-details__company">

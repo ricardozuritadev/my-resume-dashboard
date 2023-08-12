@@ -38,17 +38,21 @@ npm i
 ~~~
 
 ## Características del proyecto y demostración
-![p1](https://user-images.githubusercontent.com/84975927/179972353-4a8a06a3-8839-4eef-a438-7758617b29e5.gif)
+![mobile-tablet](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/103739ef-db4c-4160-9444-069b740b2f38)
 
-![p2](https://user-images.githubusercontent.com/84975927/179972369-005c9be0-a07b-42f6-b1f3-984df22aad42.gif)
+![about](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/347c038c-caab-4dcf-bf19-da517136eac2)
 
-![p4](https://user-images.githubusercontent.com/84975927/179972393-bfbfa169-2648-456a-b836-b55e86d831f0.gif)
+![skills](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/f1d1bac0-fbda-42a3-a7dc-f39934024997)
+
+![work](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/06b68cb5-3e02-4b94-b979-38099ac456e3)
+
+![studies](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/d183c889-1761-4240-9699-ac0315dbb9f9)
+
 
 
 - `Layout responsive`: La plataforma está diseñada con un layout completamente responsive, con un enfoque mobile first.
 - `Selector de idioma`: Se puede cambiar el idioma en el que se muestra la interfaz. Por el momento hay disponibles inglés y español pero se puede ampliar a los idiomas que sean necesarios.
 - `Selector de tema`: Se puede cambiar el tema de la interfaz entre modo oscuro y modo claro.
-- 
 
 ## Tecnologías y librerías utilizadas
 

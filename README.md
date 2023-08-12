@@ -38,7 +38,7 @@ npm i
 ~~~
 
 ## Características del proyecto y demostración
-<img src="https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/103739ef-db4c-4160-9444-069b740b2f38" alt="mobile-tablet" width="300"/>
+<img src="https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/103739ef-db4c-4160-9444-069b740b2f38" alt="mobile-tablet" width="500"/>
 
 ![about](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/347c038c-caab-4dcf-bf19-da517136eac2){width=100px}
 

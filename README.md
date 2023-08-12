@@ -40,14 +40,13 @@ npm i
 ## Características del proyecto y demostración
 <img src="https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/103739ef-db4c-4160-9444-069b740b2f38" alt="mobile-tablet" width="500"/>
 
-![about](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/347c038c-caab-4dcf-bf19-da517136eac2){width=100px}
+<img src="https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/347c038c-caab-4dcf-bf19-da517136eac2" alt="about" width="500"/>
 
-![skills](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/f1d1bac0-fbda-42a3-a7dc-f39934024997){width=100px}
+<img src="https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/f1d1bac0-fbda-42a3-a7dc-f39934024997" alt="skills" width="500"/>
 
-![work](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/06b68cb5-3e02-4b94-b979-38099ac456e3){width=100px}
+<img src="https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/06b68cb5-3e02-4b94-b979-38099ac456e3" alt="work" width="500"/>
 
-![studies](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/d183c889-1761-4240-9699-ac0315dbb9f9){width=100px}
-
+<img src="https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/d183c889-1761-4240-9699-ac0315dbb9f9" alt="studies" width="500"/>
 
 
 - `Layout responsive`: La plataforma está diseñada con un layout completamente responsive, con un enfoque mobile first.

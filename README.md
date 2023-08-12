@@ -38,15 +38,15 @@ npm i
 ~~~
 
 ## Características del proyecto y demostración
-![mobile-tablet](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/103739ef-db4c-4160-9444-069b740b2f38)
+![mobile-tablet](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/103739ef-db4c-4160-9444-069b740b2f38){width=300px}
 
-![about](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/347c038c-caab-4dcf-bf19-da517136eac2)
+![about](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/347c038c-caab-4dcf-bf19-da517136eac2){width=300px}
 
-![skills](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/f1d1bac0-fbda-42a3-a7dc-f39934024997)
+![skills](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/f1d1bac0-fbda-42a3-a7dc-f39934024997){width=300px}
 
-![work](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/06b68cb5-3e02-4b94-b979-38099ac456e3)
+![work](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/06b68cb5-3e02-4b94-b979-38099ac456e3){width=300px}
 
-![studies](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/d183c889-1761-4240-9699-ac0315dbb9f9)
+![studies](https://github.com/ricardozuritadev/my-resume-dashboard/assets/84975927/d183c889-1761-4240-9699-ac0315dbb9f9){width=300px}
 
 
 

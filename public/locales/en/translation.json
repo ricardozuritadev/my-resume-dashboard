@@ -96,13 +96,15 @@
         "position": "Front End Developer",
         "responsibilities": "Development of the 'Go-Aigua' platform for IDRICA company for water management that captures, processes, homogenizes and exploits data from multiple sources. This platform responds to the challenges of the water cycle, for all sectors and operational phases, promoting efficiency and optimizing operations.",
         "learning": "In Cleverpy I learned, above all, to be more self-sufficient and to solve problems by researching on my own. I learned new map libraries and have solidified my knowledge in React with TypeScript. I also learned a lot about the water cycle and water resource management.",
-        "challenges": "I am currently doing an official FP in Multiplatform Application Development. My goal is to learn how to develop native mobile applications. I learn the basics of Java, object oriented programming and relational and non-relational databases."
+        "challenges": "The main challenge I had at Cleverpy was learning the water management process and the platform, as it is a very large and complex project. But with time, practice and the help of my colleagues, I had no problem becoming self-sufficient and doing my job."
       }
     }
   },
   "education": {
     "downloadDiploma": "Download diploma",
     "inProgress": "In progress",
+    "startingYear": "Start year",
+    "yearsOfStudy": "years of study",
     "ilerna": {
       "name": "Ilerna Online",
       "degree": "Cross-platform application development",

@@ -97,13 +97,15 @@
         "position": "Desarrollador Front End",
         "responsibilities": "Desarrollo de la plataforma 'Go-Aigua' de la empresa IDRICA para la gestión del agua que captura, procesa, homogeneiza y explota los datos de múltiples fuentes. Esta plataforma da respuesta a los retos del ciclo del agua, para todos los sectores y fases operativas, impulsando la eficiencia y optimizando la operación.",
         "learning": "En Cleverpy aprendí, sobre todo, a ser más autosuficiente y a resolver problemas investigando por mi cuenta. Aprendí nuevas librerías de mapas y he afianzado mis conocimientos en React con TypeScript. También aprendí mucho sobre el ciclo del agua y la gestión de los recursos hídricos.",
-        "challenges": "El principal reto que tuve en Cleverpy fue el de aprender el proceso de gestión del agua y la plataforma, ya que es un proyecto muy grande y complejo. Pero con el tiempo, la práctica y la ayuda de mis compañeros, no tuve problema en volverme autosuficiente y realizar mi trabajo de forma eficiente."
+        "challenges": "El principal reto que tuve en Cleverpy fue el de aprender el proceso de gestión del agua y la plataforma, ya que es un proyecto muy grande y complejo. Pero con el tiempo, la práctica y la ayuda de mis compañeros, no tuve problema en volverme autosuficiente y realizar mi trabajo."
       }
     }
   },
   "education": {
     "downloadDiploma": "Descargar diploma",
     "inProgress": "Actualmente estudiando",
+    "startingYear": "Año de inicio",
+    "yearsOfStudy": "Años de estudio",
     "ilerna": {
       "name": "Ilerna Online",
       "date": "2022 - 2024",

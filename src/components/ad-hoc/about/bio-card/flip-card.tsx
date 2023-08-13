@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 
+import classNames from "classnames";
+
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 
 import { ButtonColor, ButtonSize } from "types/button.types";
@@ -12,11 +14,13 @@ const FlipCard = () => {
 
   const { t } = useTranslation();
 
-  const flipStyles = flip ? "flip" : "";
+  const flipCardClasses = classNames("c-flip-card", {
+    flip
+  });
 
   return (
     <div className="c-flip-container" onClick={() => setFlip(!flip)}>
-      <div className={`c-flip-card ${flipStyles}`}>
+      <div className={flipCardClasses}>
         <div className="c-flip-card__back">
           <div></div>
           <div className="c-flip-card__content">

@@ -1,6 +1,8 @@
 export const EDUCATION = {
   DOWNLOAD_DIPLOMA: "education.downloadDiploma",
   IN_PROGRESS: "education.inProgress",
+  STARTING_YEAR: "education.startingYear",
+  YEARS_OF_STUDY: "education.yearsOfStudy",
   ILERNA: {
     NAME: "Ilerna",
     DEGREE: "education.ilerna.degree",

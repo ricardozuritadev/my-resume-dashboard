@@ -1,9 +1,11 @@
 import { TFunction } from "i18next";
 
+import { months } from "data/months";
+
+import { EDUCATION } from "constants/education.constants";
 import { EXPERIENCE } from "constants/experience.constants";
 
 import { ChartData } from "types/hard-skill.types";
-import { months } from "../data/months";
 
 export const handleDownloadPdf = (url: string) => {
   const fileName = url.split("/").pop();
@@ -47,9 +49,11 @@ export const getSkillsChartSeries = (chartData: ChartData[]) => [
   }
 ];
 
-export const getEducationChartSeries = () => [
+export const getEducationChartSeries = (
+  t: TFunction<"translation", undefined>
+) => [
   {
-    name: "Año de inicio",
+    name: t(EDUCATION.STARTING_YEAR),
     type: "bar",
     stack: "Total",
     barWidth: 40,
@@ -66,7 +70,7 @@ export const getEducationChartSeries = () => [
     data: [2012, 2016, 2020, 2021, 2022]
   },
   {
-    name: "Años de estudio",
+    name: t(EDUCATION.YEARS_OF_STUDY),
     type: "bar",
     stack: "Total",
     label: {

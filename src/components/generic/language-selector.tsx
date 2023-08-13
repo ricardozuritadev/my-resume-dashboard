@@ -4,7 +4,6 @@ import { languages } from "utils/translations/locales";
 
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
-  console.log("=> i18n: ", i18n);
   const resolvedLanguage = i18n.resolvedLanguage;
 
   const getSelectedClassname = (language: string) =>

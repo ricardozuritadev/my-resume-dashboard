@@ -24,7 +24,6 @@ const CustomIcon = ({
   title,
   description
 }: CustomIconProps) => {
-  console.log("=> description: ", description);
   return (
     <div
       className="wraper"

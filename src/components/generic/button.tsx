@@ -1,3 +1,5 @@
+import classNames from "classnames";
+
 import { ButtonColor, ButtonSize } from "types/button.types";
 
 type ButtonProps = {
@@ -15,15 +17,17 @@ const Button = ({
   handleClick,
   isOutlineBtn
 }: ButtonProps) => {
-  const outlineBtn = isOutlineBtn ? "outline" : "";
-  const buttonColor = color ? color : "purple";
-  const buttonSize = size ? size : "medium";
+  const buttonClasses = classNames(
+    "c-button",
+    `c-button--${color}`,
+    `c-button--${size}`,
+    {
+      "c-button--outline": isOutlineBtn
+    }
+  );
 
   return (
-    <button
-      onClick={handleClick}
-      className={`c-button c-button--${outlineBtn} c-button--${buttonColor} c-button--${buttonSize}`}
-    >
+    <button onClick={handleClick} className={buttonClasses}>
       {children}
     </button>
   );

@@ -1,9 +1,11 @@
 import { useTheme } from "utils/hooks/use-theme.hook";
+import { useTranslation } from "react-i18next";
 
 import ReactECharts from "echarts-for-react";
 import { getEducationChartSeries } from "utils/functions";
 
 const EducationTimeline = () => {
+  const { t } = useTranslation();
   const { theme } = useTheme();
 
   const backgroundStyle = theme === "dark" ? "#1f1d1d" : "#fff";
@@ -40,13 +42,12 @@ const EducationTimeline = () => {
       splitLine: { show: false },
       data: ["UDLA", "Trazos", "CEI", "The Bridge", "IFP / Ilerna"]
     },
-    series: getEducationChartSeries()
+    series: getEducationChartSeries(t)
   };
 
   return (
     <div className="c-education-timeline">
       <section className="c-education-timeline__chart">
-        <div>Education</div>
         <ReactECharts
           option={option}
           style={{

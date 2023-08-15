@@ -28,10 +28,10 @@ const ResumeCard = () => {
         color={ButtonColor.purple}
         size={ButtonSize.medium}
         handleClick={() => {
-          if (i18n.language === "es") {
+          if (i18n.resolvedLanguage === "es") {
             handleDownloadPdf(ABOUT_CONSTANTS.PDF_FILE_URL_ES);
           } else {
-            handleDownloadPdf(ABOUT_CONSTANTS.PDF_FILE_URL_ES);
+            handleDownloadPdf(ABOUT_CONSTANTS.PDF_FILE_URL_EN);
           }
         }}
       >

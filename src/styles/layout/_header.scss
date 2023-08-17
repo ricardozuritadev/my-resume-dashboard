@@ -18,14 +18,6 @@
     margin-left: 28rem;
   }
 
-  &__title {
-    font-size: $font-size-medium;
-
-    @include from-medium {
-      font-size: $font-size-large;
-    }
-  }
-
   &__actions {
     display: flex;
     align-items: center;

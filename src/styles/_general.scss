@@ -39,7 +39,7 @@ ul {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 4rem;
+  padding: 2rem;
   border-radius: $border-radius-medium;
   width: 38rem;
   height: 34rem;
@@ -64,7 +64,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem 2rem 4rem;
+    padding-bottom: 2rem;
     width: 100%;
     z-index: 100;
   }

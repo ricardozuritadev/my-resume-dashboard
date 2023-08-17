@@ -9,6 +9,7 @@ import { Experience } from "types/experience.types";
 import PositionCard from "components/ad-hoc/experience/position-card";
 import ResponsibilitiesCard from "./responsibilities-card";
 import AppliedSkills from "./applied-skills";
+import CardTitle from "components/generic/card-title";
 
 type ExperienceDetailsProps = {
   selectedExperience: Experience;
@@ -26,17 +27,15 @@ const ExperienceDetails = ({ selectedExperience }: ExperienceDetailsProps) => {
       style={{ border: `3px solid ${color}` }}
     >
       <section className="c-experience-details__first">
-        <div>
-          <h3 className="card__title c-experience-details__company">
-            {t(selectedExperience.company)}
-          </h3>
-          <p className="c-experience-details__dates">
-            {formatDates(selectedExperience.initialDate, t)} -{" "}
-            {selectedExperience.endDate
-              ? formatDates(selectedExperience.endDate, t)
-              : t(EXPERIENCE.CURRENTLY)}
-          </p>
-        </div>
+        <CardTitle title={t(selectedExperience.company)} />
+
+        <p className="c-experience-details__dates">
+          {formatDates(selectedExperience.initialDate, t)} -{" "}
+          {selectedExperience.endDate
+            ? formatDates(selectedExperience.endDate, t)
+            : t(EXPERIENCE.CURRENTLY)}
+        </p>
+
         <PositionCard
           position={selectedExperience.position}
           positionIcon={selectedExperience.positionIcon}
@@ -54,23 +53,17 @@ const ExperienceDetails = ({ selectedExperience }: ExperienceDetailsProps) => {
       </section>
 
       <section className="c-experience-details__third">
-        <div>
-          <h3 className="card__title c-experience-details__subtitle">
-            {t(EXPERIENCE.LEARNING)}
-          </h3>
-          <p className="c-experience-details__text">
-            {t(selectedExperience.learning)}
-          </p>
-        </div>
+        <CardTitle title={t(EXPERIENCE.LEARNING)} />
 
-        <div>
-          <h3 className="card__title c-experience-details__subtitle">
-            {t(EXPERIENCE.CHALENGES)}
-          </h3>
-          <p className="c-experience-details__text">
-            {t(selectedExperience.challenges)}
-          </p>
-        </div>
+        <p className="c-experience-details__text">
+          {t(selectedExperience.learning)}
+        </p>
+
+        <CardTitle title={t(EXPERIENCE.CHALENGES)} />
+
+        <p className="c-experience-details__text">
+          {t(selectedExperience.challenges)}
+        </p>
       </section>
     </div>
   );

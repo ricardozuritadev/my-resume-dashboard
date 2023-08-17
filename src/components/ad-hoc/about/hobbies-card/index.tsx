@@ -1,15 +1,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import classNames from "classnames";
-
 import { hobbies_data } from "data/hobbies";
 import { ABOUT_CONSTANTS } from "constants/about.constants";
 
 import { CustomIconColor, CustomIconSize } from "types/custom-icon.types";
 
-import { FaAngleDown } from "react-icons/fa";
 import CustomIcon from "components/generic/custom-icon";
+import CardTitle from "components/generic/card-title";
+import HobbiesDetails from "./hobbies-details";
 
 const HobbiesCard = () => {
   const [isDetailsVisible, setIsDetailsVisible] = useState<boolean>(false);
@@ -21,23 +20,16 @@ const HobbiesCard = () => {
 
   const { t } = useTranslation();
 
-  const detailsClasses = classNames(
-    "c-hobbies-card__details",
-    `c-hobbies-card__details--${selectedHobbieColor}`,
-    {
-      "c-hobbies-card__details--visible": isDetailsVisible
-    }
-  );
-
   const showDetailsCard = () => setIsDetailsVisible(!isDetailsVisible);
-  const hideDetailsCard = () => setIsDetailsVisible(false);
+  const handleHideDetails = () => setIsDetailsVisible(false);
 
   return (
     <div className="card c-hobbies-card">
-      <div className="card__header">
-        <h3 className="card__title">{ABOUT_CONSTANTS.HOBBIES}</h3>
-        <p className="card__subtitle">{t(ABOUT_CONSTANTS.VIEW_DETAILS)}</p>
-      </div>
+      <CardTitle
+        title={ABOUT_CONSTANTS.HOBBIES}
+        subtitle={t(ABOUT_CONSTANTS.VIEW_DETAILS)}
+      />
+
       <div className="c-hobbies-card__container">
         {hobbies_data.map((hobbie) => (
           <CustomIcon
@@ -53,16 +45,13 @@ const HobbiesCard = () => {
           />
         ))}
       </div>
-      <div className={detailsClasses}>
-        <FaAngleDown size={40} cursor="pointer" onClick={hideDetailsCard} />
-        {selectedHobbieDescription && (
-          <p className="c-hobbies-card__description">
-            {selectedHobbieDescription}
-          </p>
-        )}
-        <div></div>
-        {/* <div></div> */}
-      </div>
+
+      <HobbiesDetails
+        onClick={handleHideDetails}
+        isDetailsVisible={isDetailsVisible}
+        selectedHobbieDescription={selectedHobbieDescription}
+        selectedHobbieColor={selectedHobbieColor}
+      />
     </div>
   );
 };

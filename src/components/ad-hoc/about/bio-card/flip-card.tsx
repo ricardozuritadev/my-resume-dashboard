@@ -8,6 +8,8 @@ import { ButtonColor, ButtonSize } from "types/button.types";
 
 import Button from "components/generic/button";
 import { useState } from "react";
+import CardTitle from "components/generic/card-title";
+import FlipCardContent from "./flip-card-content";
 
 const FlipCard = () => {
   const [flip, setFlip] = useState<boolean>(false);
@@ -22,11 +24,11 @@ const FlipCard = () => {
     <div className="c-flip-container" onClick={() => setFlip(!flip)}>
       <div className={flipCardClasses}>
         <div className="c-flip-card__back">
-          <div></div>
-          <div className="c-flip-card__content">
+          <FlipCardContent>
             <p>{t(ABOUT_CONSTANTS.BIO_FIRST_PART)}</p>
             <p>{t(ABOUT_CONSTANTS.BIO_SECOND_PART)}</p>
-          </div>
+          </FlipCardContent>
+
           <Button
             color={ButtonColor.purple}
             size={ButtonSize.medium}
@@ -35,10 +37,9 @@ const FlipCard = () => {
             {t(ABOUT_CONSTANTS.BACK)}
           </Button>
         </div>
+
         <div className="c-flip-card__front">
-          <div className="card__header">
-            <h3 className="card__title">{ABOUT_CONSTANTS.BIO}</h3>
-          </div>
+          <CardTitle title={ABOUT_CONSTANTS.BIO} />
           <Button
             color={ButtonColor.purple}
             size={ButtonSize.medium}

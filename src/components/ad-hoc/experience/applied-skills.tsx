@@ -1,3 +1,4 @@
+import CardTitle from "components/generic/card-title";
 import Tag from "components/generic/tag";
 import { EXPERIENCE } from "constants/experience.constants";
 import { useTranslation } from "react-i18next";
@@ -11,9 +12,8 @@ const AppliedSkills = ({ appliedSkills }: AppliedSkillsProps) => {
 
   return (
     <div className="c-applied-skills">
-      <h3 className="card__title c-applied-skills__title">
-        {t(EXPERIENCE.APPLIED_SKILLS)}
-      </h3>
+      <CardTitle title={t(EXPERIENCE.APPLIED_SKILLS)} />
+
       <ul className="c-applied-skills__list">
         {appliedSkills.map((skill, index) => (
           <Tag key={index} text={skill} hasRandomColor />

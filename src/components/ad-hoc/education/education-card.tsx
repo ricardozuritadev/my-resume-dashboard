@@ -6,6 +6,7 @@ import Button from "components/generic/button";
 
 import { handleDownloadPdf } from "utils/functions";
 import { EDUCATION } from "constants/education.constants";
+import CardTitle from "components/generic/card-title";
 
 type EducationCardProps = {
   school: string;
@@ -28,15 +29,11 @@ const EducationCard = ({
 
   return (
     <div className="c-education-card">
-      <div>
-        <h3 className="card__title c-education-card__title">
-          <span>{school}</span>
-          <span className="c-education-card__date">{date}</span>
-        </h3>
+      <CardTitle title={school} subtitle={date} />
 
-        <p className="c-education-card__degree">{t(degree)}</p>
-        <p className="c-education-card__text">{t(description)}</p>
-      </div>
+      <p className="c-education-card__degree">{t(degree)}</p>
+      <p className="c-education-card__text">{t(description)}</p>
+
       <div className="c-education-card__button">
         {finished ? (
           <Button

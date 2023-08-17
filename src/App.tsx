@@ -13,16 +13,26 @@ import Sidenav from "layout/sidenav";
 import Header from "layout/header";
 import Main from "layout/main";
 
+import PageTitle from "components/ad-hoc/page-title";
+import LanguageSelector from "components/generic/language-selector";
+import Toggle from "components/generic/toggle";
+
 const App = () => {
   const { theme } = useTheme();
 
   return (
     <>
       <div className="l-app" id={theme}>
-        <div className="l-app__menus">
-          <Sidenav />
-          <Header />
-        </div>
+        <Sidenav />
+
+        <Header>
+          <PageTitle />
+          <div className="l-header__actions">
+            <LanguageSelector />
+            <Toggle />
+          </div>
+        </Header>
+
         <Main />
       </div>
     </>

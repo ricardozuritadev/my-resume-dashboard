@@ -8,6 +8,7 @@ import { ButtonColor, ButtonSize } from "types/button.types";
 
 import Button from "components/generic/button";
 import CVIcon from "components/generic/cv-icon";
+import CardTitle from "components/generic/card-title";
 
 const ResumeCard = () => {
   const { theme } = useTheme();
@@ -17,10 +18,10 @@ const ResumeCard = () => {
 
   return (
     <div className="card c-resume-card">
-      <div className="card__header">
-        <h3 className="card__title">{t(ABOUT_CONSTANTS.RESUME)}</h3>
-        <p className="card__subtitle">{ABOUT_CONSTANTS.YEAR}</p>
-      </div>
+      <CardTitle
+        title={t(ABOUT_CONSTANTS.RESUME)}
+        subtitle={ABOUT_CONSTANTS.YEAR}
+      />
 
       <CVIcon backgroundColor={iconBackgroundColor} />
 

@@ -1,24 +1,7 @@
-import { useMatch } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { ReactElement } from "react";
 
-import LanguageSelector from "components/generic/language-selector";
-import Toggle from "components/generic/toggle";
-
-const Header = () => {
-  const { t } = useTranslation();
-
-  const match = useMatch("/:pageName");
-  const pageName = match?.params.pageName;
-
-  return (
-    <header className="l-header">
-      <h2 className="l-header__title">{t(`sidenav.${pageName}`) || ""}</h2>
-      <div className="l-header__actions">
-        <LanguageSelector />
-        <Toggle />
-      </div>
-    </header>
-  );
+const Header = ({ children }: { children: ReactElement | ReactElement[] }) => {
+  return <header className="l-header">{children}</header>;
 };
 
 export default Header;
